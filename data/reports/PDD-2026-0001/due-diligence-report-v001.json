@@ -1,0 +1,1332 @@
+{
+  "meta": {
+    "version": 1,
+    "generated_at": "2026-10-13T10:18:08Z",
+    "system_version": "1.0.0",
+    "ruleset_version": "ruleset-2026.10.1",
+    "ai": {
+      "provider": "offline",
+      "model": "deterministic-rules",
+      "available": false,
+      "sends_document_text_off_device": false,
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "errors": 0,
+      "last_error": null,
+      "note": "No language model is configured. Document contents never leave this machine. Classification, field extraction, cross-document verification, the requirement checklist and risk scoring run entirely on deterministic rules; narrative summarisation and open-ended cross-document review are not performed.",
+      "configured_provider": "offline",
+      "allow_remote_ai": false,
+      "data_leaving_device": "Nothing. All processing is local."
+    },
+    "ocr": {
+      "engine": "macOS Vision (built in)",
+      "engine_key": "macos_vision",
+      "available": true,
+      "alternatives": {
+        "tesseract": false,
+        "macos_vision": true
+      },
+      "note": "Scanned documents are read with the recognition engine built into macOS. Nothing is sent off the machine. Add languages with OCR_LANGUAGE, for example `eng+kan`."
+    },
+    "jurisdiction": {
+      "code": "KA",
+      "name": "Karnataka",
+      "confirmed_by_professional": false,
+      "title_lookback_years": 30,
+      "ec_lookback_years": 30
+    },
+    "disclaimer": "This report is an evidence-based preliminary assessment produced by an automated system from the documents supplied in the case folder. It is not a title search, not an official verification, and not a legal opinion. No statement in it should be read as confirming that title is clear or marketable, that a document is genuine, that the property is free from encumbrances or litigation, or that the property is suitable for purchase. Material conclusions require an independent title investigation and the written opinion of a qualified property lawyer."
+  },
+  "section_1_executive_summary": {
+    "property": {
+      "name": "Balaji Towers",
+      "reference": "PDD-2026-0001",
+      "address": "Bh road tumkur",
+      "survey_number": null,
+      "village": null,
+      "taluk": null,
+      "district": null,
+      "state": "Karnataka",
+      "property_type": "commercial",
+      "transaction_type": "sale"
+    },
+    "purpose": "Pre-transaction document review and due diligence support.",
+    "documents_received": 0,
+    "documents_analysed": 0,
+    "documents_pending": 0,
+    "documents_failed": 0,
+    "open_requirements": 18,
+    "open_findings_by_severity": {
+      "critical": 0,
+      "high": 1,
+      "medium": 1,
+      "low": 0,
+      "informational": 1
+    },
+    "overall_risk": "high",
+    "assessment_status": "assessment_incomplete",
+    "assessment_label": "Assessment Incomplete",
+    "status_explanation": [
+      "No documents have been added to this case.",
+      "7 statutory requirement(s) are still outstanding."
+    ],
+    "status_explanation_kn": [
+      "\u0c88 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+      "7 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cbf\u0ca8 \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbe\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6(\u0c97\u0cb3\u0cc1) \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb5\u0cc6."
+    ],
+    "major_findings": [
+      {
+        "risk_ref": "R-001",
+        "severity": "high",
+        "title": "No sanctioned building plan or building licence on record",
+        "action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+        "translations": {
+          "kn": {
+            "title": "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0c87\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c85\u0ca8\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0ccd\u0caf\u0ca4\u0ccd\u0caf\u0cbe\u0cb8\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0ca8\u0cbf\u0cb0\u0ccd\u0cae\u0cbe\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0ca6\u0c82\u0ca1 \u0c85\u0ca5\u0cb5\u0cbe \u0ca8\u0cc6\u0cb2\u0cb8\u0cae \u0c8e\u0ca6\u0cc1\u0cb0\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1; \u0cae\u0cb0\u0cc1\u0cae\u0cbe\u0cb0\u0cbe\u0c9f \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cbe\u0cb2\u0c95\u0ccd\u0c95\u0cc6 \u0ca4\u0cca\u0c82\u0ca6\u0cb0\u0cc6.",
+            "recommended_action": "\u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0ca6\u0cbf\u0c82\u0ca6 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        }
+      },
+      {
+        "risk_ref": "R-002",
+        "severity": "medium",
+        "title": "No Occupancy or Completion Certificate on record",
+        "action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+        "translations": {
+          "kn": {
+            "title": "\u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8 \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0cbe\u0cae\u0c97\u0cbe\u0cb0\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0c87\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c93\u0cb8\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0ca6\u0cc6 \u0cb5\u0cbe\u0cb8\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0ca6\u0c82\u0ca1\u0c95\u0ccd\u0c95\u0cc6 \u0c95\u0cbe\u0cb0\u0ca3\u0cb5\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1; \u0cae\u0cb0\u0cc1\u0cae\u0cbe\u0cb0\u0cbe\u0c9f, \u0cb8\u0cbe\u0cb2 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0ccc\u0cb2\u0cad\u0ccd\u0caf \u0cb8\u0c82\u0caa\u0cb0\u0ccd\u0c95 \u0c95\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+            "recommended_action": "\u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0ca6\u0cbf\u0c82\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1\u0c95\u0ccd\u0c95\u0cc6 \u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        }
+      },
+      {
+        "risk_ref": "R-003",
+        "severity": "informational",
+        "title": "No documents have been added to this case yet",
+        "action": "Add the property documents to the case folder; they will be picked up automatically.",
+        "translations": {
+          "kn": {
+            "title": "\u0c88 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c8f\u0ca8\u0ca8\u0ccd\u0ca8\u0cc2 \u0cae\u0ccc\u0cb2\u0ccd\u0caf\u0cae\u0cbe\u0caa\u0ca8 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0ca6 \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf; \u0c85\u0cb5\u0cc1 \u0ca4\u0cbe\u0ca8\u0cbe\u0c97\u0cbf\u0caf\u0cc7 \u0c93\u0ca6\u0cb2\u0ccd\u0caa\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        }
+      }
+    ],
+    "recommended_next_steps": [
+      "Obtain the sanctioned plan and licence, and compare the sanctioned built-up area with what exists on site.",
+      "Obtain the registered deed together with its certified copy from the Sub-Registrar.",
+      "Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.",
+      "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+      "Obtain the khata certificate and extract standing in the seller's name.",
+      "Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered."
+    ],
+    "recommended_next_steps_kn": [
+      "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6\u0cc1, \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+      "\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0ca6\u0cb0 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cc3\u0ca4 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3\u0cbf\u0c82\u0ca6 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+      "\u0c95\u0ca8\u0cbf\u0cb7\u0ccd\u0ca0 30 \u0cb5\u0cb0\u0ccd\u0cb7\u0c97\u0cb3 \u0c8b\u0ca3\u0cad\u0cbe\u0cb0 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 (\u0ca8\u0cae\u0cc2\u0ca8\u0cc6 15) \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+      "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+      "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5 \u0c96\u0cbe\u0ca4\u0cbe \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c89\u0ca4\u0cbe\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+      "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0c97\u0ccd\u0cb0\u0cb9\u0cbf\u0cb8\u0cbf, \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3\u0cb5\u0cbe\u0c97\u0cc1\u0cb5\u0cb5\u0cb0\u0cc6\u0c97\u0cc6 \u0cb9\u0cbf\u0c82\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0cae\u0cc1\u0c82\u0ca6\u0cc1\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf."
+    ],
+    "scope_statement": "This classification reflects only the documents supplied in the case folder. No official record, court registry or external database has been checked, and no legal opinion has been given."
+  },
+  "section_2_property_details": {
+    "declared_by_user": {
+      "property_name": "Balaji Towers",
+      "address": "Bh road tumkur",
+      "survey_number": null,
+      "subdivision_number": null,
+      "khata_number": null,
+      "village": null,
+      "taluk": null,
+      "district": null,
+      "state": "Karnataka",
+      "property_type": "commercial",
+      "classification": null,
+      "property_area": null,
+      "claimed_owner": null,
+      "seller": null,
+      "buyer": null,
+      "transaction_type": "sale",
+      "assigned_reviewer": null
+    },
+    "from_documents": [
+      {
+        "label": "Survey number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Subdivision / hissa number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Khata number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Plot number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Flat / unit number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Village",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Hobli",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Taluk",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "District",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Extent / area",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Built-up area",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Undivided share (UDS)",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Land classification",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - north",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - south",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - east",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - west",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Consideration",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Registration number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Registration date",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      }
+    ],
+    "note": "Values marked 'documented' appear in a single document and have not been corroborated. Values marked 'missing' were not found in any supplied document - that is not evidence that the underlying fact does not exist."
+  },
+  "section_3_document_inventory": [],
+  "section_4_document_analysis": [],
+  "section_5_ownership_history": {
+    "timeline": [],
+    "note": "Each step is *documented* - it reflects what a supplied document states. No step has been independently verified against the Sub-Registrar's record, and matching names across documents is not proof that the same person is involved.",
+    "gaps": [],
+    "covered": false
+  },
+  "section_6_cross_verification": {
+    "comparisons": [
+      {
+        "field": "survey_number",
+        "label": "Survey number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "khata_number",
+        "label": "Khata number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "plot_number",
+        "label": "Plot number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "flat_number",
+        "label": "Flat / unit number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "village",
+        "label": "Village",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "taluk",
+        "label": "Taluk",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "property_area",
+        "label": "Extent / area",
+        "values": [],
+        "consistent": true
+      }
+    ],
+    "consistent_fields": [
+      "Survey number",
+      "Khata number",
+      "Plot number",
+      "Flat / unit number",
+      "Village",
+      "Taluk",
+      "Extent / area"
+    ],
+    "conflicting_fields": []
+  },
+  "section_7_encumbrance": {
+    "encumbrance_certificates": [],
+    "mortgage_indications": [],
+    "findings": [],
+    "limitations": [
+      "An Encumbrance Certificate reflects only what was registered against the identifiers used to obtain it, for the period it certifies.",
+      "An equitable mortgage created by deposit of title deeds is frequently not registered and may therefore not appear.",
+      "Unregistered agreements, family arrangements, tenancies and oral claims do not appear.",
+      "No certificate has been verified against the Sub-Registrar's own record."
+    ]
+  },
+  "section_8_legal_regulatory": {
+    "approvals_on_record": [],
+    "litigation_references": [],
+    "restriction_references": [],
+    "findings": [
+      {
+        "risk_ref": "R-001",
+        "severity": "high",
+        "title": "No sanctioned building plan or building licence on record",
+        "status": "open"
+      },
+      {
+        "risk_ref": "R-002",
+        "severity": "medium",
+        "title": "No Occupancy or Completion Certificate on record",
+        "status": "open"
+      }
+    ],
+    "checks_completed": [
+      "Every supplied document was read and compared against the others.",
+      "References to litigation, acquisition, restrictions and charges inside the supplied documents were identified and listed."
+    ],
+    "checks_on_supplied_documents_only": [
+      "Document classification and field extraction.",
+      "Ownership chain reconstruction.",
+      "Encumbrance coverage assessment."
+    ],
+    "checks_outstanding": [
+      {
+        "name": "Legal title opinion from a qualified advocate",
+        "authority": "An advocate practising property law in the relevant jurisdiction",
+        "status": "not_performed"
+      },
+      {
+        "name": "Independent litigation and court records search",
+        "authority": "Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals",
+        "status": "not_performed"
+      },
+      {
+        "name": "Online verification of current revenue / khata records",
+        "authority": "Bhoomi portal (RTC), BBMP / municipal khata portal",
+        "status": "not_performed"
+      },
+      {
+        "name": "Verification of deeds against Sub-Registrar records",
+        "authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services",
+        "status": "not_performed"
+      }
+    ]
+  },
+  "section_9_risk_register": {
+    "register": [
+      {
+        "risk_ref": "R-001",
+        "category": "land_use",
+        "description": "No sanctioned building plan or building licence on record",
+        "detail": "The case describes a commercial, but no sanctioned plan, building licence or commencement certificate has been supplied, so it cannot be established that the construction was authorised.",
+        "severity": "high",
+        "evidence": [],
+        "impact": "Unauthorised or deviated construction can attract penalties, demolition, or refusal of regularisation, and affects resale and financing.",
+        "recommended_action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+        "required_documents": [
+          "Sanctioned building plan",
+          "Building licence / permit"
+        ],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0c87\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c85\u0ca8\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0ccd\u0caf\u0ca4\u0ccd\u0caf\u0cbe\u0cb8\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0ca8\u0cbf\u0cb0\u0ccd\u0cae\u0cbe\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0ca6\u0c82\u0ca1 \u0c85\u0ca5\u0cb5\u0cbe \u0ca8\u0cc6\u0cb2\u0cb8\u0cae \u0c8e\u0ca6\u0cc1\u0cb0\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1; \u0cae\u0cb0\u0cc1\u0cae\u0cbe\u0cb0\u0cbe\u0c9f \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cbe\u0cb2\u0c95\u0ccd\u0c95\u0cc6 \u0ca4\u0cca\u0c82\u0ca6\u0cb0\u0cc6.",
+            "recommended_action": "\u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0ca6\u0cbf\u0c82\u0ca6 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 0.75,
+        "confirmed": true,
+        "verification_status": "not_performed",
+        "requires_legal_review": false,
+        "score": 52.5,
+        "resolution_note": null
+      },
+      {
+        "risk_ref": "R-002",
+        "category": "land_use",
+        "description": "No Occupancy or Completion Certificate on record",
+        "detail": "The property appears to be a completed building, but no Occupancy Certificate or Completion Certificate has been supplied.",
+        "severity": "medium",
+        "evidence": [],
+        "impact": "Occupation without an OC can attract penalties and complicates resale, loans and utility connections.",
+        "recommended_action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+        "required_documents": [
+          "Occupancy Certificate",
+          "Completion Certificate"
+        ],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8 \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0cbe\u0cae\u0c97\u0cbe\u0cb0\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0c87\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c93\u0cb8\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0ca6\u0cc6 \u0cb5\u0cbe\u0cb8\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0ca6\u0c82\u0ca1\u0c95\u0ccd\u0c95\u0cc6 \u0c95\u0cbe\u0cb0\u0ca3\u0cb5\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1; \u0cae\u0cb0\u0cc1\u0cae\u0cbe\u0cb0\u0cbe\u0c9f, \u0cb8\u0cbe\u0cb2 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0ccc\u0cb2\u0cad\u0ccd\u0caf \u0cb8\u0c82\u0caa\u0cb0\u0ccd\u0c95 \u0c95\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+            "recommended_action": "\u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0ca6\u0cbf\u0c82\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1\u0c95\u0ccd\u0c95\u0cc6 \u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 0.7,
+        "confirmed": true,
+        "verification_status": "not_performed",
+        "requires_legal_review": false,
+        "score": 25.5,
+        "resolution_note": null
+      },
+      {
+        "risk_ref": "R-003",
+        "category": "process",
+        "description": "No documents have been added to this case yet",
+        "detail": "The watched folder for this case is empty, so no assessment has been possible.",
+        "severity": "informational",
+        "evidence": [],
+        "impact": "Nothing has been assessed.",
+        "recommended_action": "Add the property documents to the case folder; they will be picked up automatically.",
+        "required_documents": [],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0c88 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c8f\u0ca8\u0ca8\u0ccd\u0ca8\u0cc2 \u0cae\u0ccc\u0cb2\u0ccd\u0caf\u0cae\u0cbe\u0caa\u0ca8 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0ca6 \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd\u200c\u0c97\u0cc6 \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf; \u0c85\u0cb5\u0cc1 \u0ca4\u0cbe\u0ca8\u0cbe\u0c97\u0cbf\u0caf\u0cc7 \u0c93\u0ca6\u0cb2\u0ccd\u0caa\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 1.0,
+        "confirmed": true,
+        "verification_status": "unverified",
+        "requires_legal_review": false,
+        "score": 2.0,
+        "resolution_note": null
+      }
+    ],
+    "critical_and_high": [
+      {
+        "risk_ref": "R-001",
+        "category": "land_use",
+        "description": "No sanctioned building plan or building licence on record",
+        "detail": "The case describes a commercial, but no sanctioned plan, building licence or commencement certificate has been supplied, so it cannot be established that the construction was authorised.",
+        "severity": "high",
+        "evidence": [],
+        "impact": "Unauthorised or deviated construction can attract penalties, demolition, or refusal of regularisation, and affects resale and financing.",
+        "recommended_action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+        "required_documents": [
+          "Sanctioned building plan",
+          "Building licence / permit"
+        ],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0c87\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c85\u0ca8\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0ccd\u0caf\u0ca4\u0ccd\u0caf\u0cbe\u0cb8\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0ca8\u0cbf\u0cb0\u0ccd\u0cae\u0cbe\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0ca6\u0c82\u0ca1 \u0c85\u0ca5\u0cb5\u0cbe \u0ca8\u0cc6\u0cb2\u0cb8\u0cae \u0c8e\u0ca6\u0cc1\u0cb0\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1; \u0cae\u0cb0\u0cc1\u0cae\u0cbe\u0cb0\u0cbe\u0c9f \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cbe\u0cb2\u0c95\u0ccd\u0c95\u0cc6 \u0ca4\u0cca\u0c82\u0ca6\u0cb0\u0cc6.",
+            "recommended_action": "\u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0ca6\u0cbf\u0c82\u0ca6 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 0.75,
+        "confirmed": true,
+        "verification_status": "not_performed",
+        "requires_legal_review": false,
+        "score": 52.5,
+        "resolution_note": null
+      }
+    ]
+  },
+  "section_10_missing_documents": {
+    "groups": {
+      "1. Documents potentially required by applicable law": [
+        {
+          "key": "approved_building_plan",
+          "name": "Sanctioned building plan and building licence",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Construction must conform to a plan sanctioned by the competent planning authority.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / local planning authority / BDA / BMRDA",
+          "next_action": "Obtain the sanctioned plan and licence, and compare the sanctioned built-up area with what exists on site.",
+          "risk_if_absent": "Unauthorised construction may face penalties, demolition or refusal of regularisation.",
+          "closure_criteria": "A sanctioned plan covering the existing construction is available.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf",
+              "reason": "\u0ca8\u0cbf\u0cb0\u0ccd\u0cae\u0cbe\u0ca3\u0cb5\u0cc1 \u0cb8\u0c95\u0ccd\u0cb7\u0cae \u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cc1 \u0cae\u0cbe\u0ca1\u0cbf\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6\u0c97\u0cc6 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3\u0cb5\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cc7\u0c95\u0cc1.",
+              "next_action": "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6\u0cc1, \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c85\u0ca8\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca8\u0cbf\u0cb0\u0ccd\u0cae\u0cbe\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0ca6\u0c82\u0ca1, \u0ca8\u0cc6\u0cb2\u0cb8\u0cae \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0ccd\u0cb0\u0cae\u0cac\u0ca6\u0ccd\u0ca7\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cc1\u0cb5\u0cbf\u0c95\u0cc6 \u0ca8\u0cbf\u0cb0\u0cbe\u0c95\u0cb0\u0ca3\u0cc6 \u0c8e\u0ca6\u0cc1\u0cb0\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0c85\u0cb8\u0ccd\u0ca4\u0cbf\u0ca4\u0ccd\u0cb5\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5 \u0ca8\u0cbf\u0cb0\u0ccd\u0cae\u0cbe\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c92\u0cb3\u0c97\u0cca\u0c82\u0ca1 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf \u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0 / \u0cac\u0cbf\u0ca1\u0cbf\u0c8e / \u0cac\u0cbf\u0c8e\u0c82\u0c86\u0cb0\u0ccd\u200c\u0ca1\u0cbf\u0c8e"
+            }
+          }
+        },
+        {
+          "key": "current_title_document",
+          "name": "Current title document (registered sale / gift / partition / settlement deed)",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Establishes how the current claimed owner acquired the property and is the starting point for the title chain.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "Jurisdictional Sub-Registrar's office",
+          "next_action": "Obtain the registered deed together with its certified copy from the Sub-Registrar.",
+          "risk_if_absent": "Ownership cannot be traced; no reliable basis exists for the transaction.",
+          "closure_criteria": "A registered deed in favour of the claimed owner is available, legible and analysed.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 (\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0c95\u0ccd\u0cb0\u0caf / \u0ca6\u0cbe\u0ca8 / \u0caa\u0cbe\u0cb2\u0cc1 / \u0cb8\u0c82\u0ca7\u0cbe\u0ca8 \u0caa\u0ca4\u0ccd\u0cb0)",
+              "reason": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0\u0cc1 \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cc7\u0c97\u0cc6 \u0caa\u0ca1\u0cc6\u0ca6\u0cb0\u0cc1 \u0c8e\u0c82\u0cac\u0cc1\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0cb8\u0ccd\u0ca5\u0cbe\u0caa\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6; \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad \u0c87\u0ca6\u0cc7.",
+              "next_action": "\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0ca6\u0cb0 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cc3\u0ca4 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3\u0cbf\u0c82\u0ca6 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0ca4\u0ccd\u0cb5\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca4\u0ccd\u0ca4\u0cc6\u0cb9\u0c9a\u0ccd\u0c9a\u0cb2\u0cbe\u0c97\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2; \u0cb5\u0ccd\u0caf\u0cb5\u0cb9\u0cbe\u0cb0\u0c95\u0ccd\u0c95\u0cc6 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb5\u0cbe\u0cb8\u0cbe\u0cb0\u0ccd\u0cb9 \u0c86\u0ca7\u0cbe\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1, \u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1, \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf"
+            }
+          }
+        },
+        {
+          "key": "encumbrance_certificate_full_period",
+          "name": "Encumbrance Certificate covering the full review period",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Shows registered transactions, mortgages and charges recorded against the property for the certified period.",
+          "related_finding": "",
+          "period": "01 Jan 1996 to 13 Oct 2026",
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services",
+          "next_action": "Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.",
+          "risk_if_absent": "Registered mortgages, attachments or competing transfers may remain undetected.",
+          "closure_criteria": "An EC covering the full review period has been analysed and reconciled against the title chain.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0c8b\u0ca3\u0cad\u0cbe\u0cb0 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0",
+              "reason": "\u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3\u0cc0\u0c95\u0cc3\u0ca4 \u0c85\u0cb5\u0ca7\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0cae\u0cc7\u0cb2\u0cc6 \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0cb5\u0ccd\u0caf\u0cb5\u0cb9\u0cbe\u0cb0\u0c97\u0cb3\u0cc1, \u0c85\u0ca1\u0cae\u0cbe\u0ca8\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cac\u0cbe\u0ca7\u0ccd\u0caf\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "next_action": "\u0c95\u0ca8\u0cbf\u0cb7\u0ccd\u0ca0 30 \u0cb5\u0cb0\u0ccd\u0cb7\u0c97\u0cb3 \u0c8b\u0ca3\u0cad\u0cbe\u0cb0 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 (\u0ca8\u0cae\u0cc2\u0ca8\u0cc6 15) \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+              "risk_if_absent": "\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0c85\u0ca1\u0cae\u0cbe\u0ca8\u0c97\u0cb3\u0cc1, \u0c9c\u0caa\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0cb8\u0ccd\u0caa\u0cb0\u0ccd\u0ca7\u0cbe\u0ca4\u0ccd\u0cae\u0c95 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cb3\u0cc1 \u0caa\u0ca4\u0ccd\u0ca4\u0cc6\u0caf\u0cbe\u0c97\u0ca6\u0cc6 \u0c89\u0cb3\u0cbf\u0caf\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cbf \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf / \u0c95\u0cbe\u0cb5\u0cc7\u0cb0\u0cbf \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0cb8\u0cc7\u0cb5\u0cc6\u0c97\u0cb3\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "khata_certificate_extract",
+          "name": "Khata certificate and khata extract in the seller's name",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "The khata records the person liable to pay property tax to the local body and is required for transfer and for utilities.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / City Corporation / CMC / Gram Panchayat, as applicable",
+          "next_action": "Obtain the khata certificate and extract standing in the seller's name.",
+          "risk_if_absent": "Transfer of khata after purchase may be refused or delayed, and the property's municipal status remains unconfirmed.",
+          "closure_criteria": "A khata in the seller's name, matching the property identifiers, is available.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0c96\u0cbe\u0ca4\u0cbe \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c96\u0cbe\u0ca4\u0cbe \u0c89\u0ca4\u0cbe\u0cb0",
+              "reason": "\u0c96\u0cbe\u0ca4\u0cbe\u0cb5\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf \u0cb8\u0c82\u0cb8\u0ccd\u0ca5\u0cc6\u0c97\u0cc6 \u0c86\u0cb8\u0ccd\u0ca4\u0cbf \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0cac\u0cc7\u0c95\u0cbe\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6; \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0ccc\u0cb2\u0cad\u0ccd\u0caf\u0c97\u0cb3\u0cbf\u0c97\u0cc6 \u0c87\u0ca6\u0cc1 \u0c85\u0c97\u0ca4\u0ccd\u0caf.",
+              "next_action": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5 \u0c96\u0cbe\u0ca4\u0cbe \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c89\u0ca4\u0cbe\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0caf \u0ca8\u0c82\u0ca4\u0cb0 \u0c96\u0cbe\u0ca4\u0cbe \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0ca8\u0cbf\u0cb0\u0cbe\u0c95\u0cb0\u0cbf\u0cb8\u0cac\u0cb9\u0cc1\u0ca6\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0cbf\u0cb3\u0c82\u0cac\u0cb5\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0c97\u0cc6 \u0cb9\u0cca\u0c82\u0ca6\u0cc1\u0cb5, \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8 \u0c96\u0cbe\u0ca4\u0cbe \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0ca8\u0c97\u0cb0 \u0caa\u0cbe\u0cb2\u0cbf\u0c95\u0cc6 / \u0caa\u0cc1\u0cb0\u0cb8\u0cad\u0cc6 / \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0ccd"
+            }
+          }
+        },
+        {
+          "key": "parent_deeds_chain",
+          "name": "Parent deeds covering the title chain for the customary review period",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.",
+          "related_finding": "",
+          "period": "01 Jan 1996 to 13 Oct 2026",
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "The seller, or certified copies from the Sub-Registrar's office",
+          "next_action": "Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.",
+          "risk_if_absent": "A defect in an earlier transfer can invalidate the present owner's title even if the latest deed appears regular.",
+          "closure_criteria": "Every transfer in the chain for the review period is supported by a document that has been analysed.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0cae\u0cc2\u0cb2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1",
+              "reason": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf \u0cae\u0cbe\u0ca1\u0cbf\u0ca6\u0ccd\u0ca6\u0cbe\u0cb0\u0cc6\u0caf\u0cc7 \u0c8e\u0c82\u0ca6\u0cc1 \u0c96\u0c9a\u0cbf\u0ca4\u0caa\u0ca1\u0cbf\u0cb8\u0cb2\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc1\u0cae\u0cbe\u0cb0\u0cc1 30 \u0cb5\u0cb0\u0ccd\u0cb7\u0c97\u0cb3\u0cb5\u0cb0\u0cc6\u0c97\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cb0\u0cc2\u0ca2\u0cbf.",
+              "next_action": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0c97\u0ccd\u0cb0\u0cb9\u0cbf\u0cb8\u0cbf, \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3\u0cb5\u0cbe\u0c97\u0cc1\u0cb5\u0cb5\u0cb0\u0cc6\u0c97\u0cc6 \u0cb9\u0cbf\u0c82\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0cae\u0cc1\u0c82\u0ca6\u0cc1\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cb0\u0cbf\u0caf\u0cbe\u0c97\u0cbf \u0c95\u0c82\u0ca1\u0cb0\u0cc2, \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0ca6\u0ccb\u0cb7\u0cb5\u0cc1 \u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0cb8\u0cbf\u0c82\u0ca7\u0cc1\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc2 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0c87\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cc1, \u0c85\u0ca5\u0cb5\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf\u0caf\u0cbf\u0c82\u0ca6 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cc3\u0ca4 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c97\u0cb3\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "property_tax_receipts",
+          "name": "Latest property tax / land revenue paid receipts",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Confirms the assessee of record and that no tax arrears attach to the property.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / Municipal body / Gram Panchayat / Village Accountant",
+          "next_action": "Obtain tax-paid receipts for the current and preceding years in the seller's name.",
+          "risk_if_absent": "Unpaid dues can become a charge on the property and delay mutation after purchase.",
+          "closure_criteria": "Receipts for the current year in the seller's name are available with no arrears indicated.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0c86\u0cb8\u0ccd\u0ca4\u0cbf \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6 / \u0cad\u0cc2 \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0cc1",
+              "reason": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6\u0ca6\u0cbe\u0cb0\u0cb0\u0cc1 \u0caf\u0cbe\u0cb0\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0cb5\u0cc6\u0c82\u0cac\u0cc1\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "next_action": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cb8\u0c95\u0ccd\u0ca4 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0ca6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cc1 \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0cae\u0cc7\u0cb2\u0cc6 \u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0caf \u0ca8\u0c82\u0ca4\u0cb0 \u0c96\u0cbe\u0ca4\u0cc6 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc6 \u0c85\u0ca1\u0ccd\u0ca1\u0cbf\u0caf\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cb8\u0c95\u0ccd\u0ca4 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb2\u0ccd\u0cb2.",
+              "issuing_authority": "\u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0ca8\u0c97\u0cb0\u0cb8\u0cad\u0cc6 / \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0ccd / \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0cb2\u0cc6\u0c95\u0ccd\u0c95\u0cbf\u0c97\u0cb0\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "seller_identity_verification",
+          "name": "Seller identity and authority to transfer",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "The person executing the transfer must be the person named in the title documents and must be competent to transfer.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "The seller; verified against title documents and photo identification",
+          "next_action": "Collect photo identification and reconcile the name, parentage and address against the title deed.",
+          "risk_if_absent": "Risk of impersonation, transfer by a person without authority, or an undisclosed co-owner.",
+          "closure_criteria": "Identification has been produced and reconciled with the names in the title documents.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0caf\u0cbf\u0cb8\u0cc1\u0cb5 \u0c85\u0ca7\u0cbf\u0c95\u0cbe\u0cb0",
+              "reason": "\u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0cae\u0cbe\u0ca1\u0cc1\u0cb5 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cc7 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cc7\u0c95\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0caf\u0cbf\u0cb8\u0cb2\u0cc1 \u0cb8\u0cae\u0cb0\u0ccd\u0ca5\u0cb0\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cc7\u0c95\u0cc1.",
+              "next_action": "\u0cad\u0cbe\u0cb5\u0c9a\u0cbf\u0ca4\u0ccd\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca4\u0c82\u0ca6\u0cc6\u0caf \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb3\u0cbe\u0cb8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+              "risk_if_absent": "\u0cb8\u0ccb\u0c97\u0cc1 \u0cb9\u0cbe\u0c95\u0cc1\u0cb5\u0cbf\u0c95\u0cc6, \u0c85\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cbf\u0c82\u0ca6 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cac\u0cb9\u0cbf\u0cb0\u0c82\u0c97\u0caa\u0ca1\u0cbf\u0cb8\u0ca6 \u0cb8\u0cb9-\u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0c85\u0caa\u0cbe\u0caf.",
+              "closure_criteria": "\u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1\u0c97\u0cb3\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6\u0caf\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cc1; \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cad\u0cbe\u0cb5\u0c9a\u0cbf\u0ca4\u0ccd\u0cb0 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0c9a\u0cc0\u0c9f\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6"
+            }
+          }
+        }
+      ],
+      "2. Documents conditionally required for this property": [
+        {
+          "key": "occupancy_certificate",
+          "name": "Occupancy Certificate (and Completion Certificate where issued)",
+          "priority": "conditional",
+          "status": "pending_collection",
+          "reason": "An OC certifies that the completed building conforms to the sanctioned plan and is fit for occupation.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / local planning authority",
+          "next_action": "Obtain the OC for the building, and for the specific block where the project is phased.",
+          "risk_if_absent": "Occupation without an OC can attract penalties and complicate resale, loans and utility connections.",
+          "closure_criteria": "An OC covering the relevant building or block is on record.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 (\u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca8\u0cc0\u0ca1\u0cbf\u0ca6\u0ccd\u0ca6\u0cb0\u0cc6 \u0c95\u0cbe\u0cae\u0c97\u0cbe\u0cb0\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0)",
+              "reason": "\u0caa\u0cc2\u0cb0\u0ccd\u0ca3\u0c97\u0cca\u0c82\u0ca1 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1\u0cb5\u0cc1 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6\u0c97\u0cc6 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1 \u0cb5\u0cbe\u0cb8\u0c95\u0ccd\u0c95\u0cc6 \u0caf\u0ccb\u0c97\u0ccd\u0caf \u0c8e\u0c82\u0ca6\u0cc1 \u0c93\u0cb8\u0cbf \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3\u0cc0\u0c95\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "next_action": "\u0c95\u0c9f\u0ccd\u0c9f\u0ca1\u0c95\u0ccd\u0c95\u0cc6, \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0c82\u0ca4\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0ccd\u0ca6\u0cb0\u0cc6 \u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0ca4 \u0cac\u0ccd\u0cb2\u0cbe\u0c95\u0ccd\u200c\u0c97\u0cc6 \u0c93\u0cb8\u0cbf \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0c93\u0cb8\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0ca6\u0cc6 \u0cb5\u0cbe\u0cb8\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0ca6\u0c82\u0ca1\u0c95\u0ccd\u0c95\u0cc6 \u0c95\u0cbe\u0cb0\u0ca3\u0cb5\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1; \u0cae\u0cb0\u0cc1\u0cae\u0cbe\u0cb0\u0cbe\u0c9f, \u0cb8\u0cbe\u0cb2 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0ccc\u0cb2\u0cad\u0ccd\u0caf \u0cb8\u0c82\u0caa\u0cb0\u0ccd\u0c95 \u0c95\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "closure_criteria": "\u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0ca4 \u0c95\u0c9f\u0ccd\u0c9f\u0ca1 \u0c85\u0ca5\u0cb5\u0cbe \u0cac\u0ccd\u0cb2\u0cbe\u0c95\u0ccd\u200c\u0c97\u0cc6 \u0c93\u0cb8\u0cbf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf \u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0"
+            }
+          }
+        },
+        {
+          "key": "zoning_land_use_compliance",
+          "name": "Zoning / land-use compliance under the applicable master plan",
+          "priority": "conditional",
+          "status": "not_performed",
+          "reason": "The intended use must be permissible in the land-use zone under the applicable comprehensive development plan.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "Local planning authority (BDA / BMRDA / Town Planning department)",
+          "next_action": "Obtain a land-use certificate or zoning confirmation for the site.",
+          "risk_if_absent": "The intended use may be impermissible regardless of ownership being clear.",
+          "closure_criteria": "Written zoning confirmation permitting the intended use is on record.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0c85\u0ca8\u0ccd\u0cb5\u0caf\u0cb5\u0cbe\u0c97\u0cc1\u0cb5 \u0cae\u0cb9\u0cbe\u0caf\u0ccb\u0c9c\u0ca8\u0cc6\u0caf\u0ca1\u0cbf \u0cb5\u0cb2\u0caf / \u0cad\u0cc2 \u0cac\u0cb3\u0c95\u0cc6 \u0c85\u0ca8\u0cc1\u0cb8\u0cb0\u0ca3\u0cc6",
+              "reason": "\u0c89\u0ca6\u0ccd\u0ca6\u0cc7\u0cb6\u0cbf\u0ca4 \u0cac\u0cb3\u0c95\u0cc6\u0caf\u0cc1 \u0cb8\u0cae\u0c97\u0ccd\u0cb0 \u0c85\u0cad\u0cbf\u0cb5\u0cc3\u0ca6\u0ccd\u0ca7\u0cbf \u0caf\u0ccb\u0c9c\u0ca8\u0cc6\u0caf \u0cad\u0cc2 \u0cac\u0cb3\u0c95\u0cc6 \u0cb5\u0cb2\u0caf\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0c85\u0ca8\u0cc1\u0cae\u0ca4\u0cbf\u0cb8\u0cac\u0cc7\u0c95\u0cc1.",
+              "next_action": "\u0cb8\u0ccd\u0ca5\u0cb3\u0c95\u0ccd\u0c95\u0cc6 \u0cad\u0cc2 \u0cac\u0cb3\u0c95\u0cc6 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0cb2\u0caf \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cb0\u0ca3 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0ca4\u0ccd\u0cb5 \u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbf\u0ca6\u0ccd\u0ca6\u0cb0\u0cc2 \u0c89\u0ca6\u0ccd\u0ca6\u0cc7\u0cb6\u0cbf\u0ca4 \u0cac\u0cb3\u0c95\u0cc6 \u0c85\u0ca8\u0cc1\u0cae\u0ca4\u0cbf\u0cb8\u0ca6\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0c89\u0ca6\u0ccd\u0ca6\u0cc7\u0cb6\u0cbf\u0ca4 \u0cac\u0cb3\u0c95\u0cc6\u0c97\u0cc6 \u0c85\u0ca8\u0cc1\u0cae\u0ca4\u0cbf \u0ca8\u0cc0\u0ca1\u0cc1\u0cb5 \u0cb2\u0cbf\u0c96\u0cbf\u0ca4 \u0cb5\u0cb2\u0caf \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cb0\u0ca3 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cb8\u0ccd\u0ca5\u0cb3\u0cc0\u0caf \u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0caa\u0ccd\u0cb0\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0 (\u0cac\u0cbf\u0ca1\u0cbf\u0c8e / \u0cac\u0cbf\u0c8e\u0c82\u0c86\u0cb0\u0ccd\u200c\u0ca1\u0cbf\u0c8e / \u0ca8\u0c97\u0cb0 \u0caf\u0ccb\u0c9c\u0ca8\u0cbe \u0c87\u0cb2\u0cbe\u0c96\u0cc6)"
+            }
+          }
+        }
+      ],
+      "3. Documents needed to resolve identified discrepancies": [
+        {
+          "key": "issue:building_approval_missing:75db49b18d",
+          "name": "Sanctioned building plan",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Required to resolve: No sanctioned building plan or building licence on record",
+          "related_finding": "No sanctioned building plan or building licence on record",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / Local planning authority / BDA / BMRDA, as applicable",
+          "next_action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+          "risk_if_absent": "Unauthorised or deviated construction can attract penalties, demolition, or refusal of regularisation, and affects resale and financing.",
+          "closure_criteria": "The document is supplied, analysed, and the finding \"No sanctioned building plan or building licence on record\" is resolved.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {}
+        },
+        {
+          "key": "issue:building_approval_missing:803c15ad19",
+          "name": "Building licence / permit",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Required to resolve: No sanctioned building plan or building licence on record",
+          "related_finding": "No sanctioned building plan or building licence on record",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / Local planning authority / BDA / BMRDA, as applicable",
+          "next_action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+          "risk_if_absent": "Unauthorised or deviated construction can attract penalties, demolition, or refusal of regularisation, and affects resale and financing.",
+          "closure_criteria": "The document is supplied, analysed, and the finding \"No sanctioned building plan or building licence on record\" is resolved.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {}
+        },
+        {
+          "key": "issue:oc_missing:9e38c7dd8b",
+          "name": "Occupancy Certificate",
+          "priority": "conditional",
+          "status": "pending_collection",
+          "reason": "Required to resolve: No Occupancy or Completion Certificate on record",
+          "related_finding": "No Occupancy or Completion Certificate on record",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / Local planning authority",
+          "next_action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+          "risk_if_absent": "Occupation without an OC can attract penalties and complicates resale, loans and utility connections.",
+          "closure_criteria": "The document is supplied, analysed, and the finding \"No Occupancy or Completion Certificate on record\" is resolved.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {}
+        },
+        {
+          "key": "issue:oc_missing:e1c22e5244",
+          "name": "Completion Certificate",
+          "priority": "conditional",
+          "status": "pending_collection",
+          "reason": "Required to resolve: No Occupancy or Completion Certificate on record",
+          "related_finding": "No Occupancy or Completion Certificate on record",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "BBMP / Local planning authority",
+          "next_action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+          "risk_if_absent": "Occupation without an OC can attract penalties and complicates resale, loans and utility connections.",
+          "closure_criteria": "The document is supplied, analysed, and the finding \"No Occupancy or Completion Certificate on record\" is resolved.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {}
+        }
+      ],
+      "4. Documents recommended for stronger due diligence": [
+        {
+          "key": "physical_inspection_boundaries",
+          "name": "Physical site inspection and boundary verification",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "Documents describe boundaries and extent; only a measurement on site confirms them.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "A licensed surveyor; joint inspection with the seller",
+          "next_action": "Arrange a survey against the sketch and confirm possession, access and the absence of encroachment.",
+          "risk_if_absent": "Encroachment, access failure or a shortfall in extent may be discovered only after purchase.",
+          "closure_criteria": "A surveyor's report confirms extent, boundaries and access.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0cb8\u0ccd\u0ca5\u0cb3 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cb0\u0ca3",
+              "reason": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb5\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6; \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0c85\u0cb3\u0ca4\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf\u0ca6\u0cbe\u0c97 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0c85\u0cb5\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6.",
+              "next_action": "\u0ca8\u0c95\u0ccd\u0cb7\u0cc6\u0caf \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0 \u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cae\u0cbe\u0ca1\u0cbf\u0cb8\u0cbf, \u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8, \u0ca6\u0cbe\u0cb0\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c92\u0ca4\u0ccd\u0ca4\u0cc1\u0cb5\u0cb0\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0ca6\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c96\u0c9a\u0cbf\u0ca4\u0caa\u0ca1\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c92\u0ca4\u0ccd\u0ca4\u0cc1\u0cb5\u0cb0\u0cbf, \u0ca6\u0cbe\u0cb0\u0cbf\u0caf \u0c95\u0cca\u0cb0\u0ca4\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0ca6 \u0c95\u0cca\u0cb0\u0ca4\u0cc6 \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0caf \u0ca8\u0c82\u0ca4\u0cb0\u0cb5\u0cc7 \u0c97\u0cca\u0ca4\u0ccd\u0ca4\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7\u0caf\u0cb0\u0ccd \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3, \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca6\u0cbe\u0cb0\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "issuing_authority": "\u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6 \u0cb8\u0cb0\u0ccd\u0cb5\u0cc7\u0caf\u0cb0\u0ccd; \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0c9c\u0c82\u0c9f\u0cbf \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6"
+            }
+          }
+        }
+      ],
+      "5. External verification checks not yet performed": [
+        {
+          "key": "litigation_search_external",
+          "name": "Independent litigation and court records search",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "The supplied documents cannot show proceedings that the seller has not disclosed.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals",
+          "next_action": "Have an advocate run a search against the property identifiers and every owner in the title chain.",
+          "risk_if_absent": "Pending suits, injunctions or attachments may exist without appearing in any supplied document.",
+          "closure_criteria": "A search report from a qualified professional is on record.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0cb8\u0ccd\u0cb5\u0ca4\u0c82\u0ca4\u0ccd\u0cb0 \u0cb5\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f",
+              "reason": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cc1 \u0cac\u0cb9\u0cbf\u0cb0\u0c82\u0c97\u0caa\u0ca1\u0cbf\u0cb8\u0ca6 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0cb0\u0cb5\u0cc1.",
+              "next_action": "\u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0cb5\u0c95\u0cc0\u0cb2\u0cb0\u0cbf\u0c82\u0ca6 \u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f \u0ca8\u0ca1\u0cc6\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c95\u0cbe\u0ca3\u0cbf\u0cb8\u0ca6 \u0cac\u0cbe\u0c95\u0cbf \u0ca6\u0cbe\u0cb5\u0cc6\u0c97\u0cb3\u0cc1, \u0ca4\u0ca1\u0cc6\u0caf\u0cbe\u0c9c\u0ccd\u0c9e\u0cc6\u0c97\u0cb3\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0c9c\u0caa\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0cc1 \u0c87\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0c85\u0cb0\u0ccd\u0cb9 \u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0\u0cb0\u0cbf\u0c82\u0ca6 \u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f \u0cb5\u0cb0\u0ca6\u0cbf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0cb8\u0cbf\u0cb5\u0cbf\u0cb2\u0ccd \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf\u0c97\u0cb3\u0cc1, \u0c95\u0cb0\u0ccd\u0ca8\u0cbe\u0c9f\u0c95 \u0c89\u0c9a\u0ccd\u0c9a \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf (\u0c87-\u0c95\u0ccb\u0cb0\u0ccd\u0c9f\u0ccd\u0cb8\u0ccd), \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cae\u0c82\u0ca1\u0cb3\u0cbf\u0c97\u0cb3\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "revenue_record_online_verification",
+          "name": "Online verification of current revenue / khata records",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "Revenue records change; the supplied extract may be out of date.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "Bhoomi portal (RTC), BBMP / municipal khata portal",
+          "next_action": "Pull the live record for the survey number or khata and compare it with the supplied extract.",
+          "risk_if_absent": "A recent adverse entry, attachment or mutation may not appear in the supplied copy.",
+          "closure_criteria": "A current record has been retrieved and reconciled.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0c95\u0c82\u0ca6\u0cbe\u0caf / \u0c96\u0cbe\u0ca4\u0cbe \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6",
+              "reason": "\u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0cac\u0ca6\u0cb2\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6; \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0c89\u0ca4\u0cbe\u0cb0 \u0cb9\u0cb3\u0cc6\u0caf\u0ca6\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "next_action": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0c96\u0cbe\u0ca4\u0cbe\u0c97\u0cc6 \u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0c89\u0ca4\u0cbe\u0cb0\u0ca6\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c95\u0cc2\u0cb2 \u0ca8\u0cae\u0cc2\u0ca6\u0cc1, \u0c9c\u0caa\u0ccd\u0ca4\u0cbf \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c95\u0cbe\u0ca3\u0ca6\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cad\u0cc2\u0cae\u0cbf \u0caa\u0ccb\u0cb0\u0ccd\u0c9f\u0cb2\u0ccd (\u0c86\u0cb0\u0ccd\u200c\u0c9f\u0cbf\u0cb8\u0cbf), \u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0ca8\u0c97\u0cb0\u0cb8\u0cad\u0cc6 \u0c96\u0cbe\u0ca4\u0cbe \u0caa\u0ccb\u0cb0\u0ccd\u0c9f\u0cb2\u0ccd"
+            }
+          }
+        },
+        {
+          "key": "sub_registrar_record_verification",
+          "name": "Verification of deeds against Sub-Registrar records",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "A scanned or photocopied deed is not proof that the registration entry exists in the official record.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services",
+          "next_action": "Verify each registration number, date and book/volume entry against the official register.",
+          "risk_if_absent": "Fabricated or altered copies cannot be ruled out from the documents alone.",
+          "closure_criteria": "Each registered document has been matched to the official registration entry.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca6\u0cb8\u0ccd\u0ca4\u0cbe\u0cb5\u0cc7\u0c9c\u0cc1\u0c97\u0cb3 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6",
+              "reason": "\u0cb8\u0ccd\u0c95\u0ccd\u0caf\u0cbe\u0ca8\u0ccd \u0c85\u0ca5\u0cb5\u0cbe \u0c9b\u0cbe\u0caf\u0cbe\u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf \u0ca8\u0cae\u0cc2\u0ca6\u0cc1 \u0c87\u0ca6\u0cc6 \u0c8e\u0c82\u0cac\u0cc1\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0caa\u0cc1\u0cb0\u0cbe\u0cb5\u0cc6\u0caf\u0cb2\u0ccd\u0cb2.",
+              "next_action": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95/\u0cb8\u0c82\u0caa\u0cc1\u0c9f \u0ca8\u0cae\u0cc2\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+              "risk_if_absent": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cbf\u0c82\u0ca6 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0ca8\u0c95\u0cb2\u0cbf \u0c85\u0ca5\u0cb5\u0cbe \u0ca4\u0cbf\u0ca6\u0ccd\u0ca6\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca4\u0cb3\u0ccd\u0cb3\u0cbf\u0cb9\u0cbe\u0c95\u0cb2\u0cbe\u0c97\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf \u0ca8\u0cae\u0cc2\u0ca6\u0cbf\u0ca8\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf / \u0c95\u0cbe\u0cb5\u0cc7\u0cb0\u0cbf \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0cb8\u0cc7\u0cb5\u0cc6\u0c97\u0cb3\u0cc1"
+            }
+          }
+        }
+      ],
+      "6. Professional assessments still pending": [
+        {
+          "key": "legal_title_opinion",
+          "name": "Legal title opinion from a qualified advocate",
+          "priority": "professional_advice",
+          "status": "not_performed",
+          "reason": "This system organises and cross-checks evidence; it does not give a legal opinion on marketability of title.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "Balaji Towers",
+          "issuing_authority": "An advocate practising property law in the relevant jurisdiction",
+          "next_action": "Place the complete document set and this report before an advocate for a written title opinion.",
+          "risk_if_absent": "No qualified professional has certified that the title is marketable.",
+          "closure_criteria": "A written title opinion covering the review period is on record.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0c85\u0cb0\u0ccd\u0cb9 \u0cb5\u0c95\u0cc0\u0cb2\u0cb0\u0cbf\u0c82\u0ca6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf",
+              "reason": "\u0c88 \u0cb5\u0ccd\u0caf\u0cb5\u0cb8\u0ccd\u0ca5\u0cc6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c9c\u0ccb\u0ca1\u0cbf\u0cb8\u0cbf \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6; \u0cb9\u0c95\u0ccd\u0c95\u0cbf\u0ca8 \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0caf\u0ccb\u0c97\u0ccd\u0caf\u0ca4\u0cc6\u0caf \u0cac\u0c97\u0ccd\u0c97\u0cc6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf \u0ca8\u0cc0\u0ca1\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+              "next_action": "\u0cb8\u0c82\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0c82\u0c97\u0ccd\u0cb0\u0cb9 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0c95\u0cc0\u0cb2\u0cb0 \u0cae\u0cc1\u0c82\u0ca6\u0cc6 \u0cb2\u0cbf\u0c96\u0cbf\u0ca4 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf\u0c95\u0ccd\u0c95\u0cbe\u0c97\u0cbf \u0c87\u0cb0\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0caf\u0ccb\u0c97\u0ccd\u0caf \u0c8e\u0c82\u0ca6\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0c85\u0cb0\u0ccd\u0cb9 \u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0\u0cb0\u0cc1 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3\u0cc0\u0c95\u0cb0\u0cbf\u0cb8\u0cbf\u0cb2\u0ccd\u0cb2.",
+              "closure_criteria": "\u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c92\u0cb3\u0c97\u0cca\u0c82\u0ca1 \u0cb2\u0cbf\u0c96\u0cbf\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0ca4 \u0cb5\u0ccd\u0caf\u0cbe\u0caa\u0ccd\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c86\u0cb8\u0ccd\u0ca4\u0cbf \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0c85\u0cad\u0ccd\u0caf\u0cbe\u0cb8 \u0cae\u0cbe\u0ca1\u0cc1\u0cb5 \u0cb5\u0c95\u0cc0\u0cb2\u0cb0\u0cc1"
+            }
+          }
+        }
+      ]
+    },
+    "satisfied_or_closed": [],
+    "note": "A requirement listed here is something still to be obtained or done. The absence of a document is not itself proof of a defect - it means the point has not been verified.",
+    "jurisdiction_caveat": "Requirement sets are templates for the selected jurisdiction and have not been confirmed by local counsel. Statutory applicability must be confirmed for this property and this transaction."
+  },
+  "section_11_questions": [
+    {
+      "question": "Can you provide the sanctioned building plan and the building licence for the construction on this property?",
+      "reason": "No sanctioned building plan or building licence on record",
+      "severity": "high",
+      "risk_ref": "R-001",
+      "source": "finding"
+    },
+    {
+      "question": "Has an Occupancy Certificate been issued for this building? If not, what is the current position?",
+      "reason": "No Occupancy or Completion Certificate on record",
+      "severity": "medium",
+      "risk_ref": "R-002",
+      "source": "finding"
+    },
+    {
+      "question": "Can you provide sanctioned building plan and building licence?",
+      "reason": "Construction must conform to a plan sanctioned by the competent planning authority.",
+      "severity": null,
+      "requirement_key": "approved_building_plan",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide current title document (registered sale / gift / partition / settlement deed)?",
+      "reason": "Establishes how the current claimed owner acquired the property and is the starting point for the title chain.",
+      "severity": null,
+      "requirement_key": "current_title_document",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide encumbrance Certificate covering the full review period?",
+      "reason": "Shows registered transactions, mortgages and charges recorded against the property for the certified period.",
+      "severity": null,
+      "requirement_key": "encumbrance_certificate_full_period",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide khata certificate and khata extract in the seller's name?",
+      "reason": "The khata records the person liable to pay property tax to the local body and is required for transfer and for utilities.",
+      "severity": null,
+      "requirement_key": "khata_certificate_extract",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide occupancy Certificate (and Completion Certificate where issued)?",
+      "reason": "An OC certifies that the completed building conforms to the sanctioned plan and is fit for occupation.",
+      "severity": null,
+      "requirement_key": "occupancy_certificate",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide parent deeds covering the title chain for the customary review period?",
+      "reason": "The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.",
+      "severity": null,
+      "requirement_key": "parent_deeds_chain",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide latest property tax / land revenue paid receipts?",
+      "reason": "Confirms the assessee of record and that no tax arrears attach to the property.",
+      "severity": null,
+      "requirement_key": "property_tax_receipts",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide seller identity and authority to transfer?",
+      "reason": "The person executing the transfer must be the person named in the title documents and must be competent to transfer.",
+      "severity": null,
+      "requirement_key": "seller_identity_verification",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide zoning / land-use compliance under the applicable master plan?",
+      "reason": "The intended use must be permissible in the land-use zone under the applicable comprehensive development plan.",
+      "severity": null,
+      "requirement_key": "zoning_land_use_compliance",
+      "source": "requirement"
+    }
+  ],
+  "section_12_action_plan": [
+    {
+      "order": 1,
+      "group": "Immediate",
+      "action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+      "reason": "No sanctioned building plan or building licence on record",
+      "severity": "high",
+      "depends_on": [
+        "Sanctioned building plan",
+        "Building licence / permit"
+      ],
+      "finding_id": "3a20ed5af9b346c39cb9a045b507690e",
+      "risk_ref": "R-001"
+    },
+    {
+      "order": 2,
+      "group": "Resolve",
+      "action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+      "reason": "No Occupancy or Completion Certificate on record",
+      "severity": "medium",
+      "depends_on": [
+        "Occupancy Certificate",
+        "Completion Certificate"
+      ],
+      "finding_id": "8407cd9eaf8646519e3fa4baeb60a7bf",
+      "risk_ref": "R-002"
+    },
+    {
+      "order": 3,
+      "group": "Collect documents required by law",
+      "action": "Obtain the sanctioned plan and licence, and compare the sanctioned built-up area with what exists on site.",
+      "reason": "Construction must conform to a plan sanctioned by the competent planning authority.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "f73fed445a4a443e814b5eda1422b4fb",
+      "authority": "BBMP / local planning authority / BDA / BMRDA"
+    },
+    {
+      "order": 4,
+      "group": "Collect documents required by law",
+      "action": "Obtain the registered deed together with its certified copy from the Sub-Registrar.",
+      "reason": "Establishes how the current claimed owner acquired the property and is the starting point for the title chain.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "5f057334e1c14f2395e6ddb4107ba0d0",
+      "authority": "Jurisdictional Sub-Registrar's office"
+    },
+    {
+      "order": 5,
+      "group": "Collect documents required by law",
+      "action": "Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.",
+      "reason": "Shows registered transactions, mortgages and charges recorded against the property for the certified period.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "15d9d887e55a4f389e4c86a056a29133",
+      "authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services"
+    },
+    {
+      "order": 6,
+      "group": "Collect documents required by law",
+      "action": "Obtain the khata certificate and extract standing in the seller's name.",
+      "reason": "The khata records the person liable to pay property tax to the local body and is required for transfer and for utilities.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "3aa36b1b30a544949adb97038d45c2c8",
+      "authority": "BBMP / City Corporation / CMC / Gram Panchayat, as applicable"
+    },
+    {
+      "order": 7,
+      "group": "Collect documents required by law",
+      "action": "Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.",
+      "reason": "The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "46ac0ef0c8354664add1939c6f4c2dcf",
+      "authority": "The seller, or certified copies from the Sub-Registrar's office"
+    },
+    {
+      "order": 8,
+      "group": "Collect documents required by law",
+      "action": "Obtain tax-paid receipts for the current and preceding years in the seller's name.",
+      "reason": "Confirms the assessee of record and that no tax arrears attach to the property.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "a47158e14779415fb8312d3545da7eea",
+      "authority": "BBMP / Municipal body / Gram Panchayat / Village Accountant"
+    },
+    {
+      "order": 9,
+      "group": "Collect documents required by law",
+      "action": "Collect photo identification and reconcile the name, parentage and address against the title deed.",
+      "reason": "The person executing the transfer must be the person named in the title documents and must be competent to transfer.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "f8285f51bc214486adc813030c711056",
+      "authority": "The seller; verified against title documents and photo identification"
+    },
+    {
+      "order": 10,
+      "group": "Collect documents needed to resolve discrepancies",
+      "action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+      "reason": "Required to resolve: No sanctioned building plan or building licence on record",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "e95c3531d54543c8b814f562cd0b2fff",
+      "authority": "BBMP / Local planning authority / BDA / BMRDA, as applicable"
+    },
+    {
+      "order": 11,
+      "group": "Collect documents needed to resolve discrepancies",
+      "action": "Obtain the sanctioned plan and licence from the planning authority and compare them with what exists on site.",
+      "reason": "Required to resolve: No sanctioned building plan or building licence on record",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "b90bc447a9ed431ca296dbc7ab2cf18d",
+      "authority": "BBMP / Local planning authority / BDA / BMRDA, as applicable"
+    },
+    {
+      "order": 12,
+      "group": "Collect documents needed to resolve discrepancies",
+      "action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+      "reason": "Required to resolve: No Occupancy or Completion Certificate on record",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "3366fd5f74244f29b18d15c033967149",
+      "authority": "BBMP / Local planning authority"
+    },
+    {
+      "order": 13,
+      "group": "Collect documents needed to resolve discrepancies",
+      "action": "Obtain the Occupancy Certificate for the building or block from the planning authority.",
+      "reason": "Required to resolve: No Occupancy or Completion Certificate on record",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "5001582523fe4b6da6d42cdd8bc64ea0",
+      "authority": "BBMP / Local planning authority"
+    },
+    {
+      "order": 14,
+      "group": "Collect conditionally required documents",
+      "action": "Obtain the OC for the building, and for the specific block where the project is phased.",
+      "reason": "An OC certifies that the completed building conforms to the sanctioned plan and is fit for occupation.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "0fc281650dcd4447b0a63edc081f978e",
+      "authority": "BBMP / local planning authority"
+    },
+    {
+      "order": 15,
+      "group": "Collect conditionally required documents",
+      "action": "Obtain a land-use certificate or zoning confirmation for the site.",
+      "reason": "The intended use must be permissible in the land-use zone under the applicable comprehensive development plan.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "e0445461cb9d41f2bd7d3bcaa0f63b9f",
+      "authority": "Local planning authority (BDA / BMRDA / Town Planning department)"
+    },
+    {
+      "order": 16,
+      "group": "Perform external verification",
+      "action": "Have an advocate run a search against the property identifiers and every owner in the title chain.",
+      "reason": "The supplied documents cannot show proceedings that the seller has not disclosed.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "7398f0cf1a76483a9356221b4175ec49",
+      "authority": "Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals"
+    },
+    {
+      "order": 17,
+      "group": "Perform external verification",
+      "action": "Pull the live record for the survey number or khata and compare it with the supplied extract.",
+      "reason": "Revenue records change; the supplied extract may be out of date.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "de3b65cb7452450faa0214a6f15748c7",
+      "authority": "Bhoomi portal (RTC), BBMP / municipal khata portal"
+    },
+    {
+      "order": 18,
+      "group": "Perform external verification",
+      "action": "Verify each registration number, date and book/volume entry against the official register.",
+      "reason": "A scanned or photocopied deed is not proof that the registration entry exists in the official record.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "48b26448a00d497e93e4f7e99bc9a5ac",
+      "authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services"
+    },
+    {
+      "order": 19,
+      "group": "Recommended for stronger due diligence",
+      "action": "Arrange a survey against the sketch and confirm possession, access and the absence of encroachment.",
+      "reason": "Documents describe boundaries and extent; only a measurement on site confirms them.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "b03d80b6443d41b4a836e101d09f087d",
+      "authority": "A licensed surveyor; joint inspection with the seller"
+    },
+    {
+      "order": 20,
+      "group": "Obtain professional review",
+      "action": "Place the complete document set and this report before an advocate for a written title opinion.",
+      "reason": "This system organises and cross-checks evidence; it does not give a legal opinion on marketability of title.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "e0d0313b5aa8406e9bf62f2a24feddb9",
+      "authority": "An advocate practising property law in the relevant jurisdiction"
+    }
+  ],
+  "section_13_final_assessment": {
+    "status": "assessment_incomplete",
+    "label": "Assessment Incomplete",
+    "overall_risk": "high",
+    "risk_score": 80.0,
+    "risk_score_normalised": 26.7,
+    "how_determined": "The overall level is set by the most severe unresolved finding, not by an average. The numerical score (severity x evidence reliability x whether the issue is confirmed and still open) is shown alongside it as a secondary indicator only.",
+    "how_determined_kn": "\u0c92\u0c9f\u0ccd\u0c9f\u0cbe\u0cb0\u0cc6 \u0cae\u0c9f\u0ccd\u0c9f\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0c97\u0c82\u0cad\u0cc0\u0cb0\u0cb5\u0cbe\u0ca6 \u0c87\u0ca4\u0ccd\u0caf\u0cb0\u0ccd\u0ca5\u0cb5\u0cbe\u0c97\u0ca6 \u0c85\u0c82\u0cb6\u0cb5\u0cc1 \u0ca8\u0cbf\u0cb0\u0ccd\u0ca7\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6, \u0cb8\u0cb0\u0cbe\u0cb8\u0cb0\u0cbf \u0c85\u0cb2\u0ccd\u0cb2. \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cbe\u0ca4\u0ccd\u0cae\u0c95 \u0c85\u0c82\u0c95\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 (\u0ca4\u0cc0\u0cb5\u0ccd\u0cb0\u0ca4\u0cc6 x \u0cb8\u0cbe\u0c95\u0ccd\u0cb7\u0ccd\u0caf\u0ca6 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb5\u0cbe\u0cb8\u0cbe\u0cb0\u0ccd\u0cb9\u0ca4\u0cc6 x \u0c85\u0c82\u0cb6 \u0ca6\u0cc3\u0ca2\u0caa\u0c9f\u0ccd\u0c9f\u0cbf\u0ca6\u0cc6\u0caf\u0cc7 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0ca6\u0cc6\u0caf\u0cc7) \u0c9c\u0cca\u0ca4\u0cc6\u0c97\u0cc6 \u0ca6\u0ccd\u0cb5\u0cbf\u0ca4\u0cc0\u0caf \u0cb8\u0cc2\u0c9a\u0c95\u0cb5\u0cbe\u0c97\u0cbf \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+    "label_kn": "\u0cae\u0ccc\u0cb2\u0ccd\u0caf\u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0caa\u0cc2\u0cb0\u0ccd\u0ca3",
+    "reasons": [
+      "No documents have been added to this case.",
+      "7 statutory requirement(s) are still outstanding."
+    ],
+    "reasons_kn": [
+      "\u0c88 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0c95\u0ccd\u0c95\u0cc6 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cc7\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+      "7 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cbf\u0ca8 \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbe\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6(\u0c97\u0cb3\u0cc1) \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb5\u0cc6."
+    ],
+    "scope_and_limitations_kn": [
+      "\u0c88 \u0cb5\u0cb0\u0ccd\u0c97\u0cc0\u0c95\u0cb0\u0ca3\u0cb5\u0cc1 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0ca6 \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0c86\u0ca7\u0cb0\u0cbf\u0cb8\u0cbf\u0ca6\u0cc6. \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6, \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cb9\u0cca\u0cb0\u0c97\u0cbf\u0ca8 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c95\u0ccb\u0cb6\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2, \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf \u0ca8\u0cc0\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+      "\u0c88 \u0c86\u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caf \u0cb8\u0cae\u0caf\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0ca6 \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0ccd\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0caa\u0cb0\u0cbf\u0c97\u0ca3\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+      "\u0cb8\u0ccd\u0c95\u0ccd\u0caf\u0cbe\u0ca8\u0ccd \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6\u0caf\u0cc7 \u0c93\u0ca6\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6; \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cc2\u0cb2\u0ca6\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+      "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0ca4\u0ccd\u0cb5\u0c95\u0ccd\u0c95\u0cc6 \u0caa\u0cc1\u0cb0\u0cbe\u0cb5\u0cc6\u0caf\u0cb2\u0ccd\u0cb2, \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cbf\u0c97\u0cc6 \u0ca8\u0cbf\u0cb0\u0ccd\u0ca3\u0cbe\u0caf\u0c95 \u0cb8\u0cbe\u0c95\u0ccd\u0cb7\u0ccd\u0caf\u0cb5\u0cb2\u0ccd\u0cb2.",
+      "\u0c88 \u0c86\u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf 18 \u0c85\u0c97\u0ca4\u0ccd\u0caf(\u0c97\u0cb3\u0cc1) \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb5\u0cc6."
+    ],
+    "scope_and_limitations": [
+      "This classification reflects only the documents supplied in the case folder. No official record, court registry or external database has been checked, and no legal opinion has been given.",
+      "Only the documents present in the case folder at the time of this version were considered.",
+      "Scanned copies were read as supplied; no copy was compared with an original or with the official register.",
+      "Possession of a document is not evidence of ownership, and a revenue record is not conclusive evidence of title.",
+      "18 requirement(s) remain outstanding at this version."
+    ],
+    "disclaimer": "This report is an evidence-based preliminary assessment produced by an automated system from the documents supplied in the case folder. It is not a title search, not an official verification, and not a legal opinion. No statement in it should be read as confirming that title is clear or marketable, that a document is genuine, that the property is free from encumbrances or litigation, or that the property is suitable for purchase. Material conclusions require an independent title investigation and the written opinion of a qualified property lawyer."
+  },
+  "change_summary": [
+    {
+      "type": "created",
+      "detail": "First assessment for this case."
+    }
+  ]
+}

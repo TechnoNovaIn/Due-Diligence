@@ -1,0 +1,102 @@
+code: DEFAULT
+name: Generic (India) - jurisdiction-specific confirmation required
+country: IN
+title_lookback_years: 30
+ec_lookback_years: 30
+jurisdiction_confirmed: false
+
+authorities:
+  encumbrance_certificate: "Jurisdictional Sub-Registrar's office"
+  mutation: "Local revenue authority (Tahsildar / Circle Officer)"
+  khata: "Local municipal body or panchayat"
+  property_tax: "Local municipal body or panchayat"
+  building_approval: "Local planning authority"
+  litigation_search: "Jurisdictional civil courts and the relevant High Court"
+  legal_opinion: "An advocate practising property law in the relevant jurisdiction"
+
+requirements:
+  - key: current_title_document
+    name: "Current title document (registered deed in favour of the claimed owner)"
+    category: statutory
+    priority: mandatory
+    property_types: [all]
+    satisfied_by: [sale_deed, title_deed, gift_deed, partition_deed, settlement_deed, conveyance_deed, exchange_deed, apartment_deed]
+    reason: "Establishes how the claimed owner acquired the property."
+    authority: "Jurisdictional Sub-Registrar's office"
+    next_action: "Obtain the registered deed and a certified copy."
+    risk_if_absent: "Ownership cannot be traced."
+    closure_criteria: "A registered deed in favour of the claimed owner has been analysed."
+
+  - key: parent_deeds_chain
+    name: "Parent deeds covering the title chain for the review period"
+    category: statutory
+    priority: mandatory
+    property_types: [all]
+    requires_chain_coverage: true
+    satisfied_by: [mother_deed, sale_deed, partition_deed, gift_deed, settlement_deed, inheritance_document, court_order_ownership, release_deed, exchange_deed]
+    reason: "Each transfer in the chain must be supported by a document."
+    authority: "The seller, or certified copies from the Sub-Registrar"
+    next_action: "Collect each earlier referenced deed."
+    risk_if_absent: "A defect in an earlier transfer can invalidate the present title."
+    closure_criteria: "Every transfer in the review period is documented."
+
+  - key: encumbrance_certificate_full_period
+    name: "Encumbrance Certificate covering the full review period"
+    category: statutory
+    priority: mandatory
+    property_types: [all]
+    requires_ec_coverage: true
+    satisfied_by: [encumbrance_certificate]
+    reason: "Shows registered charges and transfers for the certified period."
+    authority: "Jurisdictional Sub-Registrar's office"
+    next_action: "Apply for an EC covering at least {ec_lookback_years} years."
+    risk_if_absent: "Registered mortgages or attachments may remain undetected."
+    closure_criteria: "An EC covering the full period has been analysed."
+
+  - key: property_tax_receipts
+    name: "Latest property tax / land revenue receipts"
+    category: statutory
+    priority: mandatory
+    property_types: [all]
+    satisfied_by: [property_tax_receipt, land_revenue_receipt, tax_payment_receipt]
+    reason: "Confirms the assessee of record and the absence of arrears."
+    authority: "Local municipal body or panchayat"
+    next_action: "Obtain current-year receipts in the seller's name."
+    risk_if_absent: "Arrears may attach to the property."
+    closure_criteria: "Current receipts with no arrears are available."
+
+  - key: seller_identity_verification
+    name: "Seller identity and authority to transfer"
+    category: statutory
+    priority: mandatory
+    property_types: [all]
+    satisfied_by: [identity_document, pan_card, aadhaar, affidavit]
+    reason: "The executant must be the titleholder and competent to transfer."
+    authority: "The seller"
+    next_action: "Collect photo identification and reconcile it with the title documents."
+    risk_if_absent: "Risk of impersonation or transfer without authority."
+    closure_criteria: "Identification reconciled with the title documents."
+
+  - key: litigation_search_external
+    name: "Independent litigation and court records search"
+    category: external_check
+    priority: recommended
+    property_types: [all]
+    external_only: true
+    reason: "Supplied documents cannot reveal undisclosed proceedings."
+    authority: "Jurisdictional courts"
+    next_action: "Commission a search against the property and every owner in the chain."
+    risk_if_absent: "Pending proceedings may exist undetected."
+    closure_criteria: "A professional search report is on record."
+
+  - key: legal_title_opinion
+    name: "Legal title opinion from a qualified advocate"
+    category: professional
+    priority: professional_advice
+    property_types: [all]
+    external_only: true
+    reason: "This system does not provide a legal opinion on marketability of title."
+    authority: "An advocate practising property law in the relevant jurisdiction"
+    next_action: "Place the document set and this report before an advocate."
+    risk_if_absent: "No professional has certified the title."
+    closure_criteria: "A written title opinion is on record."

@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Property Due Diligence Report v3 — hamsa layout</title>
+<style>
+  :root{
+    --ink:#15181d; --muted:#5b6472; --line:#dfe3ea; --bg:#ffffff; --panel:#f6f8fb;
+    --critical:#8b1a1a; --high:#b3541e; --medium:#8a6d1a; --low:#2c6e49; --info:#39506b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 28px 90px}
+  h1{font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
+  h2{font-size:19px;margin:42px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+  h3{font-size:15px;margin:22px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+  p{margin:9px 0}
+  .sub{color:var(--muted);font-size:14px}
+  .masthead{border-bottom:3px double var(--ink);padding-bottom:18px;margin-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:18px 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:12px 14px}
+  .stat .n{font-size:24px;font-weight:700;display:block;line-height:1.2}
+  .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--panel);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+  .badge{display:inline-block;padding:2px 8px;border-radius:11px;font-size:11px;font-weight:700;
+         text-transform:uppercase;letter-spacing:.05em;color:#fff;white-space:nowrap}
+  .critical{background:var(--critical)} .high{background:var(--high)} .medium{background:var(--medium)}
+  .low{background:var(--low)} .informational{background:var(--info)}
+  .callout{background:var(--panel);border-left:4px solid var(--ink);padding:12px 16px;margin:16px 0;border-radius:0 6px 6px 0}
+  .warn{border-left-color:var(--critical)}
+  .evidence{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:5px;
+            border-left:2px solid var(--line);padding-left:9px}
+  ul,ol{margin:8px 0 8px 20px;padding:0} li{margin:4px 0}
+  .doc{border:1px solid var(--line);border-radius:7px;padding:14px 16px;margin:14px 0}
+  .doc h4{margin:0 0 4px;font-size:15px}
+  .pill{display:inline-block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+        padding:1px 8px;font-size:11.5px;color:var(--muted);margin-right:5px}
+  .timeline li{margin:8px 0}
+  .gap{color:var(--critical);font-weight:700}
+  footer{margin-top:50px;border-top:1px solid var(--line);padding-top:14px;font-size:12px;color:var(--muted)}
+  @media print{.wrap{max-width:none;padding:0} h2{page-break-after:avoid} .doc,table{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="masthead">
+  <h1>Property Due Diligence Report</h1>
+  <p class="sub">
+    hamsa layout &middot; Case PDD-2026-0002
+    &middot; Version 3
+    &middot; Generated 2026-10-14T10:15:02Z
+  </p>
+</div>
+
+<div class="callout warn">
+  <strong>Scope and limitations.</strong> This report is an evidence-based preliminary assessment produced by an automated system from the documents supplied in the case folder. It is not a title search, not an official verification, and not a legal opinion. No statement in it should be read as confirming that title is clear or marketable, that a document is genuine, that the property is free from encumbrances or litigation, or that the property is suitable for purchase. Material conclusions require an independent title investigation and the written opinion of a qualified property lawyer.
+</div>
+
+<h2>1. Executive summary</h2>
+<div class="grid">
+  <div class="stat"><span class="n">4</span><span class="l">Documents received</span></div>
+  <div class="stat"><span class="n">0</span><span class="l">Analysed</span></div>
+  <div class="stat"><span class="n">19</span><span class="l">Open requirements</span></div>
+  <div class="stat"><span class="n">0</span><span class="l">Critical &amp; high findings</span></div>
+  <div class="stat"><span class="n">Medium</span><span class="l">Overall risk level</span></div>
+</div>
+
+<p><strong>Property:</strong> hamsa layout  &middot; Residential plot
+  &middot; Purchase</p>
+<p><strong>Purpose:</strong> Pre-transaction document review and due diligence support.</p>
+<p><strong>Current status:</strong> <strong>Assessment Incomplete</strong></p>
+<ul><li>7 mandatory requirement(s) have not been met: Current title document (registered sale / gift / partition / settlement deed); Encumbrance Certificate covering the full review period; Khata certificate and khata extract in the seller&#39;s name.</li><li>7 statutory requirement(s) are still outstanding.</li><li>4 of 4 documents could not be analysed.</li></ul>
+
+<h3>Major findings</h3>
+<table><thead><tr><th>Ref</th><th>Severity</th><th>Finding</th><th>Recommended action</th></tr></thead><tbody>
+<tr><td>R-003</td><td><span class="badge medium">Medium</span></td>
+    <td>Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)</td>
+    <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td></tr>
+<tr><td>R-004</td><td><span class="badge medium">Medium</span></td>
+    <td>WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)</td>
+    <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td></tr>
+<tr><td>R-005</td><td><span class="badge medium">Medium</span></td>
+    <td>yellapura site reg.pdf could not be analysed (needs manual review)</td>
+    <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td></tr>
+<tr><td>R-006</td><td><span class="badge medium">Medium</span></td>
+    <td>TMPEC-260601398326.pdf could not be analysed (needs manual review)</td>
+    <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td></tr>
+<tr><td>R-002</td><td><span class="badge medium">Medium</span></td>
+    <td>yellapura site reg.pdf: text recognition confidence is low</td>
+    <td>Verify the extracted values against the original document.</td></tr>
+<tr><td>R-007</td><td><span class="badge informational">Informational</span></td>
+    <td>No external or official record has been checked</td>
+    <td>Commission the external searches listed under pending verification before relying on this assessment.</td></tr>
+</tbody></table>
+
+<h3>Recommended next steps</h3>
+<ol><li>Obtain the registered deed together with its certified copy from the Sub-Registrar.</li><li>Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.</li><li>Obtain the khata certificate and extract standing in the seller&#39;s name.</li><li>Obtain the MR extract corresponding to each transfer in the title chain.</li><li>Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.</li><li>Obtain tax-paid receipts for the current and preceding years in the seller&#39;s name.</li></ol>
+
+<h2>2. Property details</h2>
+<h3>Recorded on the case</h3>
+<table><tbody>
+<tr><th style="width:30%">Property name</th><td>hamsa layout</td></tr><tr><th style="width:30%">Address</th><td>yallapura</td></tr><tr><th style="width:30%">State</th><td>Karnataka</td></tr><tr><th style="width:30%">Property type</th><td>residential_plot</td></tr><tr><th style="width:30%">Transaction type</th><td>purchase</td></tr></tbody></table>
+<h3>Consolidated from the documents</h3>
+<table><thead><tr><th>Field</th><th>Value</th><th>Status</th><th>Source</th></tr></thead><tbody>
+<tr>
+  <td>Survey number</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Subdivision / hissa number</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Khata number</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Plot number</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Flat / unit number</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Village</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Hobli</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Taluk</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>District</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Extent / area</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Built-up area</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Undivided share (UDS)</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Land classification</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Boundary - north</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Boundary - south</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Boundary - east</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Boundary - west</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Consideration</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Registration number</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+<tr>
+  <td>Registration date</td>
+  <td>—</td>
+  <td>Missing</td>
+  <td class="sub">Not stated in any supplied document.</td>
+</tr>
+</tbody></table>
+<p class="sub">Values marked &#39;documented&#39; appear in a single document and have not been corroborated. Values marked &#39;missing&#39; were not found in any supplied document - that is not evidence that the underlying fact does not exist.</p>
+
+<h2>3. Document inventory</h2>
+<table><thead><tr><th>File</th><th>Type</th><th>Date</th><th>Status</th><th>Pages</th><th>Extraction</th><th>Issues</th></tr></thead><tbody>
+<tr>
+  <td>Arakere Final Sy.No.96.12.pdf</td>
+  <td>Unknown Document Type - Manual Review Required<br><span class="sub">confidence 0%</span></td>
+  <td>—</td>
+  <td>Needs manual review</td>
+  <td>4/4</td>
+  <td>85% <span class="pill">OCR</span></td>
+  <td class="sub">—</td>
+</tr>
+<tr>
+  <td>WhatsApp Image 2026-10-14 at 15.42.27.jpeg</td>
+  <td>Unknown Document Type - Manual Review Required<br><span class="sub">confidence 9%</span></td>
+  <td>—</td>
+  <td>Needs manual review</td>
+  <td>1/1</td>
+  <td>98% <span class="pill">OCR</span></td>
+  <td class="sub">—</td>
+</tr>
+<tr>
+  <td>yellapura site reg.pdf</td>
+  <td>Unknown Document Type - Manual Review Required<br><span class="sub">confidence 9%</span></td>
+  <td>—</td>
+  <td>Needs manual review</td>
+  <td>14/14</td>
+  <td>71% <span class="pill">OCR</span></td>
+  <td class="sub">OCR confidence is low on page(s) 7; extracted values need checking against the original.</td>
+</tr>
+<tr>
+  <td>TMPEC-260601398326.pdf</td>
+  <td>Unknown Document Type - Manual Review Required<br><span class="sub">confidence 16%</span></td>
+  <td>—</td>
+  <td>Needs manual review</td>
+  <td>3/3</td>
+  <td>100%</td>
+  <td class="sub">—</td>
+</tr>
+</tbody></table>
+
+<h2>4. Individual document analysis</h2>
+<div class="doc">
+  <h4>Arakere Final Sy.No.96.12.pdf <span class="pill">Unknown Document Type - Manual Review Required</span><span class="pill">needs manual review</span></h4>
+  <p>Not determined - the document type could not be established with confidence.</p>
+<p>Classified as Unknown Document Type - Manual Review Required.</p><p><strong>Parties:</strong>
+Sridhar.A (Owner of record)</p><p><strong>Property identifiers:</strong>
+Village: OF ARAKERE (p.4)</p>  <p><strong>Effect:</strong> The document&#39;s effect has not been independently assessed.</p>
+<p><strong>Requires verification:</strong></p>
+    <ul><li>Values were read by OCR and should be checked against the original.</li><li>The document type was not established with high confidence.</li></ul></div>
+<div class="doc">
+  <h4>WhatsApp Image 2026-10-14 at 15.42.27.jpeg <span class="pill">Unknown Document Type - Manual Review Required</span><span class="pill">needs manual review</span></h4>
+  <p>Not determined - the document type could not be established with confidence.</p>
+<p>Classified as Unknown Document Type - Manual Review Required, measuring 8.A. 29 QTN.</p><p><strong>Property identifiers:</strong>
+Village: OF ARAKERE (p.1); Extent / area: 8.A. 29 QTN (p.1)</p>  <p><strong>Effect:</strong> The document&#39;s effect has not been independently assessed.</p>
+<p><strong>Requires verification:</strong></p>
+    <ul><li>Values were read by OCR and should be checked against the original.</li><li>The document type was not established with high confidence.</li></ul></div>
+<div class="doc">
+  <h4>yellapura site reg.pdf <span class="pill">Unknown Document Type - Manual Review Required</span><span class="pill">needs manual review</span></h4>
+  <p>Not determined - the document type could not be established with confidence.</p>
+<p>Classified as Unknown Document Type - Manual Review Required, covering Sy. No. 19-10.</p><p><strong>Property identifiers:</strong>
+Survey number: 19-10 (p.11)</p>  <p><strong>Effect:</strong> The document&#39;s effect has not been independently assessed.</p>
+<p><strong>Requires verification:</strong></p>
+    <ul><li>Values were read by OCR and should be checked against the original.</li><li>The document type was not established with high confidence.</li></ul><p><strong>Issues:</strong></p><ul><li>OCR confidence is low on page(s) 7; extracted values need checking against the original.</li></ul></div>
+<div class="doc">
+  <h4>TMPEC-260601398326.pdf <span class="pill">Unknown Document Type - Manual Review Required</span><span class="pill">needs manual review</span></h4>
+  <p>Not determined - the document type could not be established with confidence.</p>
+<p>Classified as Unknown Document Type - Manual Review Required.</p><p><strong>Property identifiers:</strong>
+Khata number: 1433/91 (p.1); Village: Arakere (p.1)</p>  <p><strong>Effect:</strong> The document&#39;s effect has not been independently assessed.</p>
+<p><strong>Requires verification:</strong></p>
+    <ul><li>The document type was not established with high confidence.</li></ul></div>
+
+<h2>5. Ownership and title history</h2>
+<p>No transfer document on record, so no ownership timeline could be constructed.</p><p class="sub">Each step is *documented* - it reflects what a supplied document states. No step has been independently verified against the Sub-Registrar&#39;s record, and matching names across documents is not proof that the same person is involved.</p>
+
+<h2>6. Cross-document verification</h2>
+<table><thead><tr><th>Field</th><th>Consistent?</th><th>Values and sources</th></tr></thead><tbody>
+<tr>
+  <td>Survey number</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+<tr>
+  <td>Khata number</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+<tr>
+  <td>Plot number</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+<tr>
+  <td>Flat / unit number</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+<tr>
+  <td>Village</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+<tr>
+  <td>Taluk</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+<tr>
+  <td>Extent / area</td>
+  <td>Consistent</td>
+  <td><span class="sub">Not stated in any document.</span></td>
+</tr>
+</tbody></table>
+
+<h2>7. Encumbrance and liability assessment</h2>
+<p>No Encumbrance Certificate is on record.</p><div class="callout"><strong>Limitations of the encumbrance evidence</strong>
+<ul><li>An Encumbrance Certificate reflects only what was registered against the identifiers used to obtain it, for the period it certifies.</li><li>An equitable mortgage created by deposit of title deeds is frequently not registered and may therefore not appear.</li><li>Unregistered agreements, family arrangements, tenancies and oral claims do not appear.</li><li>No certificate has been verified against the Sub-Registrar&#39;s own record.</li></ul></div>
+
+<h2>8. Legal and regulatory review</h2>
+<p>No litigation reference was found in the supplied documents. <strong>This is not evidence that no
+litigation exists</strong> — no court record has been searched.</p>
+<h3>What was and was not checked</h3>
+<p><strong>Completed:</strong></p><ul><li>Every supplied document was read and compared against the others.</li><li>References to litigation, acquisition, restrictions and charges inside the supplied documents were identified and listed.</li></ul>
+<p><strong>Performed on the supplied documents only:</strong></p><ul><li>Document classification and field extraction.</li><li>Ownership chain reconstruction.</li><li>Encumbrance coverage assessment.</li></ul>
+<p><strong>Outstanding:</strong></p>
+<ul><li>Legal title opinion from a qualified advocate — <span class="sub">An advocate practising property law in the relevant jurisdiction</span></li><li>Independent litigation and court records search — <span class="sub">Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals</span></li><li>Online verification of current revenue / khata records — <span class="sub">Bhoomi portal (RTC), BBMP / municipal khata portal</span></li><li>Verification of deeds against Sub-Registrar records — <span class="sub">Jurisdictional Sub-Registrar&#39;s office / Kaveri Online Services</span></li></ul>
+
+<h2>9. Risk register</h2>
+<table><thead><tr><th>Ref</th><th>Finding</th><th>Severity</th><th>Evidence</th><th>Potential impact</th><th>Recommended action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>R-002</td>
+  <td>yellapura site reg.pdf: text recognition confidence is low
+      <div class="sub">OCR confidence is low on page(s) 7; extracted values need checking against the original. Parts of this document were not assessed; nothing has been assumed about their contents.</div>
+</td>
+  <td><span class="badge medium">Medium</span>
+      <div class="sub">suspected<br>
+      confidence 75%</div></td>
+  <td><div>yellapura site reg.pdf<div class="sub">OCR confidence is low on page(s) 7; extracted values need checking against the original.</div></div></td>
+  <td>Values read from these pages may be wrong.</td>
+  <td>Verify the extracted values against the original document.
+<ul><li>Complete, legible copy of yellapura site reg.pdf</li></ul></td>
+  <td>Open</td>
+</tr>
+<tr>
+  <td>R-003</td>
+  <td>Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)
+      <div class="sub">This file is in the case folder but its contents have not been assessed. Nothing in this report accounts for what it may contain.</div>
+</td>
+  <td><span class="badge medium">Medium</span>
+      <div class="sub">confirmed<br>
+      confidence 100%</div></td>
+  <td><div>Arakere Final Sy.No.96.12.pdf<div class="sub">Processing status: needs_manual_review.</div></div></td>
+  <td>A material fact in an unprocessed document would be missing from this assessment.</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+<ul><li>Readable copy of Arakere Final Sy.No.96.12.pdf</li></ul></td>
+  <td>Open</td>
+</tr>
+<tr>
+  <td>R-004</td>
+  <td>WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)
+      <div class="sub">This file is in the case folder but its contents have not been assessed. Nothing in this report accounts for what it may contain.</div>
+</td>
+  <td><span class="badge medium">Medium</span>
+      <div class="sub">confirmed<br>
+      confidence 100%</div></td>
+  <td><div>WhatsApp Image 2026-10-14 at 15.42.27.jpeg<div class="sub">Processing status: needs_manual_review.</div></div></td>
+  <td>A material fact in an unprocessed document would be missing from this assessment.</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+<ul><li>Readable copy of WhatsApp Image 2026-10-14 at 15.42.27.jpeg</li></ul></td>
+  <td>Open</td>
+</tr>
+<tr>
+  <td>R-005</td>
+  <td>yellapura site reg.pdf could not be analysed (needs manual review)
+      <div class="sub">This file is in the case folder but its contents have not been assessed. Nothing in this report accounts for what it may contain.</div>
+</td>
+  <td><span class="badge medium">Medium</span>
+      <div class="sub">confirmed<br>
+      confidence 100%</div></td>
+  <td><div>yellapura site reg.pdf<div class="sub">Processing status: needs_manual_review.</div></div></td>
+  <td>A material fact in an unprocessed document would be missing from this assessment.</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+<ul><li>Readable copy of yellapura site reg.pdf</li></ul></td>
+  <td>Open</td>
+</tr>
+<tr>
+  <td>R-006</td>
+  <td>TMPEC-260601398326.pdf could not be analysed (needs manual review)
+      <div class="sub">This file is in the case folder but its contents have not been assessed. Nothing in this report accounts for what it may contain.</div>
+</td>
+  <td><span class="badge medium">Medium</span>
+      <div class="sub">confirmed<br>
+      confidence 100%</div></td>
+  <td><div>TMPEC-260601398326.pdf<div class="sub">Processing status: needs_manual_review.</div></div></td>
+  <td>A material fact in an unprocessed document would be missing from this assessment.</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+<ul><li>Readable copy of TMPEC-260601398326.pdf</li></ul></td>
+  <td>Open</td>
+</tr>
+<tr>
+  <td>R-001</td>
+  <td>No documents have been added to this case yet
+      <div class="sub">The watched folder for this case is empty, so no assessment has been possible.</div>
+<div class="sub">This finding no longer reproduces against the current evidence - the documents that supported it have changed, been replaced, or the gap it described has been filled.</div></td>
+  <td><span class="badge informational">Informational</span>
+      <div class="sub">confirmed<br>
+      confidence 100%</div></td>
+  <td><span class="sub">—</span></td>
+  <td>Nothing has been assessed.</td>
+  <td>Add the property documents to the case folder; they will be picked up automatically.
+</td>
+  <td>Resolved</td>
+</tr>
+<tr>
+  <td>R-007</td>
+  <td>No external or official record has been checked
+      <div class="sub">This assessment is based solely on the documents placed in the case folder. No search has been made of the Sub-Registrar&#39;s records, revenue databases, municipal records, court registries, RERA registrations or acquisition notifications. A document that exists but was not supplied cannot be seen, and a supplied copy has not been verified against the official record.</div>
+<div class="sub"><strong>Requires professional legal review.</strong></div></td>
+  <td><span class="badge informational">Informational</span>
+      <div class="sub">confirmed<br>
+      confidence 100%</div></td>
+  <td><span class="sub">—</span></td>
+  <td>The absence of a finding in this report is not evidence that the underlying issue does not exist.</td>
+  <td>Commission the external searches listed under pending verification before relying on this assessment.
+</td>
+  <td>Open</td>
+</tr>
+</tbody></table>
+
+<h2>10. Missing and pending documents</h2>
+<p class="sub">A requirement listed here is something still to be obtained or done. The absence of a document is not itself proof of a defect - it means the point has not been verified.</p>
+<h3>1. Documents potentially required by applicable law</h3>
+<table><thead><tr><th>Requirement</th><th>Priority</th>
+  <th>Why</th><th>Period / relates to</th>
+  <th>Where to obtain it</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>Current title document (registered sale / gift / partition / settlement deed)
+</td>
+  <td>Mandatory</td>
+  <td>Establishes how the current claimed owner acquired the property and is the starting point for the title chain.
+      <div class="sub">Risk if absent: Ownership cannot be traced; no reliable basis exists for the transaction.</div></td>
+  <td>hamsa layout</td>
+  <td>Jurisdictional Sub-Registrar&#39;s office</td>
+  <td>Obtain the registered deed together with its certified copy from the Sub-Registrar.
+      <div class="sub">Closes when: A registered deed in favour of the claimed owner is available, legible and analysed.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Encumbrance Certificate covering the full review period
+</td>
+  <td>Mandatory</td>
+  <td>Shows registered transactions, mortgages and charges recorded against the property for the certified period.
+      <div class="sub">Risk if absent: Registered mortgages, attachments or competing transfers may remain undetected.</div></td>
+  <td>01 Jan 1996 to 14 Oct 2026</td>
+  <td>Jurisdictional Sub-Registrar&#39;s office / Kaveri Online Services</td>
+  <td>Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.
+      <div class="sub">Closes when: An EC covering the full review period has been analysed and reconciled against the title chain.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Khata certificate and khata extract in the seller&#39;s name
+</td>
+  <td>Mandatory</td>
+  <td>The khata records the person liable to pay property tax to the local body and is required for transfer and for utilities.
+      <div class="sub">Risk if absent: Transfer of khata after purchase may be refused or delayed, and the property&#39;s municipal status remains unconfirmed.</div></td>
+  <td>hamsa layout</td>
+  <td>BBMP / City Corporation / CMC / Gram Panchayat, as applicable</td>
+  <td>Obtain the khata certificate and extract standing in the seller&#39;s name.
+      <div class="sub">Closes when: A khata in the seller&#39;s name, matching the property identifiers, is available.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Mutation register extracts (MR) for each transfer
+</td>
+  <td>Mandatory</td>
+  <td>Mutation entries reconcile the registered transfers with the revenue record.
+      <div class="sub">Risk if absent: The revenue record may not reflect the registered transfers, leaving the chain unreconciled.</div></td>
+  <td>hamsa layout</td>
+  <td>Tahsildar&#39;s office / Bhoomi mutation register</td>
+  <td>Obtain the MR extract corresponding to each transfer in the title chain.
+      <div class="sub">Closes when: Each registered transfer has a corresponding mutation entry on record.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Parent deeds covering the title chain for the customary review period
+</td>
+  <td>Mandatory</td>
+  <td>The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.
+      <div class="sub">Risk if absent: A defect in an earlier transfer can invalidate the present owner&#39;s title even if the latest deed appears regular.</div></td>
+  <td>01 Jan 1996 to 14 Oct 2026</td>
+  <td>The seller, or certified copies from the Sub-Registrar&#39;s office</td>
+  <td>Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.
+      <div class="sub">Closes when: Every transfer in the chain for the review period is supported by a document that has been analysed.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Latest property tax / land revenue paid receipts
+</td>
+  <td>Mandatory</td>
+  <td>Confirms the assessee of record and that no tax arrears attach to the property.
+      <div class="sub">Risk if absent: Unpaid dues can become a charge on the property and delay mutation after purchase.</div></td>
+  <td>hamsa layout</td>
+  <td>BBMP / Municipal body / Gram Panchayat / Village Accountant</td>
+  <td>Obtain tax-paid receipts for the current and preceding years in the seller&#39;s name.
+      <div class="sub">Closes when: Receipts for the current year in the seller&#39;s name are available with no arrears indicated.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Seller identity and authority to transfer
+</td>
+  <td>Mandatory</td>
+  <td>The person executing the transfer must be the person named in the title documents and must be competent to transfer.
+      <div class="sub">Risk if absent: Risk of impersonation, transfer by a person without authority, or an undisclosed co-owner.</div></td>
+  <td>hamsa layout</td>
+  <td>The seller; verified against title documents and photo identification</td>
+  <td>Collect photo identification and reconcile the name, parentage and address against the title deed.
+      <div class="sub">Closes when: Identification has been produced and reconciled with the names in the title documents.</div></td>
+  <td>Pending collection</td>
+</tr>
+</tbody></table>
+<h3>2. Documents conditionally required for this property</h3>
+<table><thead><tr><th>Requirement</th><th>Priority</th>
+  <th>Why</th><th>Period / relates to</th>
+  <th>Where to obtain it</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>Approved layout plan / released plan for the site
+</td>
+  <td>Conditional</td>
+  <td>A plot carved out of a larger parcel must form part of a layout approved by the planning authority.
+      <div class="sub">Risk if absent: A revenue-layout plot may be unapprovable, unmortgageable and liable to demolition.</div></td>
+  <td>hamsa layout</td>
+  <td>BDA / BMRDA / local planning authority / Town Planning section of the local body</td>
+  <td>Obtain the approved layout plan and confirm the plot number appears in the released area.
+      <div class="sub">Closes when: The plot appears in an approved and released layout plan.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Survey sketch / Tippani / Akarband
+</td>
+  <td>Recommended</td>
+  <td>Confirms the shape, boundaries and official extent of the survey number on the ground.
+      <div class="sub">Risk if absent: Boundary and extent disputes cannot be assessed against official survey records.</div></td>
+  <td>hamsa layout</td>
+  <td>Department of Survey, Settlement and Land Records</td>
+  <td>Apply for the Tippani / Akarband and the hissa sketch for the survey number.
+      <div class="sub">Closes when: An official sketch matching the described boundaries is on record.</div></td>
+  <td>Pending collection</td>
+</tr>
+</tbody></table>
+<h3>3. Documents needed to resolve identified discrepancies</h3>
+<table><thead><tr><th>Requirement</th><th>Priority</th>
+  <th>Why</th><th>Period / relates to</th>
+  <th>Where to obtain it</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>Readable copy of yellapura site reg.pdf
+<div class="sub">Resolves: yellapura site reg.pdf could not be analysed (needs manual review)</div></td>
+  <td>Conditional</td>
+  <td>Required to resolve: yellapura site reg.pdf could not be analysed (needs manual review)
+      <div class="sub">Risk if absent: A material fact in an unprocessed document would be missing from this assessment.</div></td>
+  <td>hamsa layout</td>
+  <td>The seller, or the authority that issued the original record</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+      <div class="sub">Closes when: The document is supplied, analysed, and the finding &#34;yellapura site reg.pdf could not be analysed (needs manual review)&#34; is resolved.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Readable copy of WhatsApp Image 2026-10-14 at 15.42.27.jpeg
+<div class="sub">Resolves: WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)</div></td>
+  <td>Conditional</td>
+  <td>Required to resolve: WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)
+      <div class="sub">Risk if absent: A material fact in an unprocessed document would be missing from this assessment.</div></td>
+  <td>hamsa layout</td>
+  <td>The seller, or the authority that issued the original record</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+      <div class="sub">Closes when: The document is supplied, analysed, and the finding &#34;WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)&#34; is resolved.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Readable copy of TMPEC-260601398326.pdf
+<div class="sub">Resolves: TMPEC-260601398326.pdf could not be analysed (needs manual review)</div></td>
+  <td>Conditional</td>
+  <td>Required to resolve: TMPEC-260601398326.pdf could not be analysed (needs manual review)
+      <div class="sub">Risk if absent: A material fact in an unprocessed document would be missing from this assessment.</div></td>
+  <td>hamsa layout</td>
+  <td>The seller, or the authority that issued the original record</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+      <div class="sub">Closes when: The document is supplied, analysed, and the finding &#34;TMPEC-260601398326.pdf could not be analysed (needs manual review)&#34; is resolved.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Readable copy of Arakere Final Sy.No.96.12.pdf
+<div class="sub">Resolves: Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)</div></td>
+  <td>Conditional</td>
+  <td>Required to resolve: Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)
+      <div class="sub">Risk if absent: A material fact in an unprocessed document would be missing from this assessment.</div></td>
+  <td>hamsa layout</td>
+  <td>The seller, or the authority that issued the original record</td>
+  <td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.
+      <div class="sub">Closes when: The document is supplied, analysed, and the finding &#34;Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)&#34; is resolved.</div></td>
+  <td>Pending collection</td>
+</tr>
+<tr>
+  <td>Complete, legible copy of yellapura site reg.pdf
+<div class="sub">Resolves: yellapura site reg.pdf: text recognition confidence is low</div></td>
+  <td>Conditional</td>
+  <td>Required to resolve: yellapura site reg.pdf: text recognition confidence is low
+      <div class="sub">Risk if absent: Values read from these pages may be wrong.</div></td>
+  <td>hamsa layout</td>
+  <td>The seller, or the authority that issued the original record</td>
+  <td>Verify the extracted values against the original document.
+      <div class="sub">Closes when: The document is supplied, analysed, and the finding &#34;yellapura site reg.pdf: text recognition confidence is low&#34; is resolved.</div></td>
+  <td>Pending collection</td>
+</tr>
+</tbody></table>
+<h3>4. Documents recommended for stronger due diligence</h3>
+<table><thead><tr><th>Requirement</th><th>Priority</th>
+  <th>Why</th><th>Period / relates to</th>
+  <th>Where to obtain it</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>Physical site inspection and boundary verification
+</td>
+  <td>Recommended</td>
+  <td>Documents describe boundaries and extent; only a measurement on site confirms them.
+      <div class="sub">Risk if absent: Encroachment, access failure or a shortfall in extent may be discovered only after purchase.</div></td>
+  <td>hamsa layout</td>
+  <td>A licensed surveyor; joint inspection with the seller</td>
+  <td>Arrange a survey against the sketch and confirm possession, access and the absence of encroachment.
+      <div class="sub">Closes when: A surveyor&#39;s report confirms extent, boundaries and access.</div></td>
+  <td>Not performed</td>
+</tr>
+</tbody></table>
+<h3>5. External verification checks not yet performed</h3>
+<table><thead><tr><th>Requirement</th><th>Priority</th>
+  <th>Why</th><th>Period / relates to</th>
+  <th>Where to obtain it</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>Independent litigation and court records search
+</td>
+  <td>Recommended</td>
+  <td>The supplied documents cannot show proceedings that the seller has not disclosed.
+      <div class="sub">Risk if absent: Pending suits, injunctions or attachments may exist without appearing in any supplied document.</div></td>
+  <td>hamsa layout</td>
+  <td>Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals</td>
+  <td>Have an advocate run a search against the property identifiers and every owner in the title chain.
+      <div class="sub">Closes when: A search report from a qualified professional is on record.</div></td>
+  <td>Not performed</td>
+</tr>
+<tr>
+  <td>Online verification of current revenue / khata records
+</td>
+  <td>Recommended</td>
+  <td>Revenue records change; the supplied extract may be out of date.
+      <div class="sub">Risk if absent: A recent adverse entry, attachment or mutation may not appear in the supplied copy.</div></td>
+  <td>hamsa layout</td>
+  <td>Bhoomi portal (RTC), BBMP / municipal khata portal</td>
+  <td>Pull the live record for the survey number or khata and compare it with the supplied extract.
+      <div class="sub">Closes when: A current record has been retrieved and reconciled.</div></td>
+  <td>Not performed</td>
+</tr>
+<tr>
+  <td>Verification of deeds against Sub-Registrar records
+</td>
+  <td>Recommended</td>
+  <td>A scanned or photocopied deed is not proof that the registration entry exists in the official record.
+      <div class="sub">Risk if absent: Fabricated or altered copies cannot be ruled out from the documents alone.</div></td>
+  <td>hamsa layout</td>
+  <td>Jurisdictional Sub-Registrar&#39;s office / Kaveri Online Services</td>
+  <td>Verify each registration number, date and book/volume entry against the official register.
+      <div class="sub">Closes when: Each registered document has been matched to the official registration entry.</div></td>
+  <td>Not performed</td>
+</tr>
+</tbody></table>
+<h3>6. Professional assessments still pending</h3>
+<table><thead><tr><th>Requirement</th><th>Priority</th>
+  <th>Why</th><th>Period / relates to</th>
+  <th>Where to obtain it</th><th>Next action</th><th>Status</th></tr></thead><tbody>
+<tr>
+  <td>Legal title opinion from a qualified advocate
+</td>
+  <td>Professional advice</td>
+  <td>This system organises and cross-checks evidence; it does not give a legal opinion on marketability of title.
+      <div class="sub">Risk if absent: No qualified professional has certified that the title is marketable.</div></td>
+  <td>hamsa layout</td>
+  <td>An advocate practising property law in the relevant jurisdiction</td>
+  <td>Place the complete document set and this report before an advocate for a written title opinion.
+      <div class="sub">Closes when: A written title opinion covering the review period is on record.</div></td>
+  <td>Not performed</td>
+</tr>
+</tbody></table>
+<div class="callout"><strong>Jurisdiction caveat.</strong> Requirement sets are templates for the selected jurisdiction and have not been confirmed by local counsel. Statutory applicability must be confirmed for this property and this transaction.</div>
+
+<h2>11. Questions for the seller or property owner</h2>
+<ol><li>Can you provide a complete and legible copy of yellapura site reg.pdf?<div class="sub">Why: yellapura site reg.pdf: text recognition confidence is low (R-002)</div></li>
+<li>Can you provide a readable copy of Arakere Final Sy.No.96.12.pdf, preferably as a PDF?<div class="sub">Why: Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review) (R-003)</div></li>
+<li>Can you provide a readable copy of WhatsApp Image 2026-10-14 at 15.42.27.jpeg, preferably as a PDF?<div class="sub">Why: WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review) (R-004)</div></li>
+<li>Can you provide a readable copy of yellapura site reg.pdf, preferably as a PDF?<div class="sub">Why: yellapura site reg.pdf could not be analysed (needs manual review) (R-005)</div></li>
+<li>Can you provide a readable copy of TMPEC-260601398326.pdf, preferably as a PDF?<div class="sub">Why: TMPEC-260601398326.pdf could not be analysed (needs manual review) (R-006)</div></li>
+<li>Can you provide current title document (registered sale / gift / partition / settlement deed)?<div class="sub">Why: Establishes how the current claimed owner acquired the property and is the starting point for the title chain.</div></li>
+<li>Can you provide encumbrance Certificate covering the full review period?<div class="sub">Why: Shows registered transactions, mortgages and charges recorded against the property for the certified period.</div></li>
+<li>Can you provide khata certificate and khata extract in the seller&#39;s name?<div class="sub">Why: The khata records the person liable to pay property tax to the local body and is required for transfer and for utilities.</div></li>
+<li>Can you provide approved layout plan / released plan for the site?<div class="sub">Why: A plot carved out of a larger parcel must form part of a layout approved by the planning authority.</div></li>
+<li>Can you provide mutation register extracts (MR) for each transfer?<div class="sub">Why: Mutation entries reconcile the registered transfers with the revenue record.</div></li>
+<li>Can you provide parent deeds covering the title chain for the customary review period?<div class="sub">Why: The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.</div></li>
+<li>Can you provide latest property tax / land revenue paid receipts?<div class="sub">Why: Confirms the assessee of record and that no tax arrears attach to the property.</div></li>
+<li>Can you provide seller identity and authority to transfer?<div class="sub">Why: The person executing the transfer must be the person named in the title documents and must be competent to transfer.</div></li>
+<li>Can you provide survey sketch / Tippani / Akarband?<div class="sub">Why: Confirms the shape, boundaries and official extent of the survey number on the ground.</div></li>
+</ol>
+
+<h2>12. Recommended action plan</h2>
+<table><thead><tr><th>#</th><th>Group</th><th>Action</th><th>Because</th><th>Depends on</th></tr></thead><tbody>
+<tr><td>1</td><td>Resolve</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td>
+    <td>Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)</td><td class="sub">Readable copy of Arakere Final Sy.No.96.12.pdf</td></tr>
+<tr><td>2</td><td>Resolve</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td>
+    <td>WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)</td><td class="sub">Readable copy of WhatsApp Image 2026-10-14 at 15.42.27.jpeg</td></tr>
+<tr><td>3</td><td>Resolve</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td>
+    <td>yellapura site reg.pdf could not be analysed (needs manual review)</td><td class="sub">Readable copy of yellapura site reg.pdf</td></tr>
+<tr><td>4</td><td>Resolve</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.</td>
+    <td>TMPEC-260601398326.pdf could not be analysed (needs manual review)</td><td class="sub">Readable copy of TMPEC-260601398326.pdf</td></tr>
+<tr><td>5</td><td>Resolve</td><td>Verify the extracted values against the original document.</td>
+    <td>yellapura site reg.pdf: text recognition confidence is low</td><td class="sub">Complete, legible copy of yellapura site reg.pdf</td></tr>
+<tr><td>6</td><td>Collect documents required by law</td><td>Obtain the registered deed together with its certified copy from the Sub-Registrar.<div class="sub">Jurisdictional Sub-Registrar&#39;s office</div></td>
+    <td>Establishes how the current claimed owner acquired the property and is the starting point for the title chain.</td><td class="sub">—</td></tr>
+<tr><td>7</td><td>Collect documents required by law</td><td>Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.<div class="sub">Jurisdictional Sub-Registrar&#39;s office / Kaveri Online Services</div></td>
+    <td>Shows registered transactions, mortgages and charges recorded against the property for the certified period.</td><td class="sub">—</td></tr>
+<tr><td>8</td><td>Collect documents required by law</td><td>Obtain the khata certificate and extract standing in the seller&#39;s name.<div class="sub">BBMP / City Corporation / CMC / Gram Panchayat, as applicable</div></td>
+    <td>The khata records the person liable to pay property tax to the local body and is required for transfer and for utilities.</td><td class="sub">—</td></tr>
+<tr><td>9</td><td>Collect documents required by law</td><td>Obtain the MR extract corresponding to each transfer in the title chain.<div class="sub">Tahsildar&#39;s office / Bhoomi mutation register</div></td>
+    <td>Mutation entries reconcile the registered transfers with the revenue record.</td><td class="sub">—</td></tr>
+<tr><td>10</td><td>Collect documents required by law</td><td>Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.<div class="sub">The seller, or certified copies from the Sub-Registrar&#39;s office</div></td>
+    <td>The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.</td><td class="sub">—</td></tr>
+<tr><td>11</td><td>Collect documents required by law</td><td>Obtain tax-paid receipts for the current and preceding years in the seller&#39;s name.<div class="sub">BBMP / Municipal body / Gram Panchayat / Village Accountant</div></td>
+    <td>Confirms the assessee of record and that no tax arrears attach to the property.</td><td class="sub">—</td></tr>
+<tr><td>12</td><td>Collect documents required by law</td><td>Collect photo identification and reconcile the name, parentage and address against the title deed.<div class="sub">The seller; verified against title documents and photo identification</div></td>
+    <td>The person executing the transfer must be the person named in the title documents and must be competent to transfer.</td><td class="sub">—</td></tr>
+<tr><td>13</td><td>Collect documents needed to resolve discrepancies</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.<div class="sub">The seller, or the authority that issued the original record</div></td>
+    <td>Required to resolve: yellapura site reg.pdf could not be analysed (needs manual review)</td><td class="sub">—</td></tr>
+<tr><td>14</td><td>Collect documents needed to resolve discrepancies</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.<div class="sub">The seller, or the authority that issued the original record</div></td>
+    <td>Required to resolve: WhatsApp Image 2026-10-14 at 15.42.27.jpeg could not be analysed (needs manual review)</td><td class="sub">—</td></tr>
+<tr><td>15</td><td>Collect documents needed to resolve discrepancies</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.<div class="sub">The seller, or the authority that issued the original record</div></td>
+    <td>Required to resolve: TMPEC-260601398326.pdf could not be analysed (needs manual review)</td><td class="sub">—</td></tr>
+<tr><td>16</td><td>Collect documents needed to resolve discrepancies</td><td>Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.<div class="sub">The seller, or the authority that issued the original record</div></td>
+    <td>Required to resolve: Arakere Final Sy.No.96.12.pdf could not be analysed (needs manual review)</td><td class="sub">—</td></tr>
+<tr><td>17</td><td>Collect documents needed to resolve discrepancies</td><td>Verify the extracted values against the original document.<div class="sub">The seller, or the authority that issued the original record</div></td>
+    <td>Required to resolve: yellapura site reg.pdf: text recognition confidence is low</td><td class="sub">—</td></tr>
+<tr><td>18</td><td>Collect conditionally required documents</td><td>Obtain the approved layout plan and confirm the plot number appears in the released area.<div class="sub">BDA / BMRDA / local planning authority / Town Planning section of the local body</div></td>
+    <td>A plot carved out of a larger parcel must form part of a layout approved by the planning authority.</td><td class="sub">—</td></tr>
+<tr><td>19</td><td>Collect conditionally required documents</td><td>Apply for the Tippani / Akarband and the hissa sketch for the survey number.<div class="sub">Department of Survey, Settlement and Land Records</div></td>
+    <td>Confirms the shape, boundaries and official extent of the survey number on the ground.</td><td class="sub">—</td></tr>
+<tr><td>20</td><td>Perform external verification</td><td>Have an advocate run a search against the property identifiers and every owner in the title chain.<div class="sub">Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals</div></td>
+    <td>The supplied documents cannot show proceedings that the seller has not disclosed.</td><td class="sub">—</td></tr>
+<tr><td>21</td><td>Perform external verification</td><td>Pull the live record for the survey number or khata and compare it with the supplied extract.<div class="sub">Bhoomi portal (RTC), BBMP / municipal khata portal</div></td>
+    <td>Revenue records change; the supplied extract may be out of date.</td><td class="sub">—</td></tr>
+<tr><td>22</td><td>Perform external verification</td><td>Verify each registration number, date and book/volume entry against the official register.<div class="sub">Jurisdictional Sub-Registrar&#39;s office / Kaveri Online Services</div></td>
+    <td>A scanned or photocopied deed is not proof that the registration entry exists in the official record.</td><td class="sub">—</td></tr>
+<tr><td>23</td><td>Recommended for stronger due diligence</td><td>Arrange a survey against the sketch and confirm possession, access and the absence of encroachment.<div class="sub">A licensed surveyor; joint inspection with the seller</div></td>
+    <td>Documents describe boundaries and extent; only a measurement on site confirms them.</td><td class="sub">—</td></tr>
+<tr><td>24</td><td>Obtain professional review</td><td>Place the complete document set and this report before an advocate for a written title opinion.<div class="sub">An advocate practising property law in the relevant jurisdiction</div></td>
+    <td>This system organises and cross-checks evidence; it does not give a legal opinion on marketability of title.</td><td class="sub">—</td></tr>
+</tbody></table>
+
+<h2>13. Final assessment</h2>
+<div class="callout warn">
+  <p style="font-size:18px;margin:0 0 6px"><strong>Assessment Incomplete</strong></p>
+  <p style="margin:0">Overall risk level: <span class="badge medium">Medium</span>
+     &nbsp; Risk score: 140.38 (46.8/100 indicative)</p>
+</div>
+<p><strong>How this was determined:</strong>
+  The overall level is set by the most severe unresolved finding, not by an average. The numerical score (severity x evidence reliability x whether the issue is confirmed and still open) is shown alongside it as a secondary indicator only.</p>
+<ul><li>7 mandatory requirement(s) have not been met: Current title document (registered sale / gift / partition / settlement deed); Encumbrance Certificate covering the full review period; Khata certificate and khata extract in the seller&#39;s name.</li><li>7 statutory requirement(s) are still outstanding.</li><li>4 of 4 documents could not be analysed.</li></ul>
+<h3>Scope and limitations</h3>
+<ul><li>This classification reflects only the documents supplied in the case folder. No official record, court registry or external database has been checked, and no legal opinion has been given.</li><li>Only the documents present in the case folder at the time of this version were considered.</li><li>Scanned copies were read as supplied; no copy was compared with an original or with the official register.</li><li>Possession of a document is not evidence of ownership, and a revenue record is not conclusive evidence of title.</li><li>19 requirement(s) remain outstanding at this version.</li></ul>
+<div class="callout warn">This report is an evidence-based preliminary assessment produced by an automated system from the documents supplied in the case folder. It is not a title search, not an official verification, and not a legal opinion. No statement in it should be read as confirming that title is clear or marketable, that a document is genuine, that the property is free from encumbrances or litigation, or that the property is suitable for purchase. Material conclusions require an independent title investigation and the written opinion of a qualified property lawyer.</div>
+
+<h2>Change history for this version</h2>
+<ul><li><strong>No Material Change:</strong> No material change from the previous version.</li></ul>
+
+<footer>
+  Version 3 &middot; 2026-10-14T10:15:02Z &middot;
+  v1.0.0 &middot; ruleset ruleset-2026.10.1<br>
+  AI processing: offline (deterministic-rules) —
+  all processing local; no document content left this machine.<br>
+  OCR: macOS Vision (built in) —
+  available.
+  Jurisdiction rules: Karnataka
+  (not confirmed by local counsel).
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1255 @@
+# Document taxonomy + deterministic classification signals.
+#
+# strong      : phrases that are near-conclusive for the type (weight 4)
+# keywords    : supporting vocabulary (weight 1)
+# negative    : phrases that argue against the type (weight -4)
+# strong_kn   : Kannada equivalents of `strong`, merged in at load time
+# keywords_kn : Kannada equivalents of `keywords`, merged in at load time
+# label_kn    : the type's name in Kannada, used by the interface and the report
+# fields      : structured extractors to run for this type
+#
+# The Kannada terms were compiled from common Karnataka revenue and registration
+# usage. They should be reviewed by a Kannada-speaking property professional
+# before the output is relied on - see docs/LIMITATIONS.md.
+
+"ownership":
+  "sale_deed":
+    "label": "Sale Deed"
+    "strong":
+    - "deed of sale"
+    - "sale deed"
+    - "this sale deed"
+    - "absolute sale deed"
+    - "deed of absolute sale"
+    - "deed of absolute sale is made"
+    - "absolute sale"
+    "keywords":
+    - "vendor"
+    - "purchaser"
+    - "sale consideration"
+    - "conveys"
+    - "hereby sells"
+    - "schedule of property"
+    - "possession has been delivered"
+    "negative":
+    - "agreement to sell"
+    - "agreement of sale"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "area"
+    - "money"
+    - "parent_deed"
+    - "boundaries"
+    - "dates"
+    "strong_kn":
+    - "ಕ್ರಯ ಪತ್ರ"
+    - "ಕ್ರಯಪತ್ರ"
+    - "ಮಾರಾಟ ಪತ್ರ"
+    - "ಸಂಪೂರ್ಣ ಕ್ರಯ ಪತ್ರ"
+    "keywords_kn":
+    - "ಮಾರಾಟಗಾರ"
+    - "ಕ್ರಯದಾರ"
+    - "ಖರೀದಿದಾರ"
+    - "ವಿಕ್ರಯದಾರ"
+    - "ಕ್ರಯದ ಮೊತ್ತ"
+    - "ಸ್ವಾಧೀನ"
+    - "ಅನುಬಂಧ"
+    "label_kn": "ಕ್ರಯ ಪತ್ರ"
+  "title_deed":
+    "label": "Title Deed"
+    "strong":
+    - "title deed"
+    "keywords":
+    - "absolute owner"
+    - "title"
+    - "vested"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "area"
+    - "dates"
+    "label_kn": "ಹಕ್ಕು ಪತ್ರ"
+  "gift_deed":
+    "label": "Gift Deed"
+    "strong":
+    - "gift deed"
+    - "deed of gift"
+    "keywords":
+    - "donor"
+    - "donee"
+    - "out of natural love and affection"
+    - "without consideration"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "area"
+    - "dates"
+    - "parent_deed"
+    "strong_kn":
+    - "ದಾನ ಪತ್ರ"
+    - "ದಾನಪತ್ರ"
+    "keywords_kn":
+    - "ದಾನಿ"
+    - "ದಾನ ಸ್ವೀಕರಿಸಿದವರು"
+    - "ಪ್ರೀತಿ ಮತ್ತು ವಾತ್ಸಲ್ಯ"
+    "label_kn": "ದಾನ ಪತ್ರ"
+  "partition_deed":
+    "label": "Partition Deed"
+    "strong":
+    - "partition deed"
+    - "deed of partition"
+    - "this deed of partition"
+    "keywords":
+    - "co-parceners"
+    - "coparceners"
+    - "joint family"
+    - "shares allotted"
+    - "schedule a property"
+    - "severance of status"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "area"
+    - "dates"
+    - "parent_deed"
+    "strong_kn":
+    - "ಪಾಲು ಪತ್ರ"
+    - "ಪಾಲುಪತ್ರ"
+    - "ವಿಭಾಗ ಪತ್ರ"
+    - "ಭಾಗ ಪತ್ರ"
+    "keywords_kn":
+    - "ಕೂಡು ಕುಟುಂಬ"
+    - "ಅವಿಭಕ್ತ ಕುಟುಂಬ"
+    - "ಪಾಲುದಾರರು"
+    - "ಅನುಬಂಧ ಅ"
+    - "ಅನುಬಂಧ ಬ"
+    "label_kn": "ಪಾಲು ಪತ್ರ"
+  "settlement_deed":
+    "label": "Settlement Deed"
+    "strong":
+    - "settlement deed"
+    - "deed of settlement"
+    "keywords":
+    - "settlor"
+    - "settlee"
+    - "settles"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "dates"
+    "strong_kn":
+    - "ಸಂಧಾನ ಪತ್ರ"
+    - "ಇತ್ಯರ್ಥ ಪತ್ರ"
+    "keywords_kn":
+    - "ಇತ್ಯರ್ಥ"
+    "label_kn": "ಸಂಧಾನ ಪತ್ರ"
+  "release_deed":
+    "label": "Release Deed"
+    "strong":
+    - "release deed"
+    - "deed of release"
+    - "relinquishment deed"
+    "keywords":
+    - "releasor"
+    - "releasee"
+    - "relinquishes"
+    - "gives up all rights"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "dates"
+    - "mortgage"
+    "strong_kn":
+    - "ಬಿಡುಗಡೆ ಪತ್ರ"
+    - "ಹಕ್ಕು ಬಿಡುಗಡೆ ಪತ್ರ"
+    - "ಹಕ್ಕು ಬಿಡುಗಡೆಪತ್ರ"
+    "keywords_kn":
+    - "ಹಕ್ಕು ತ್ಯಜಿಸು"
+    "label_kn": "ಹಕ್ಕು ಬಿಡುಗಡೆ ಪತ್ರ"
+  "exchange_deed":
+    "label": "Exchange Deed"
+    "strong":
+    - "exchange deed"
+    - "deed of exchange"
+    "keywords":
+    - "exchanged"
+    - "in lieu of"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "dates"
+    "strong_kn":
+    - "ವಿನಿಮಯ ಪತ್ರ"
+    "keywords_kn":
+    - "ವಿನಿಮಯ"
+    "label_kn": "ವಿನಿಮಯ ಪತ್ರ"
+  "conveyance_deed":
+    "label": "Conveyance Deed"
+    "strong":
+    - "conveyance deed"
+    - "deed of conveyance"
+    "keywords":
+    - "conveys"
+    - "builder"
+    - "promoter"
+    - "undivided share"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "area"
+    - "money"
+    - "dates"
+    "strong_kn":
+    - "ವರ್ಗಾವಣೆ ಪತ್ರ"
+    - "ಹಸ್ತಾಂತರ ಪತ್ರ"
+    "keywords_kn":
+    - "ಬಿಲ್ಡರ್"
+    - "ಅವಿಭಜಿತ ಪಾಲು"
+    "label_kn": "ವರ್ಗಾವಣೆ ಪತ್ರ"
+  "mother_deed":
+    "label": "Mother Deed / Parent Document"
+    "strong":
+    - "mother deed"
+    - "parent document"
+    - "parent deed"
+    "keywords":
+    - "earlier title"
+    - "predecessor in title"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "dates"
+    "strong_kn":
+    - "ಮೂಲ ಪತ್ರ"
+    - "ಮಾತೃ ಪತ್ರ"
+    - "ಪೂರ್ವದ ದಾಖಲೆ"
+    "keywords_kn":
+    - "ಹಿಂದಿನ ಹಕ್ಕು"
+    "label_kn": "ಮೂಲ ಪತ್ರ"
+  "inheritance_document":
+    "label": "Inheritance Document"
+    "strong":
+    - "succession certificate"
+    - "legal heir certificate"
+    - "will deed"
+    - "last will and testament"
+    - "probate"
+    "keywords":
+    - "testator"
+    - "bequeath"
+    - "legal heirs"
+    - "deceased"
+    "fields":
+    - "parties"
+    - "dates"
+    - "property"
+    "strong_kn":
+    - "ಮರಣ ಶಾಸನ"
+    - "ವಿಲ್"
+    - "ಉಯಿಲು"
+    - "ವಾರಸುದಾರಿಕೆ ಪ್ರಮಾಣ ಪತ್ರ"
+    "keywords_kn":
+    - "ಮೃತ"
+    - "ವಾರಸುದಾರರು"
+    - "ಉತ್ತರಾಧಿಕಾರ"
+    "label_kn": "ಉತ್ತರಾಧಿಕಾರ ದಾಖಲೆ"
+  "court_order_ownership":
+    "label": "Court Order Affecting Ownership"
+    "strong":
+    - "decree"
+    - "in the court of"
+    - "o.s. no"
+    - "judgment and decree"
+    "keywords":
+    - "plaintiff"
+    - "defendant"
+    - "suit"
+    - "hereby decreed"
+    "fields":
+    - "parties"
+    - "dates"
+    - "litigation"
+    - "property"
+    "strong_kn":
+    - "ಡಿಕ್ರಿ"
+    - "ತೀರ್ಪು ಮತ್ತು ಡಿಕ್ರಿ"
+    "keywords_kn":
+    - "ವಾದಿ"
+    - "ಪ್ರತಿವಾದಿ"
+    - "ದಾವೆ"
+    - "ನ್ಯಾಯಾಲಯ"
+    "label_kn": "ಮಾಲೀಕತ್ವದ ನ್ಯಾಯಾಲಯ ಆದೇಶ"
+"revenue":
+  "rtc_pahani":
+    "label": "RTC / Pahani (Record of Rights, Tenancy and Crops)"
+    "strong":
+    - "record of rights"
+    - "pahani"
+    - "r.t.c"
+    - "rtc"
+    - "tenancy and crops"
+    "keywords":
+    - "khatedar"
+    - "kharab"
+    - "crop"
+    - "soil"
+    - "hissa"
+    - "land revenue"
+    - "village accountant"
+    "fields":
+    - "property"
+    - "area"
+    - "owner_record"
+    - "land_classification"
+    - "dates"
+    "strong_kn":
+    - "ಪಹಣಿ"
+    - "ಪಹಣಿ ಪತ್ರಿಕೆ"
+    - "ಹಕ್ಕು, ಬಾಧ್ಯತೆ ಮತ್ತು ಬೆಳೆಗಳ ದಾಖಲೆ"
+    - "ಆರ್.ಟಿ.ಸಿ"
+    - "ಭೂಮಿ"
+    "keywords_kn":
+    - "ಖಾತೆದಾರ"
+    - "ಖರಾಬು"
+    - "ಬೆಳೆ"
+    - "ಮಣ್ಣು"
+    - "ಹಿಸ್ಸಾ"
+    - "ಭೂ ಕಂದಾಯ"
+    - "ಗ್ರಾಮ ಲೆಕ್ಕಿಗ"
+    "label_kn": "ಪಹಣಿ (ಆರ್‌ಟಿಸಿ)"
+  "mutation_extract":
+    "label": "Mutation Register Extract (MR)"
+    "strong":
+    - "mutation register"
+    - "mutation extract"
+    - "m.r. no"
+    - "mutation no"
+    "keywords":
+    - "mutated"
+    - "khata transferred"
+    - "tahsildar"
+    "fields":
+    - "parties"
+    - "property"
+    - "dates"
+    - "mutation"
+    "strong_kn":
+    - "ಮ್ಯುಟೇಶನ್"
+    - "ಮ್ಯೂಟೇಶನ್"
+    - "ವರ್ಗಾವಣೆ ದಾಖಲೆ"
+    - "ಎಂ.ಆರ್"
+    "keywords_kn":
+    - "ಖಾತೆ ವರ್ಗಾವಣೆ"
+    - "ತಹಶೀಲ್ದಾರ್"
+    "label_kn": "ಮ್ಯುಟೇಶನ್ ಉತಾರ"
+  "mutation_order":
+    "label": "Mutation Order"
+    "strong":
+    - "mutation order"
+    - "order of mutation"
+    "keywords":
+    - "tahsildar"
+    - "ordered that the khata"
+    - "mutation is hereby"
+    "fields":
+    - "parties"
+    - "property"
+    - "dates"
+    - "mutation"
+    "strong_kn":
+    - "ವರ್ಗಾವಣೆ ಆದೇಶ"
+    - "ಮ್ಯುಟೇಶನ್ ಆದೇಶ"
+    "keywords_kn":
+    - "ತಹಶೀಲ್ದಾರ್"
+    - "ಆದೇಶಿಸಲಾಗಿದೆ"
+    "label_kn": "ವರ್ಗಾವಣೆ ಆದೇಶ"
+  "survey_record":
+    "label": "Survey Record / Sketch"
+    "strong":
+    - "survey sketch"
+    - "akarband"
+    - "atlas"
+    - "survey record"
+    - "hissa survey"
+    "keywords":
+    - "assistant director of land records"
+    - "survey number"
+    - "measurement"
+    "fields":
+    - "property"
+    - "area"
+    - "boundaries"
+    "strong_kn":
+    - "ಸರ್ವೇ ನಕ್ಷೆ"
+    - "ಆಕಾರ್ ಬಂದ್"
+    - "ಆಕಾರಬಂದ್"
+    - "ಹಿಸ್ಸಾ ಸರ್ವೇ"
+    "keywords_kn":
+    - "ಭೂ ದಾಖಲೆಗಳ ಇಲಾಖೆ"
+    - "ಅಳತೆ"
+    "label_kn": "ಸರ್ವೇ ದಾಖಲೆ"
+  "village_map":
+    "label": "Village Map"
+    "strong":
+    - "village map"
+    - "cadastral map"
+    "keywords":
+    - "scale"
+    - "survey settlement"
+    "fields":
+    - "property"
+    "strong_kn":
+    - "ಗ್ರಾಮ ನಕ್ಷೆ"
+    "keywords_kn":
+    - "ನಕ್ಷೆ"
+    "label_kn": "ಗ್ರಾಮ ನಕ್ಷೆ"
+  "tippani":
+    "label": "Tippani"
+    "strong":
+    - "tippani"
+    - "tippan"
+    "keywords":
+    - "survey department"
+    - "sketch"
+    "fields":
+    - "property"
+    - "boundaries"
+    "strong_kn":
+    - "ಟಿಪ್ಪಣಿ"
+    "keywords_kn":
+    - "ಸರ್ವೇ ಇಲಾಖೆ"
+    "label_kn": "ಟಿಪ್ಪಣಿ"
+  "phodi_record":
+    "label": "Phodi / Subdivision Record"
+    "strong":
+    - "phodi"
+    - "podi"
+    - "subdivision record"
+    - "hissa phodi"
+    "keywords":
+    - "subdivided"
+    - "sub division"
+    - "new survey numbers"
+    "fields":
+    - "property"
+    - "area"
+    "strong_kn":
+    - "ಪೋಡಿ"
+    - "ಹಿಸ್ಸಾ ಪೋಡಿ"
+    - "ಪೋಡಿ ದುರಸ್ತಿ"
+    "keywords_kn":
+    - "ಉಪ ವಿಭಾಗ"
+    "label_kn": "ಪೋಡಿ ದಾಖಲೆ"
+  "land_conversion_order":
+    "label": "Land Conversion Order (DC Conversion)"
+    "strong":
+    - "conversion order"
+    - "change of land use"
+    - "converted for non-agricultural"
+    "keywords":
+    - "deputy commissioner"
+    - "non-agricultural purpose"
+    - "conversion fee"
+    - "section 95"
+    "fields":
+    - "property"
+    - "area"
+    - "approval"
+    - "dates"
+    "strong_kn":
+    - "ಭೂ ಪರಿವರ್ತನೆ ಆದೇಶ"
+    - "ಭೂಪರಿವರ್ತನೆ"
+    - "ಪರಿವರ್ತನೆ ಆದೇಶ"
+    "keywords_kn":
+    - "ಜಿಲ್ಲಾಧಿಕಾರಿ"
+    - "ಕೃಷಿಯೇತರ"
+    - "ಪರಿವರ್ತನೆ ಶುಲ್ಕ"
+    "label_kn": "ಭೂ ಪರಿವರ್ತನೆ ಆದೇಶ"
+  "land_revenue_receipt":
+    "label": "Land Revenue Receipt"
+    "strong":
+    - "land revenue receipt"
+    - "revenue paid"
+    "keywords":
+    - "receipt no"
+    - "village accountant"
+    - "amount paid"
+    "fields":
+    - "property"
+    - "money"
+    - "dates"
+    "strong_kn":
+    - "ಭೂ ಕಂದಾಯ ರಸೀದಿ"
+    - "ಕಂದಾಯ ರಸೀದಿ"
+    "keywords_kn":
+    - "ರಸೀದಿ ಸಂಖ್ಯೆ"
+    - "ಗ್ರಾಮ ಲೆಕ್ಕಿಗ"
+    "label_kn": "ಭೂ ಕಂದಾಯ ರಸೀದಿ"
+  "property_tax_receipt":
+    "label": "Property Tax Receipt"
+    "strong":
+    - "property tax"
+    - "tax paid receipt"
+    - "khata and tax"
+    "keywords":
+    - "assessment no"
+    - "receipt no"
+    - "financial year"
+    - "municipal"
+    - "panchayat"
+    - "corporation"
+    "fields":
+    - "property"
+    - "money"
+    - "dates"
+    - "tax"
+    "strong_kn":
+    - "ಆಸ್ತಿ ತೆರಿಗೆ"
+    - "ತೆರಿಗೆ ಪಾವತಿ ರಸೀದಿ"
+    - "ಕರ ಪಾವತಿ ರಸೀದಿ"
+    "keywords_kn":
+    - "ರಸೀದಿ ಸಂಖ್ಯೆ"
+    - "ಆರ್ಥಿಕ ವರ್ಷ"
+    - "ಗ್ರಾಮ ಪಂಚಾಯತ್"
+    - "ನಗರ ಪಾಲಿಕೆ"
+    "label_kn": "ಆಸ್ತಿ ತೆರಿಗೆ ರಸೀದಿ"
+  "khata_certificate":
+    "label": "Khata Certificate"
+    "strong":
+    - "khata certificate"
+    - "katha certificate"
+    "keywords":
+    - "assessment"
+    - "standing in the name of"
+    - "municipal corporation"
+    "fields":
+    - "property"
+    - "owner_record"
+    - "dates"
+    "strong_kn":
+    - "ಖಾತಾ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ಖಾತೆ ಪ್ರಮಾಣ ಪತ್ರ"
+    "keywords_kn":
+    - "ಹೆಸರಿನಲ್ಲಿದೆ"
+    - "ಪಂಚಾಯತ್"
+    "label_kn": "ಖಾತಾ ಪ್ರಮಾಣ ಪತ್ರ"
+  "khata_extract":
+    "label": "Khata Extract"
+    "strong":
+    - "khata extract"
+    - "katha extract"
+    "keywords":
+    - "assessment register"
+    - "built up area"
+    - "annual value"
+    "fields":
+    - "property"
+    - "area"
+    - "owner_record"
+    - "dates"
+    "strong_kn":
+    - "ಖಾತಾ ಉತಾರ"
+    - "ಖಾತೆ ಉತಾರ"
+    "keywords_kn":
+    - "ನಿರ್ಧಾರಿತ ಮೌಲ್ಯ"
+    - "ಕಟ್ಟಡ ವಿಸ್ತೀರ್ಣ"
+    "label_kn": "ಖಾತಾ ಉತಾರ"
+  "encumbrance_certificate":
+    "label": "Encumbrance Certificate (Form 15 / 16)"
+    "strong":
+    - "encumbrance certificate"
+    - "form no. 15"
+    - "form no.15"
+    - "form 15"
+    - "form no. 16"
+    "keywords":
+    - "sub-registrar"
+    - "period from"
+    - "entries relating to"
+    - "no encumbrance"
+    - "nil encumbrance"
+    "fields":
+    - "property"
+    - "ec_period"
+    - "ec_entries"
+    - "dates"
+    "strong_kn":
+    - "ಋಣಭಾರ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ಋಣ ಭಾರ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ನಮೂನೆ ೧೫"
+    - "ನಮೂನೆ 15"
+    "keywords_kn":
+    - "ಉಪ ನೋಂದಣಾಧಿಕಾರಿ"
+    - "ಅವಧಿ"
+    - "ಯಾವುದೇ ಋಣಭಾರ"
+    - "ನಮೂದು"
+    "label_kn": "ಋಣಭಾರ ಪ್ರಮಾಣ ಪತ್ರ (ನಮೂನೆ 15)"
+"registration_legal":
+  "sale_agreement":
+    "label": "Agreement of Sale"
+    "strong":
+    - "agreement of sale"
+    - "agreement to sell"
+    - "sale agreement"
+    "keywords":
+    - "advance amount"
+    - "earnest money"
+    - "time is the essence"
+    - "shall execute the sale deed"
+    "negative":
+    - "this sale deed"
+    "fields":
+    - "parties"
+    - "property"
+    - "money"
+    - "dates"
+    "strong_kn":
+    - "ಕ್ರಯ ಕರಾರು"
+    - "ಮಾರಾಟ ಕರಾರು"
+    - "ಒಪ್ಪಂದ ಪತ್ರ"
+    "keywords_kn":
+    - "ಮುಂಗಡ"
+    - "ಬಾಬ್ತು"
+    "label_kn": "ಕ್ರಯ ಕರಾರು"
+  "registered_agreement":
+    "label": "Registered Agreement"
+    "strong":
+    - "registered agreement"
+    "keywords":
+    - "sub-registrar"
+    - "registered as document"
+    "fields":
+    - "parties"
+    - "registration"
+    - "dates"
+    "label_kn": "ನೋಂದಾಯಿತ ಕರಾರು"
+  "power_of_attorney":
+    "label": "Power of Attorney"
+    "strong":
+    - "power of attorney"
+    - "general power of attorney"
+    - "special power of attorney"
+    - "gpa"
+    "keywords":
+    - "attorney holder"
+    - "principal"
+    - "hereby appoint"
+    - "irrevocable"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "dates"
+    - "poa"
+    "strong_kn":
+    - "ಮುಖ್ತ್ಯಾರ್ ಪತ್ರ"
+    - "ಅಧಿಕಾರ ಪತ್ರ"
+    - "ಜಿ.ಪಿ.ಎ"
+    "keywords_kn":
+    - "ಮುಖ್ತ್ಯಾರ್ದಾರ"
+    - "ನೇಮಕ"
+    "label_kn": "ಮುಖ್ತ್ಯಾರ್ ಪತ್ರ"
+  "relinquishment_deed":
+    "label": "Relinquishment Deed"
+    "strong":
+    - "relinquishment deed"
+    - "deed of relinquishment"
+    "keywords":
+    - "relinquishes"
+    - "share in the joint family property"
+    "fields":
+    - "parties"
+    - "registration"
+    - "dates"
+    "label_kn": "ಹಕ್ಕು ತ್ಯಾಗ ಪತ್ರ"
+  "legal_heir_certificate":
+    "label": "Legal Heir Certificate"
+    "strong":
+    - "legal heir certificate"
+    - "family member certificate"
+    "keywords":
+    - "tahsildar"
+    - "surviving members"
+    - "deceased"
+    "fields":
+    - "parties"
+    - "dates"
+    "strong_kn":
+    - "ವಾರಸುದಾರರ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ಕುಟುಂಬ ಸದಸ್ಯರ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ವಂಶವೃಕ್ಷ"
+    "keywords_kn":
+    - "ತಹಶೀಲ್ದಾರ್"
+    - "ಮೃತ"
+    "label_kn": "ವಾರಸುದಾರರ ಪ್ರಮಾಣ ಪತ್ರ"
+  "succession_certificate":
+    "label": "Succession Certificate"
+    "strong":
+    - "succession certificate"
+    "keywords":
+    - "civil court"
+    - "debts and securities"
+    "fields":
+    - "parties"
+    - "dates"
+    "label_kn": "ಉತ್ತರಾಧಿಕಾರ ಪ್ರಮಾಣ ಪತ್ರ"
+  "court_judgment":
+    "label": "Court Judgment / Decree"
+    "strong":
+    - "judgment"
+    - "decree"
+    - "in the court of the"
+    - "o.s.no"
+    - "w.p. no"
+    "keywords":
+    - "plaintiff"
+    - "defendant"
+    - "hereby decreed"
+    - "dismissed"
+    - "stay order"
+    - "injunction"
+    "fields":
+    - "parties"
+    - "dates"
+    - "litigation"
+    "strong_kn":
+    - "ತೀರ್ಪು"
+    - "ನ್ಯಾಯಾಲಯದಲ್ಲಿ"
+    "keywords_kn":
+    - "ವಾದಿ"
+    - "ಪ್ರತಿವಾದಿ"
+    - "ತಡೆಯಾಜ್ಞೆ"
+    "label_kn": "ನ್ಯಾಯಾಲಯದ ತೀರ್ಪು / ಡಿಕ್ರಿ"
+  "litigation_notice":
+    "label": "Litigation / Legal Notice"
+    "strong":
+    - "legal notice"
+    - "notice under section"
+    - "caveat"
+    "keywords":
+    - "advocate"
+    - "my client"
+    - "forthwith"
+    - "suit will be filed"
+    "fields":
+    - "parties"
+    - "dates"
+    - "litigation"
+    "strong_kn":
+    - "ಕಾನೂನು ನೋಟೀಸು"
+    - "ನೋಟೀಸ್"
+    "keywords_kn":
+    - "ವಕೀಲರು"
+    - "ನನ್ನ ಕಕ್ಷಿದಾರ"
+    "label_kn": "ಕಾನೂನು ನೋಟೀಸು"
+  "government_notice":
+    "label": "Government Notice"
+    "strong":
+    - "government notification"
+    - "public notice"
+    - "show cause notice"
+    "keywords":
+    - "gazette"
+    - "competent authority"
+    - "hereby notified"
+    "fields":
+    - "dates"
+    - "property"
+    - "litigation"
+    "strong_kn":
+    - "ಸರ್ಕಾರಿ ಅಧಿಸೂಚನೆ"
+    - "ಸಾರ್ವಜನಿಕ ಪ್ರಕಟಣೆ"
+    "keywords_kn":
+    - "ಗೆಜೆಟ್"
+    - "ಸಕ್ಷಮ ಪ್ರಾಧಿಕಾರ"
+    "label_kn": "ಸರ್ಕಾರಿ ಅಧಿಸೂಚನೆ"
+  "acquisition_notice":
+    "label": "Land Acquisition Notice"
+    "strong":
+    - "land acquisition"
+    - "section 4(1) notification"
+    - "preliminary notification"
+    - "4(1) notification"
+    "keywords":
+    - "acquisition"
+    - "public purpose"
+    - "special land acquisition officer"
+    - "khb"
+    - "bda"
+    - "nhai"
+    "fields":
+    - "dates"
+    - "property"
+    - "litigation"
+    "strong_kn":
+    - "ಭೂ ಸ್ವಾಧೀನ"
+    - "ಪ್ರಾಥಮಿಕ ಅಧಿಸೂಚನೆ"
+    "keywords_kn":
+    - "ಸ್ವಾಧೀನ"
+    - "ಸಾರ್ವಜನಿಕ ಉದ್ದೇಶ"
+    "label_kn": "ಭೂ ಸ್ವಾಧೀನ ಅಧಿಸೂಚನೆ"
+  "easement_document":
+    "label": "Easement / Right of Way Document"
+    "strong":
+    - "easement"
+    - "right of way"
+    - "easementary right"
+    "keywords":
+    - "access"
+    - "pathway"
+    - "ingress and egress"
+    "fields":
+    - "parties"
+    - "property"
+    - "dates"
+    "label_kn": "ದಾರಿ ಹಕ್ಕು ದಾಖಲೆ"
+"building":
+  "approved_building_plan":
+    "label": "Approved Building Plan"
+    "strong":
+    - "approved plan"
+    - "building plan approval"
+    - "plan sanction"
+    "keywords":
+    - "setback"
+    - "far"
+    - "floor area ratio"
+    - "ground coverage"
+    - "sanction no"
+    "fields":
+    - "property"
+    - "area"
+    - "approval"
+    - "dates"
+    "strong_kn":
+    - "ಮಂಜೂರಾದ ನಕ್ಷೆ"
+    - "ಕಟ್ಟಡ ನಕ್ಷೆ ಮಂಜೂರಾತಿ"
+    "keywords_kn":
+    - "ಸೆಟ್‌ಬ್ಯಾಕ್"
+    - "ಮಂಜೂರಾತಿ ಸಂಖ್ಯೆ"
+    "label_kn": "ಮಂಜೂರಾದ ಕಟ್ಟಡ ನಕ್ಷೆ"
+  "building_permit":
+    "label": "Building Licence / Permit"
+    "strong":
+    - "building licence"
+    - "building license"
+    - "building permit"
+    - "licence for construction"
+    "keywords":
+    - "sanctioned"
+    - "validity"
+    - "commencement"
+    - "bbmp"
+    - "corporation"
+    "fields":
+    - "property"
+    - "approval"
+    - "dates"
+    "strong_kn":
+    - "ಕಟ್ಟಡ ಪರವಾನಗಿ"
+    "keywords_kn":
+    - "ಮಂಜೂರು"
+    - "ಮಾನ್ಯತೆ"
+    "label_kn": "ಕಟ್ಟಡ ಪರವಾನಗಿ"
+  "commencement_certificate":
+    "label": "Commencement Certificate"
+    "strong":
+    - "commencement certificate"
+    "keywords":
+    - "commence construction"
+    - "permitted to commence"
+    "fields":
+    - "property"
+    - "approval"
+    - "dates"
+    "label_kn": "ಕಾಮಗಾರಿ ಆರಂಭ ಪ್ರಮಾಣ ಪತ್ರ"
+  "completion_certificate":
+    "label": "Completion Certificate"
+    "strong":
+    - "completion certificate"
+    "keywords":
+    - "construction completed"
+    - "as per the approved plan"
+    "fields":
+    - "property"
+    - "approval"
+    - "dates"
+    "strong_kn":
+    - "ಪೂರ್ಣಗೊಂಡ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ಕಾಮಗಾರಿ ಪೂರ್ಣ ಪ್ರಮಾಣ ಪತ್ರ"
+    "keywords_kn":
+    - "ಪೂರ್ಣಗೊಂಡಿದೆ"
+    "label_kn": "ಕಾಮಗಾರಿ ಪೂರ್ಣ ಪ್ರಮಾಣ ಪತ್ರ"
+  "occupancy_certificate":
+    "label": "Occupancy Certificate"
+    "strong":
+    - "occupancy certificate"
+    - "oc no"
+    "keywords":
+    - "fit for occupation"
+    - "permitted to occupy"
+    "fields":
+    - "property"
+    - "approval"
+    - "dates"
+    "strong_kn":
+    - "ಸ್ವಾಧೀನ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ವಾಸಯೋಗ್ಯ ಪ್ರಮಾಣ ಪತ್ರ"
+    "keywords_kn":
+    - "ವಾಸಕ್ಕೆ ಯೋಗ್ಯ"
+    "label_kn": "ಸ್ವಾಧೀನ ಪ್ರಮಾಣ ಪತ್ರ"
+  "apartment_deed":
+    "label": "Apartment / Flat Ownership Document"
+    "strong":
+    - "deed of apartment"
+    - "declaration under the karnataka apartment ownership act"
+    - "apartment ownership"
+    "keywords":
+    - "undivided share"
+    - "common areas"
+    - "flat no"
+    - "super built up"
+    "fields":
+    - "parties"
+    - "property"
+    - "area"
+    - "uds"
+    - "dates"
+    "label_kn": "ಅಪಾರ್ಟ್‌ಮೆಂಟ್ ಮಾಲೀಕತ್ವ ಪತ್ರ"
+  "association_document":
+    "label": "Owners' Association Document"
+    "strong":
+    - "association of apartment owners"
+    - "owners association"
+    - "bye-laws"
+    "keywords":
+    - "registered under the societies"
+    - "maintenance"
+    "fields":
+    - "dates"
+    - "parties"
+    "label_kn": "ಮಾಲೀಕರ ಸಂಘದ ದಾಖಲೆ"
+  "uds_details":
+    "label": "Undivided Share (UDS) Details"
+    "strong":
+    - "undivided share"
+    - "uds"
+    "keywords":
+    - "proportionate"
+    - "land share"
+    "fields":
+    - "property"
+    - "area"
+    - "uds"
+    "label_kn": "ಅವಿಭಜಿತ ಪಾಲು (ಯುಡಿಎಸ್) ವಿವರ"
+  "rera_registration":
+    "label": "RERA Registration"
+    "strong":
+    - "rera"
+    - "real estate regulatory authority"
+    - "prm/ka/rera"
+    "keywords":
+    - "registration no"
+    - "promoter"
+    - "project registered"
+    - "validity"
+    "fields":
+    - "approval"
+    - "dates"
+    - "property"
+    "label_kn": "ರೇರಾ ನೋಂದಣಿ"
+  "builder_agreement":
+    "label": "Builder / Developer Agreement"
+    "strong":
+    - "joint development agreement"
+    - "development agreement"
+    - "construction agreement"
+    - "builder agreement"
+    "keywords":
+    - "developer"
+    - "landowner share"
+    - "developer share"
+    - "jda"
+    "fields":
+    - "parties"
+    - "property"
+    - "area"
+    - "money"
+    - "dates"
+    "label_kn": "ಅಭಿವೃದ್ಧಿ ಒಪ್ಪಂದ"
+  "approved_layout_plan":
+    "label": "Approved Layout Plan"
+    "strong":
+    - "layout plan"
+    - "released plan"
+    - "layout approval"
+    - "sanctioned layout"
+    - "revised layout plan"
+    - "approved layout plan"
+    "keywords":
+    - "town planner"
+    - "tuda"
+    - "bda"
+    - "bmrda"
+    - "planning authority"
+    - "drg no"
+    - "drawing no"
+    - "civic amenity"
+    - "c.a. site"
+    - "open space"
+    - "approved layout"
+    - "release order"
+    - "kharab"
+    - "sites formed"
+    - "layout formed"
+    "strong_kn":
+    - "ವಿನ್ಯಾಸ ನಕ್ಷೆ"
+    - "ಲೇಔಟ್ ನಕ್ಷೆ"
+    - "ಬಡಾವಣೆ ನಕ್ಷೆ"
+    - "ಮಂಜೂರಾದ ವಿನ್ಯಾಸ"
+    "keywords_kn":
+    - "ನಗರ ಯೋಜನೆ"
+    - "ಯೋಜನಾ ಪ್ರಾಧಿಕಾರ"
+    - "ನಿವೇಶನ"
+    - "ಉದ್ಯಾನ"
+    - "ಬಿಡುಗಡೆ ಆದೇಶ"
+    "label_kn": "ಮಂಜೂರಾದ ವಿನ್ಯಾಸ ನಕ್ಷೆ (ಲೇಔಟ್)"
+    "fields":
+    - "property"
+    - "area"
+    - "approval"
+    - "dates"
+"financial":
+  "loan_sanction_letter":
+    "label": "Loan Sanction Letter"
+    "strong":
+    - "sanction letter"
+    - "loan sanction"
+    - "sanctioned a loan"
+    "keywords":
+    - "emi"
+    - "rate of interest"
+    - "tenure"
+    - "disbursement"
+    - "bank"
+    "fields":
+    - "parties"
+    - "money"
+    - "dates"
+    - "loan"
+    "strong_kn":
+    - "ಸಾಲ ಮಂಜೂರಾತಿ ಪತ್ರ"
+    "keywords_kn":
+    - "ಬಡ್ಡಿ ದರ"
+    - "ಕಂತು"
+    - "ಬ್ಯಾಂಕ್"
+    "label_kn": "ಸಾಲ ಮಂಜೂರಾತಿ ಪತ್ರ"
+  "mortgage_deed":
+    "label": "Mortgage Deed"
+    "strong":
+    - "mortgage deed"
+    - "deed of mortgage"
+    - "deed of simple mortgage"
+    - "deposit of title deeds"
+    - "equitable mortgage"
+    - "simple mortgage"
+    "keywords":
+    - "mortgagor"
+    - "mortgagee"
+    - "charge created"
+    - "security"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "money"
+    - "dates"
+    - "mortgage"
+    "strong_kn":
+    - "ಅಡಮಾನ ಪತ್ರ"
+    - "ಅಡಮಾನಪತ್ರ"
+    - "ಸರಳ ಅಡಮಾನ ಪತ್ರ"
+    "keywords_kn":
+    - "ಅಡಮಾನದಾರ"
+    - "ಅಡಮಾನ ಸ್ವೀಕರಿಸಿದವರು"
+    - "ಬ್ಯಾಂಕ್"
+    - "ಋಣ"
+    "label_kn": "ಅಡಮಾನ ಪತ್ರ"
+  "loan_closure_certificate":
+    "label": "Loan Closure / No-Dues Certificate"
+    "strong":
+    - "no dues certificate"
+    - "loan closure"
+    - "loan closed"
+    - "foreclosure letter"
+    - "no objection certificate for release"
+    "keywords":
+    - "fully repaid"
+    - "account closed"
+    - "nil outstanding"
+    "fields":
+    - "parties"
+    - "money"
+    - "dates"
+    - "loan"
+    "strong_kn":
+    - "ಸಾಲ ಮುಕ್ತಾಯ ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ಬಾಕಿ ಇಲ್ಲದ ಪ್ರಮಾಣ ಪತ್ರ"
+    "keywords_kn":
+    - "ಸಂಪೂರ್ಣ ಮರುಪಾವತಿ"
+    - "ಖಾತೆ ಮುಕ್ತಾಯ"
+    "label_kn": "ಸಾಲ ಮುಕ್ತಾಯ ಪ್ರಮಾಣ ಪತ್ರ"
+  "bank_release_deed":
+    "label": "Bank Release / Reconveyance Deed"
+    "strong":
+    - "release deed executed by the bank"
+    - "reconveyance"
+    - "deed of release of mortgage"
+    - "discharge of mortgage"
+    "keywords":
+    - "mortgage released"
+    - "title deeds returned"
+    - "charge satisfied"
+    "fields":
+    - "parties"
+    - "registration"
+    - "property"
+    - "dates"
+    - "mortgage"
+    "strong_kn":
+    - "ಅಡಮಾನ ಬಿಡುಗಡೆ ಪತ್ರ"
+    - "ಅಡಮಾನ ವಿಮೋಚನೆ"
+    "keywords_kn":
+    - "ಅಡಮಾನ ಬಿಡುಗಡೆ"
+    "label_kn": "ಅಡಮಾನ ಬಿಡುಗಡೆ ಪತ್ರ"
+  "tax_payment_receipt":
+    "label": "Tax Payment Receipt"
+    "strong":
+    - "tax paid"
+    - "payment receipt"
+    "keywords":
+    - "receipt no"
+    - "amount"
+    - "financial year"
+    "fields":
+    - "money"
+    - "dates"
+    - "tax"
+    "label_kn": "ತೆರಿಗೆ ಪಾವತಿ ರಸೀದಿ"
+  "dues_statement":
+    "label": "Outstanding Dues Statement"
+    "strong":
+    - "statement of dues"
+    - "outstanding dues"
+    - "arrears"
+    "keywords":
+    - "balance payable"
+    - "as on"
+    "fields":
+    - "money"
+    - "dates"
+    "label_kn": "ಬಾಕಿ ವಿವರ ಪಟ್ಟಿ"
+  "lien_document":
+    "label": "Lien / Charge Document"
+    "strong":
+    - "lien"
+    - "charge over the property"
+    - "attachment order"
+    "keywords":
+    - "attached"
+    - "prohibitory order"
+    "fields":
+    - "parties"
+    - "property"
+    - "dates"
+    - "mortgage"
+    "label_kn": "ಹಕ್ಕುಬಾಧ್ಯತೆ ದಾಖಲೆ"
+"identity":
+  "aadhaar":
+    "label": "Aadhaar (Identity Document)"
+    "strong":
+    - "aadhaar"
+    - "unique identification authority"
+    - "uidai"
+    "keywords":
+    - "enrolment"
+    - "vid"
+    "fields":
+    - "identity"
+    "label_kn": "ಆಧಾರ್"
+  "pan_card":
+    "label": "PAN Document"
+    "strong":
+    - "permanent account number"
+    - "income tax department"
+    - "pan card"
+    "keywords":
+    - "signature"
+    "fields":
+    - "identity"
+    "label_kn": "ಪ್ಯಾನ್ ದಾಖಲೆ"
+  "identity_document":
+    "label": "Identity Document"
+    "strong":
+    - "passport"
+    - "driving licence"
+    - "voter id"
+    - "election commission of india"
+    "keywords":
+    - "date of birth"
+    - "issued"
+    "fields":
+    - "identity"
+    "strong_kn":
+    - "ಆಧಾರ್"
+    - "ಚುನಾವಣಾ ಗುರುತಿನ ಚೀಟಿ"
+    - "ಚಾಲನಾ ಪರವಾನಗಿ"
+    "keywords_kn":
+    - "ಜನ್ಮ ದಿನಾಂಕ"
+    "label_kn": "ಗುರುತಿನ ದಾಖಲೆ"
+  "photograph":
+    "label": "Photograph"
+    "strong": []
+    "keywords":
+    - "photograph"
+    - "site photo"
+    "fields": []
+    "label_kn": "ಛಾಯಾಚಿತ್ರ"
+  "affidavit":
+    "label": "Affidavit"
+    "strong":
+    - "affidavit"
+    - "solemnly affirm"
+    - "sworn statement"
+    "keywords":
+    - "deponent"
+    - "notary"
+    - "declare on oath"
+    "fields":
+    - "parties"
+    - "dates"
+    "strong_kn":
+    - "ಪ್ರಮಾಣ ಪತ್ರ"
+    - "ಅಫಿಡವಿಟ್"
+    - "ಪ್ರಮಾಣ ವಚನ"
+    "keywords_kn":
+    - "ಪ್ರಮಾಣೀಕರಿಸುತ್ತೇನೆ"
+    - "ನೋಟರಿ"
+    "label_kn": "ಪ್ರಮಾಣ ಪತ್ರ"
+"other":
+  "unknown":
+    "label": "Unknown Document Type - Manual Review Required"
+    "strong": []
+    "keywords": []
+    "fields": []
+    "label_kn": "ಅಪರಿಚಿತ ದಾಖಲೆ - ಕೈಯಾರೆ ಪರಿಶೀಲನೆ ಅಗತ್ಯ"

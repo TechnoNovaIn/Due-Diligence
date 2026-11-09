@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t("report.title") }} v{{ report.version }} — {{ case.property_name }}</title>
+<style>
+  :root{
+    --ink:#15181d; --muted:#5b6472; --line:#dfe3ea; --bg:#ffffff; --panel:#f6f8fb;
+    --critical:#8b1a1a; --high:#b3541e; --medium:#8a6d1a; --low:#2c6e49; --info:#39506b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 28px 90px}
+  h1{font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
+  h2{font-size:19px;margin:42px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+  h3{font-size:15px;margin:22px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+  p{margin:9px 0}
+  .sub{color:var(--muted);font-size:14px}
+  .masthead{border-bottom:3px double var(--ink);padding-bottom:18px;margin-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:18px 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:12px 14px}
+  .stat .n{font-size:24px;font-weight:700;display:block;line-height:1.2}
+  .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--panel);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+  .badge{display:inline-block;padding:2px 8px;border-radius:11px;font-size:11px;font-weight:700;
+         text-transform:uppercase;letter-spacing:.05em;color:#fff;white-space:nowrap}
+  .critical{background:var(--critical)} .high{background:var(--high)} .medium{background:var(--medium)}
+  .low{background:var(--low)} .informational{background:var(--info)}
+  .callout{background:var(--panel);border-left:4px solid var(--ink);padding:12px 16px;margin:16px 0;border-radius:0 6px 6px 0}
+  .warn{border-left-color:var(--critical)}
+  .evidence{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:5px;
+            border-left:2px solid var(--line);padding-left:9px}
+  ul,ol{margin:8px 0 8px 20px;padding:0} li{margin:4px 0}
+  .doc{border:1px solid var(--line);border-radius:7px;padding:14px 16px;margin:14px 0}
+  .doc h4{margin:0 0 4px;font-size:15px}
+  .pill{display:inline-block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+        padding:1px 8px;font-size:11.5px;color:var(--muted);margin-right:5px}
+  .timeline li{margin:8px 0}
+  .gap{color:var(--critical);font-weight:700}
+  footer{margin-top:50px;border-top:1px solid var(--line);padding-top:14px;font-size:12px;color:var(--muted)}
+  @media print{.wrap{max-width:none;padding:0} h2{page-break-after:avoid} .doc,table{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="masthead">
+  <h1>{{ t("report.title") }}</h1>
+  <p class="sub">
+    {{ case.property_name }} &middot; {{ t("report.case") }} {{ case.case_ref }}
+    &middot; {{ t("report.version") }} {{ report.version }}
+    &middot; {{ t("report.generated") }} {{ p.meta.generated_at }}
+  </p>
+</div>
+
+<div class="callout warn">
+  <strong>{{ t("report.scopeHeading") }}</strong> {{ disclaimer }}
+</div>
+
+{% macro kn(row) %}{{ (row.translations or {}).get('kn') or {} }}{% endmacro %}
+{% set s1 = p.section_1_executive_summary %}
+<h2>{{ t("s1") }}</h2>
+<div class="grid">
+  <div class="stat"><span class="n">{{ s1.documents_received }}</span><span class="l">{{ t("lbl.documentsReceived") }}</span></div>
+  <div class="stat"><span class="n">{{ s1.documents_analysed }}</span><span class="l">{{ t("lbl.analysed") }}</span></div>
+  <div class="stat"><span class="n">{{ s1.open_requirements }}</span><span class="l">{{ t("lbl.openRequirements") }}</span></div>
+  <div class="stat"><span class="n">{{ s1.open_findings_by_severity.critical + s1.open_findings_by_severity.high }}</span><span class="l">{{ t("lbl.criticalHigh") }}</span></div>
+  <div class="stat"><span class="n">{{ sev(s1.overall_risk) }}</span><span class="l">{{ t("lbl.overallRisk") }}</span></div>
+</div>
+
+<p><strong>{{ t("lbl.property") }}:</strong> {{ s1.property.name }}{% if s1.property.survey_number %}, Sy. No. {{ s1.property.survey_number }}{% endif %}{% if s1.property.village %}, {{ s1.property.village }}{% endif %}{% if s1.property.district %}, {{ s1.property.district }}{% endif %}
+  &middot; {{ tr("property_type", s1.property.property_type) }}
+  &middot; {{ tr("transaction_type", s1.property.transaction_type) }}</p>
+<p><strong>{{ t("lbl.purpose") }}:</strong> {{ s1.purpose }}</p>
+<p><strong>{{ t("lbl.currentStatus") }}:</strong> <strong>{{ assessment_label }}</strong></p>
+<ul>{% for r in (s1.status_explanation_kn if lang == 'kn' and s1.status_explanation_kn else s1.status_explanation) %}<li>{{ r }}</li>{% endfor %}</ul>
+
+{% if s1.major_findings %}
+<h3>{{ t("lbl.majorFindings") }}</h3>
+<table><thead><tr><th>{{ t("lbl.ref") }}</th><th>{{ t("lbl.severity") }}</th><th>{{ t("lbl.finding") }}</th><th>{{ t("lbl.recommendedAction") }}</th></tr></thead><tbody>
+{% for f in s1.major_findings %}
+{% set k = (f.translations or {}).get('kn') if lang == 'kn' else None %}
+<tr><td>{{ f.risk_ref }}</td><td><span class="badge {{ f.severity }}">{{ sev(f.severity) }}</span></td>
+    <td>{{ (k.title if k else none) or f.title }}</td>
+    <td>{{ (k.recommended_action if k else none) or f.action }}</td></tr>
+{% endfor %}</tbody></table>
+{% endif %}
+
+{% if s1.recommended_next_steps %}
+<h3>{{ t("lbl.nextSteps") }}</h3>
+<ol>{% for step in (s1.recommended_next_steps_kn if lang == 'kn' and s1.recommended_next_steps_kn else s1.recommended_next_steps) %}<li>{{ step }}</li>{% endfor %}</ol>
+{% endif %}
+
+{% set s2 = p.section_2_property_details %}
+<h2>{{ t("s2") }}</h2>
+<h3>{{ t("lbl.recordedOnCase") }}</h3>
+<table><tbody>
+{% for k, v in s2.declared_by_user.items() %}{% if v %}<tr><th style="width:30%">{{ tr("case_field", k) }}</th><td>{{ v }}</td></tr>{% endif %}{% endfor %}
+</tbody></table>
+<h3>{{ t("lbl.consolidated") }}</h3>
+<table><thead><tr><th>{{ t("lbl.field") }}</th><th>{{ t("lbl.value") }}</th><th>{{ t("lbl.status") }}</th><th>{{ t("lbl.source") }}</th></tr></thead><tbody>
+{% for row in s2.from_documents %}
+<tr>
+  <td>{{ row.label }}</td>
+  <td>{{ row.value or '—' }}</td>
+  <td>{{ row.status|replace('_',' ')|title }}</td>
+  <td class="sub">{{ row.sources|join('; ') or row.note }}</td>
+</tr>
+{% endfor %}
+</tbody></table>
+<p class="sub">{{ s2.note }}</p>
+
+<h2>{{ t("s3") }}</h2>
+<table><thead><tr><th>{{ t("lbl.file") }}</th><th>{{ t("lbl.type") }}</th><th>{{ t("lbl.date") }}</th><th>{{ t("lbl.status") }}</th><th>{{ t("lbl.pages") }}</th><th>{{ t("lbl.extraction") }}</th><th>{{ t("lbl.issues") }}</th></tr></thead><tbody>
+{% for d in p.section_3_document_inventory %}
+<tr>
+  <td>{{ d.filename }}</td>
+  <td>{{ d.document_type }}<br><span class="sub">confidence {{ '%.0f'|format(d.classification_confidence*100) }}%</span></td>
+  <td>{{ d.document_date }}</td>
+  <td>{{ doc_status(d.status) }}</td>
+  <td>{{ d.pages_analysed }}/{{ d.pages }}</td>
+  <td>{{ '%.0f'|format(d.extraction_confidence*100) }}%{% if d.ocr_used %} <span class="pill">OCR</span>{% endif %}</td>
+  <td class="sub">{{ d.issues|join('; ') or '—' }}</td>
+</tr>
+{% endfor %}
+</tbody></table>
+
+<h2>{{ t("s4") }}</h2>
+{% for d in p.section_4_document_analysis %}
+<div class="doc">
+  <h4>{{ d.filename }} <span class="pill">{{ d.document_type }}</span><span class="pill">{{ d.status|replace('_',' ') }}</span></h4>
+  <p>{{ d.purpose }}</p>
+  {% if d.summary %}<p>{{ d.summary }}</p>{% endif %}
+  {% if d.parties %}<p><strong>{{ t("lbl.parties") }}:</strong>
+    {% for party in d.parties %}{{ party.name }} ({{ party.role }}){% if not loop.last %}; {% endif %}{% endfor %}</p>{% endif %}
+  {% if d.important_dates %}<p><strong>{{ t("lbl.dates") }}:</strong>
+    {% for dt in d.important_dates %}{{ dt.label }}: {{ dt.value }}{% if not loop.last %}; {% endif %}{% endfor %}</p>{% endif %}
+  {% if d.property_identifiers %}<p><strong>{{ t("lbl.identifiers") }}:</strong>
+    {% for i in d.property_identifiers %}{{ i.label }}: {{ i.value }} (p.{{ i.page }}){% if not loop.last %}; {% endif %}{% endfor %}</p>{% endif %}
+  <p><strong>{{ t("lbl.effect") }}:</strong> {{ d.legal_or_financial_effect }}</p>
+  {% if d.referenced_documents %}<p><strong>{{ t("lbl.references") }}:</strong></p>
+    <ul>{% for r in d.referenced_documents %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+  {% if d.internal_inconsistencies %}<p><strong>{{ t("lbl.inconsistencies") }}:</strong></p>
+    <ul>{% for r in d.internal_inconsistencies %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+  {% if d.items_requiring_verification %}<p><strong>{{ t("lbl.requiresVerification") }}:</strong></p>
+    <ul>{% for r in d.items_requiring_verification %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+  {% if d.issues %}<p><strong>{{ t("lbl.issues") }}:</strong></p><ul>{% for r in d.issues %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+</div>
+{% endfor %}
+
+{% set s5 = p.section_5_ownership_history %}
+<h2>{{ t("s5") }}</h2>
+{% if s5.timeline %}
+<table><thead><tr><th>#</th><th>{{ t("lbl.from") }}</th><th>{{ t("lbl.to") }}</th><th>{{ t("lbl.transfer") }}</th><th>{{ t("lbl.date") }}</th><th>{{ t("lbl.document") }}</th><th>{{ t("lbl.registration") }}</th><th>{{ t("lbl.status") }}</th></tr></thead><tbody>
+{# the loop variable must not be called t: that is the translation function #}
+{% for step in s5.timeline %}
+<tr{% if step.gap_before %} style="background:#fdf2f2"{% endif %}>
+  <td>{{ step.sequence }}</td><td>{% if step.gap_before %}<span class="gap">⚠ {{ t("lbl.gapBefore") }}</span><br>{% endif %}{{ step.from_owner }}</td>
+  <td>{{ step.to_owner }}</td><td>{{ step.transfer_type }}</td><td>{{ step.date }}</td>
+  <td>{{ step.document }}</td><td>{{ step.registration_ref }}</td><td>{{ step.verification_status|title }}</td>
+</tr>
+{% if step.notes %}<tr><td></td><td colspan="7" class="sub">{{ step.notes }}</td></tr>{% endif %}
+{% endfor %}
+</tbody></table>
+{% else %}<p>{{ t("lbl.noTimeline") }}</p>{% endif %}
+<p class="sub">{{ s5.note }}</p>
+
+{% set s6 = p.section_6_cross_verification %}
+<h2>{{ t("s6") }}</h2>
+<table><thead><tr><th>{{ t("lbl.field") }}</th><th>{{ t("lbl.consistent") }}</th><th>{{ t("lbl.valuesSources") }}</th></tr></thead><tbody>
+{% for c in s6.comparisons %}
+<tr>
+  <td>{{ c.label }}</td>
+  <td>{% if c.consistent %}{{ t("lbl.isConsistent") }}{% else %}<span class="badge medium">{{ t("lbl.differs") }}</span>{% endif %}</td>
+  <td>{% for v in c['values'] %}<div><strong>{{ v.value }}</strong> <span class="sub">— {{ v.documents|join(', ') }}{% if v.pages %} (p.{{ v.pages|join(', ') }}){% endif %}</span></div>{% endfor %}
+      {% if not c['values'] %}<span class="sub">{{ t("lbl.notStated") }}</span>{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody></table>
+
+{% set s7 = p.section_7_encumbrance %}
+<h2>{{ t("s7") }}</h2>
+{% if s7.encumbrance_certificates %}
+<table><thead><tr><th>{{ t("lbl.certificate") }}</th><th>{{ t("lbl.periodFrom") }}</th><th>{{ t("lbl.periodTo") }}</th><th>{{ t("lbl.declaresNil") }}</th><th>{{ t("lbl.entries") }}</th></tr></thead><tbody>
+{% for e in s7.encumbrance_certificates %}
+<tr><td>{{ e.document }}</td><td>{{ e['from'] }}</td><td>{{ e.to }}</td>
+    <td>{{ 'Yes' if e.declares_nil else 'No' }}</td><td>{{ e.entries_detected }}</td></tr>
+{% endfor %}</tbody></table>
+{% else %}<p>{{ t("lbl.noEc") }}</p>{% endif %}
+{% if s7.mortgage_indications %}
+<h3>{{ t("lbl.chargeIndications") }}</h3>
+<ul>{% for m in s7.mortgage_indications %}
+  <li>{{ m.document }} (p.{{ m.page }}) — <em>{{ m.signal|replace('_',' ') }}</em>
+      {% if m.evidence %}<div class="evidence">“{{ m.evidence }}”</div>{% endif %}</li>
+{% endfor %}</ul>
+{% endif %}
+{% if s7.findings %}
+<h3>Open encumbrance findings</h3>
+<ul>{% for f in s7.findings %}<li><span class="badge {{ f.severity }}">{{ f.severity }}</span> <strong>{{ f.risk_ref }}</strong> {{ f.title }}<br><span class="sub">{{ f.description }}</span></li>{% endfor %}</ul>
+{% endif %}
+<div class="callout"><strong>{{ t("lbl.ecLimitations") }}</strong>
+<ul>{% for l in s7.limitations %}<li>{{ l }}</li>{% endfor %}</ul></div>
+
+{% set s8 = p.section_8_legal_regulatory %}
+<h2>{{ t("s8") }}</h2>
+{% if s8.approvals_on_record %}
+<h3>{{ t("lbl.approvals") }}</h3>
+<table><thead><tr><th>Type</th><th>Value</th><th>Document</th><th>Page</th></tr></thead><tbody>
+{% for a in s8.approvals_on_record %}<tr><td>{{ a.label }}</td><td>{{ a.value }}</td><td>{{ a.document }}</td><td>{{ a.page }}</td></tr>{% endfor %}
+</tbody></table>
+{% endif %}
+{% if s8.litigation_references %}
+<h3>{{ t("lbl.litigationRefs") }}</h3>
+<ul>{% for l in s8.litigation_references %}<li>{{ l.document }} (p.{{ l.page }}) — {{ l.signal|replace('_',' ') }}
+  {% if l.evidence %}<div class="evidence">“{{ l.evidence }}”</div>{% endif %}</li>{% endfor %}</ul>
+<p class="sub">A reference in a document is not evidence that a proceeding is currently pending or decided.</p>
+{% else %}
+<p>No litigation reference was found in the supplied documents. <strong>This is not evidence that no
+litigation exists</strong> — no court record has been searched.</p>
+{% endif %}
+{% if s8.restriction_references %}
+<h3>{{ t("lbl.restrictionRefs") }}</h3>
+<ul>{% for l in s8.restriction_references %}<li>{{ l.document }} (p.{{ l.page }}) — {{ l.signal|replace('_',' ') }}
+  {% if l.evidence %}<div class="evidence">“{{ l.evidence }}”</div>{% endif %}</li>{% endfor %}</ul>
+{% endif %}
+<h3>{{ t("lbl.checksHeading") }}</h3>
+<p><strong>{{ t("lbl.completed") }}:</strong></p><ul>{% for c in s8.checks_completed %}<li>{{ c }}</li>{% endfor %}</ul>
+<p><strong>{{ t("lbl.suppliedOnly") }}:</strong></p><ul>{% for c in s8.checks_on_supplied_documents_only %}<li>{{ c }}</li>{% endfor %}</ul>
+<p><strong>{{ t("lbl.outstanding") }}:</strong></p>
+<ul>{% for c in s8.checks_outstanding %}<li>{{ c.name }} — <span class="sub">{{ c.authority }}</span></li>{% endfor %}</ul>
+
+{% set s9 = p.section_9_risk_register %}
+<h2>{{ t("s9") }}</h2>
+{% if s9.critical_and_high %}
+<div class="callout warn"><strong>{{ t("lbl.criticalHighHeading") }}</strong>
+<ul>{% for r in s9.critical_and_high %}<li><span class="badge {{ r.severity }}">{{ r.severity }}</span>
+  <strong>{{ r.risk_ref }}</strong> — {{ r.description }}</li>{% endfor %}</ul></div>
+{% endif %}
+<table><thead><tr><th>Ref</th><th>Finding</th><th>Severity</th><th>Evidence</th><th>Potential impact</th><th>Recommended action</th><th>Status</th></tr></thead><tbody>
+{% for r in s9.register %}
+{% set k = (r.translations or {}).get('kn') if lang == 'kn' else None %}
+<tr>
+  <td>{{ r.risk_ref }}</td>
+  <td>{{ (k.title if k else none) or r.description }}
+      <div class="sub">{{ r.detail }}{% if k %}
+        <em>({{ t('lbl.englishNote') }})</em>{% endif %}</div>
+      {% if r.requires_legal_review %}<div class="sub"><strong>{{ t('lbl.requiresLegal') }}</strong></div>{% endif %}
+      {% if r.resolution_note %}<div class="sub">{{ r.resolution_note }}</div>{% endif %}</td>
+  <td><span class="badge {{ r.severity }}">{{ sev(r.severity) }}</span>
+      <div class="sub">{{ t('lbl.confirmed') if r.confirmed else t('lbl.suspected') }}<br>
+      {{ t('lbl.confidence') }} {{ '%.0f'|format(r.confidence*100) }}%</div></td>
+  <td>{% for e in r.evidence %}<div>{{ e.document }}{% if e.page %} (p.{{ e.page }}){% endif %}
+      {% if e.note %}<div class="sub">{{ e.note }}</div>{% endif %}
+      {% if e.quote %}<div class="evidence">“{{ e.quote }}”</div>{% endif %}</div>{% endfor %}
+      {% if not r.evidence %}<span class="sub">—</span>{% endif %}</td>
+  <td>{{ (k.consequence if k else none) or r.impact }}</td>
+  <td>{{ (k.recommended_action if k else none) or r.recommended_action }}
+      {% if r.required_documents %}<ul>{% for d in r.required_documents %}<li>{{ d }}</li>{% endfor %}</ul>{% endif %}</td>
+  <td>{{ tr('finding_status', r.status) }}</td>
+</tr>
+{% endfor %}
+</tbody></table>
+
+{% set s10 = p.section_10_missing_documents %}
+<h2>{{ t("s10") }}</h2>
+<p class="sub">{{ s10.note }}</p>
+{% for title, rows in s10.groups.items() %}
+<h3>{{ title }}</h3>
+<table><thead><tr><th>{{ t('lbl.requirement') }}</th><th>{{ t('lbl.priority') }}</th>
+  <th>{{ t('lbl.whyRequired') }}</th><th>{{ t('lbl.periodRelates') }}</th>
+  <th>{{ t('lbl.whereObtain') }}</th><th>{{ t('lbl.nextAction') }}</th><th>{{ t('lbl.status') }}</th></tr></thead><tbody>
+{% for r in rows %}
+{% set k = (r.translations or {}).get('kn') if lang == 'kn' else None %}
+<tr>
+  <td>{{ (k.name if k else none) or r.name }}
+      {% if r.related_finding %}<div class="sub">{{ t('lbl.resolves') }}: {{ r.related_finding }}</div>{% endif %}</td>
+  <td>{{ tr('priority', r.priority) }}</td>
+  <td>{{ (k.reason if k else none) or r.reason }}
+      <div class="sub">{{ t('lbl.riskIfAbsent') }}: {{ (k.risk_if_absent if k else none) or r.risk_if_absent }}</div></td>
+  <td>{{ r.period or r.relates_to or '—' }}</td>
+  <td>{{ (k.issuing_authority if k else none) or r.issuing_authority }}</td>
+  <td>{{ (k.next_action if k else none) or r.next_action }}
+      <div class="sub">{{ t('lbl.closesWhen') }}: {{ (k.closure_criteria if k else none) or r.closure_criteria }}</div></td>
+  <td>{{ tr('requirement_status', r.status) }}</td>
+</tr>
+{% endfor %}
+</tbody></table>
+{% endfor %}
+<div class="callout"><strong>{{ t("lbl.jurisdictionCaveat") }}</strong> {{ s10.jurisdiction_caveat }}</div>
+{% if s10.satisfied_or_closed %}
+<h3>{{ t("lbl.requirementsMet") }}</h3>
+<ul>{% for r in s10.satisfied_or_closed %}<li>{{ r.name }} — {{ r.status|replace('_',' ')|title }}{% if r.note %} <span class="sub">({{ r.note }})</span>{% endif %}</li>{% endfor %}</ul>
+{% endif %}
+
+<h2>{{ t("s11") }}</h2>
+{% if p.section_11_questions %}
+<ol>{% for q in p.section_11_questions %}
+<li>{{ q.question }}<div class="sub">{{ t("lbl.why") }}: {{ q.reason }}{% if q.risk_ref %} ({{ q.risk_ref }}){% endif %}</div></li>
+{% endfor %}</ol>
+{% else %}<p>{{ t("lbl.noQuestions") }}</p>{% endif %}
+
+<h2>{{ t("s12") }}</h2>
+<table><thead><tr><th>#</th><th>{{ t("lbl.group") }}</th><th>{{ t("lbl.action") }}</th><th>{{ t("lbl.because") }}</th><th>{{ t("lbl.dependsOn") }}</th></tr></thead><tbody>
+{% for a in p.section_12_action_plan %}
+<tr><td>{{ a.order }}</td><td>{{ a.group }}</td><td>{{ a.action }}{% if a.authority %}<div class="sub">{{ a.authority }}</div>{% endif %}</td>
+    <td>{{ a.reason }}</td><td class="sub">{{ a.depends_on|join('; ') or '—' }}</td></tr>
+{% endfor %}
+</tbody></table>
+
+{% set s13 = p.section_13_final_assessment %}
+<h2>{{ t("s13") }}</h2>
+<div class="callout warn">
+  <p style="font-size:18px;margin:0 0 6px"><strong>{{ assessment_label }}</strong></p>
+  <p style="margin:0">{{ t("lbl.overallRisk") }}: <span class="badge {{ s13.overall_risk }}">{{ sev(s13.overall_risk) }}</span>
+     &nbsp; {{ t("lbl.riskScore") }}: {{ s13.risk_score }} ({{ s13.risk_score_normalised }}/100 {{ t("lbl.indicative") }})</p>
+</div>
+<p><strong>{{ t("lbl.howDetermined") }}:</strong>
+  {{ (s13.how_determined_kn if lang == 'kn' and s13.how_determined_kn else s13.how_determined) }}</p>
+<ul>{% for r in (s13.reasons_kn if lang == 'kn' and s13.reasons_kn else s13.reasons) %}<li>{{ r }}</li>{% endfor %}</ul>
+<h3>{{ t("lbl.scopeLimitations") }}</h3>
+<ul>{% for r in (s13.scope_and_limitations_kn if lang == 'kn' and s13.scope_and_limitations_kn else s13.scope_and_limitations) %}<li>{{ r }}</li>{% endfor %}</ul>
+<div class="callout warn">{{ disclaimer }}</div>
+
+<h2>{{ t("s14") }}</h2>
+<ul>{% for c in p.change_summary %}<li><strong>{{ c.type|replace('_',' ')|title }}:</strong> {{ c.detail }}</li>{% endfor %}</ul>
+
+<footer>
+  {{ t('report.version') }} {{ report.version }} &middot; {{ p.meta.generated_at }} &middot;
+  v{{ p.meta.system_version }} &middot; {{ t('lbl.ruleset') }} {{ p.meta.ruleset_version }}<br>
+  {{ t('lbl.aiProcessing') }}: {{ p.meta.ai.provider }} ({{ p.meta.ai.model }}) —
+  {{ t('lbl.aiRemote') if p.meta.ai.sends_document_text_off_device else t('lbl.aiLocal') }}.<br>
+  {{ t('lbl.ocr') }}: {{ p.meta.ocr.engine }} —
+  {{ t('lbl.available') if p.meta.ocr.available else t('lbl.notInstalled') }}.
+  {{ t('lbl.jurisdictionRules') }}: {{ p.meta.jurisdiction.name }}
+  ({{ t('lbl.confirmedByPro') if p.meta.jurisdiction.confirmed_by_professional else t('lbl.notConfirmed') }}).
+</footer>
+</div>
+</body>
+</html>

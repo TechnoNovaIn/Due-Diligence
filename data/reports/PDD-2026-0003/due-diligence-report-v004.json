@@ -1,0 +1,1462 @@
+{
+  "meta": {
+    "version": 4,
+    "generated_at": "2026-10-14T11:46:28Z",
+    "system_version": "1.0.0",
+    "ruleset_version": "ruleset-2026.10.1",
+    "ai": {
+      "provider": "offline",
+      "model": "deterministic-rules",
+      "available": false,
+      "sends_document_text_off_device": false,
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "errors": 0,
+      "last_error": null,
+      "note": "No language model is configured. Document contents never leave this machine. Classification, field extraction, cross-document verification, the requirement checklist and risk scoring run entirely on deterministic rules; narrative summarisation and open-ended cross-document review are not performed.",
+      "configured_provider": "offline",
+      "allow_remote_ai": false,
+      "data_leaving_device": "Nothing. All processing is local."
+    },
+    "ocr": {
+      "engine": "macOS Vision (built in)",
+      "engine_key": "macos_vision",
+      "available": true,
+      "alternatives": {
+        "tesseract": false,
+        "macos_vision": true
+      },
+      "note": "Scanned documents are read with the recognition engine built into macOS. Nothing is sent off the machine. Add languages with OCR_LANGUAGE, for example `eng+kan`."
+    },
+    "jurisdiction": {
+      "code": "KA",
+      "name": "Karnataka",
+      "confirmed_by_professional": false,
+      "title_lookback_years": 30,
+      "ec_lookback_years": 30
+    },
+    "disclaimer": "This report is an evidence-based preliminary assessment produced by an automated system from the documents supplied in the case folder. It is not a title search, not an official verification, and not a legal opinion. No statement in it should be read as confirming that title is clear or marketable, that a document is genuine, that the property is free from encumbrances or litigation, or that the property is suitable for purchase. Material conclusions require an independent title investigation and the written opinion of a qualified property lawyer."
+  },
+  "section_1_executive_summary": {
+    "property": {
+      "name": "minnasandra agri land",
+      "reference": "PDD-2026-0003",
+      "address": null,
+      "survey_number": null,
+      "village": null,
+      "taluk": null,
+      "district": null,
+      "state": "Karnataka",
+      "property_type": "agricultural_land",
+      "transaction_type": "purchase"
+    },
+    "purpose": "Pre-transaction document review and due diligence support.",
+    "documents_received": 5,
+    "documents_analysed": 3,
+    "documents_pending": 0,
+    "documents_failed": 2,
+    "open_requirements": 14,
+    "open_findings_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 2,
+      "low": 0,
+      "informational": 1
+    },
+    "overall_risk": "medium",
+    "assessment_status": "assessment_incomplete",
+    "assessment_label": "Assessment Incomplete",
+    "status_explanation": [
+      "6 mandatory requirement(s) have not been met: Current title document (registered sale / gift / partition / settlement deed); Encumbrance Certificate covering the full review period; Mutation register extracts (MR) for each transfer.",
+      "6 statutory requirement(s) are still outstanding.",
+      "2 of 5 documents could not be analysed."
+    ],
+    "status_explanation_kn": [
+      "6 \u0c95\u0ca1\u0ccd\u0ca1\u0cbe\u0caf \u0c85\u0c97\u0ca4\u0ccd\u0caf(\u0c97\u0cb3\u0cc1) \u0caa\u0cc2\u0cb0\u0cc8\u0cb8\u0cbf\u0cb2\u0ccd\u0cb2: Current title document (registered sale / gift / partition / settlement deed); Encumbrance Certificate covering the full review period; Mutation register extracts (MR) for each transfer.",
+      "6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cbf\u0ca8 \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbe\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6(\u0c97\u0cb3\u0cc1) \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb5\u0cc6.",
+      "5 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf 2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2."
+    ],
+    "major_findings": [
+      {
+        "risk_ref": "R-001",
+        "severity": "medium",
+        "title": "MR.pdf could not be analysed (needs manual review)",
+        "action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+        "translations": {
+          "kn": {
+            "title": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0cae\u0cb9\u0ca4\u0ccd\u0cb5\u0ca6 \u0c85\u0c82\u0cb6 \u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0ca6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cbf\u0cb5\u0cb0\u0ccd\u0ca4\u0cbf\u0cb8\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 (\u0caa\u0cbf\u0ca1\u0cbf\u0c8e\u0cab\u0ccd \u0c85\u0ca5\u0cb5\u0cbe \u0ca1\u0cbe\u0c95\u0ccd\u0cb8\u0ccd) \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf, \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0cc8\u0caf\u0cbe\u0cb0\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf \u0cab\u0cb2\u0cbf\u0ca4\u0cbe\u0c82\u0cb6 \u0ca6\u0cbe\u0c96\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        }
+      },
+      {
+        "risk_ref": "R-002",
+        "severity": "medium",
+        "title": "AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+        "action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+        "translations": {
+          "kn": {
+            "title": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0cae\u0cb9\u0ca4\u0ccd\u0cb5\u0ca6 \u0c85\u0c82\u0cb6 \u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0ca6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cbf\u0cb5\u0cb0\u0ccd\u0ca4\u0cbf\u0cb8\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 (\u0caa\u0cbf\u0ca1\u0cbf\u0c8e\u0cab\u0ccd \u0c85\u0ca5\u0cb5\u0cbe \u0ca1\u0cbe\u0c95\u0ccd\u0cb8\u0ccd) \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf, \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0cc8\u0caf\u0cbe\u0cb0\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf \u0cab\u0cb2\u0cbf\u0ca4\u0cbe\u0c82\u0cb6 \u0ca6\u0cbe\u0c96\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        }
+      },
+      {
+        "risk_ref": "R-003",
+        "severity": "informational",
+        "title": "No external or official record has been checked",
+        "action": "Commission the external searches listed under pending verification before relying on this assessment.",
+        "translations": {
+          "kn": {
+            "title": "\u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0cb9\u0cca\u0cb0\u0c97\u0cbf\u0ca8 \u0c85\u0ca5\u0cb5\u0cbe \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c92\u0c82\u0ca6\u0cc1 \u0c85\u0c82\u0cb6 \u0c95\u0cbe\u0ca3\u0cbf\u0cb8\u0ca6\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0c85\u0ca6\u0cc1 \u0c87\u0cb2\u0ccd\u0cb2\u0cb5\u0cc6\u0c82\u0cac\u0cc1\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0caa\u0cc1\u0cb0\u0cbe\u0cb5\u0cc6\u0caf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0c88 \u0cae\u0ccc\u0cb2\u0ccd\u0caf\u0cae\u0cbe\u0caa\u0ca8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0cb5\u0cb2\u0c82\u0cac\u0cbf\u0cb8\u0cc1\u0cb5 \u0cae\u0cca\u0ca6\u0cb2\u0cc1 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb0\u0cc1\u0cb5 \u0cb9\u0cca\u0cb0\u0c97\u0cbf\u0ca8 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0ca1\u0cc6\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        }
+      }
+    ],
+    "recommended_next_steps": [
+      "Obtain the registered deed together with its certified copy from the Sub-Registrar.",
+      "Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.",
+      "Obtain the MR extract corresponding to each transfer in the title chain.",
+      "Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.",
+      "Obtain tax-paid receipts for the current and preceding years in the seller's name.",
+      "Collect photo identification and reconcile the name, parentage and address against the title deed."
+    ],
+    "recommended_next_steps_kn": [
+      "\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0ca6\u0cb0 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cc3\u0ca4 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3\u0cbf\u0c82\u0ca6 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+      "\u0c95\u0ca8\u0cbf\u0cb7\u0ccd\u0ca0 30 \u0cb5\u0cb0\u0ccd\u0cb7\u0c97\u0cb3 \u0c8b\u0ca3\u0cad\u0cbe\u0cb0 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 (\u0ca8\u0cae\u0cc2\u0ca8\u0cc6 15) \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+      "\u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc6 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3\u0cb5\u0cbe\u0ca6 \u0c8e\u0c82.\u0c86\u0cb0\u0ccd. \u0c89\u0ca4\u0cbe\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+      "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0c97\u0ccd\u0cb0\u0cb9\u0cbf\u0cb8\u0cbf, \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3\u0cb5\u0cbe\u0c97\u0cc1\u0cb5\u0cb5\u0cb0\u0cc6\u0c97\u0cc6 \u0cb9\u0cbf\u0c82\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0cae\u0cc1\u0c82\u0ca6\u0cc1\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf.",
+      "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cb8\u0c95\u0ccd\u0ca4 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+      "\u0cad\u0cbe\u0cb5\u0c9a\u0cbf\u0ca4\u0ccd\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca4\u0c82\u0ca6\u0cc6\u0caf \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb3\u0cbe\u0cb8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf."
+    ],
+    "scope_statement": "This classification reflects only the documents supplied in the case folder. No official record, court registry or external database has been checked, and no legal opinion has been given."
+  },
+  "section_2_property_details": {
+    "declared_by_user": {
+      "property_name": "minnasandra agri land",
+      "address": null,
+      "survey_number": null,
+      "subdivision_number": null,
+      "khata_number": null,
+      "village": null,
+      "taluk": null,
+      "district": null,
+      "state": "Karnataka",
+      "property_type": "agricultural_land",
+      "classification": null,
+      "property_area": null,
+      "claimed_owner": null,
+      "seller": null,
+      "buyer": null,
+      "transaction_type": "purchase",
+      "assigned_reviewer": null
+    },
+    "from_documents": [
+      {
+        "label": "Survey number",
+        "value": "/",
+        "status": "documented",
+        "sources": [
+          "Digitized Sketch.pdf (p.1)"
+        ],
+        "note": "Stated in one document only; not corroborated."
+      },
+      {
+        "label": "Subdivision / hissa number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Khata number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Plot number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Flat / unit number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Village",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Hobli",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Taluk",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "District",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Extent / area",
+        "value": "\u0c97\u0cb3\u0cc1 \u0cb8\u0ccd\u0c95\u0cc7\u0cb2\u0ccd \u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3 \u0cb5\u0cbe\u0c97\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2 (\u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1 \u0cae\u0cc0\u0c9f\u0cb0\u0ccd\u200c\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf\u0cb5\u0cc6)Measurements are not to the scale (all measurements are in meeters )",
+        "status": "documented",
+        "sources": [
+          "Digitized Sketch.pdf (p.2)"
+        ],
+        "note": "Stated in one document only; not corroborated."
+      },
+      {
+        "label": "Built-up area",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Undivided share (UDS)",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Land classification",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - north",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - south",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - east",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Boundary - west",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Consideration",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Registration number",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      },
+      {
+        "label": "Registration date",
+        "value": null,
+        "status": "missing",
+        "sources": [],
+        "note": "Not stated in any supplied document."
+      }
+    ],
+    "note": "Values marked 'documented' appear in a single document and have not been corroborated. Values marked 'missing' were not found in any supplied document - that is not evidence that the underlying fact does not exist."
+  },
+  "section_3_document_inventory": [
+    {
+      "filename": "MR.pdf",
+      "path": "MR.pdf",
+      "document_type": "Unknown Document Type - Manual Review Required",
+      "document_type_key": "unknown",
+      "classification_confidence": 0.0,
+      "document_date": "\u2014",
+      "status": "needs_manual_review",
+      "pages": 1,
+      "pages_analysed": 1,
+      "extraction_confidence": 0.69,
+      "ocr_used": true,
+      "key_information": [],
+      "issues": [],
+      "verification_status": "Not analysed"
+    },
+    {
+      "filename": "Digitized Sketch.pdf",
+      "path": "Digitized Sketch.pdf",
+      "document_type": "Survey Record / Sketch",
+      "document_type_key": "survey_record",
+      "classification_confidence": 0.92,
+      "document_date": "\u2014",
+      "status": "analysed",
+      "pages": 2,
+      "pages_analysed": 2,
+      "extraction_confidence": 1.0,
+      "ocr_used": false,
+      "key_information": [
+        {
+          "label": "Survey number",
+          "value": "/",
+          "page": 1,
+          "evidence": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc6 \u0ca8\u0c82/Survey No"
+        },
+        {
+          "label": "Extent / area",
+          "value": "\u0c97\u0cb3\u0cc1 \u0cb8\u0ccd\u0c95\u0cc7\u0cb2\u0ccd \u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3 \u0cb5\u0cbe\u0c97\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2 (\u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1 \u0cae\u0cc0\u0c9f\u0cb0\u0ccd\u200c\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf\u0cb5\u0cc6)Measurements are not to the scale (all measurements are in meeters )",
+          "page": 2,
+          "evidence": "1) \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1 \u0cb8\u0ccd\u0c95\u0cc7\u0cb2\u0ccd \u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3 \u0cb5\u0cbe\u0c97\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2 (\u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1 \u0cae\u0cc0\u0c9f\u0cb0\u0ccd\u200c\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf\u0cb5\u0cc6)Measurements are not to the scale (all measurements are in meeters )"
+        }
+      ],
+      "issues": [],
+      "verification_status": "Contents read and compared against the other documents"
+    },
+    {
+      "filename": "WhatsApp Image 2026-10-14 at 16.30.34.jpeg",
+      "path": "WhatsApp Image 2026-10-14 at 16.30.34.jpeg",
+      "document_type": "Survey Record / Sketch",
+      "document_type_key": "survey_record",
+      "classification_confidence": 0.68,
+      "document_date": "\u2014",
+      "status": "analysed",
+      "pages": 1,
+      "pages_analysed": 1,
+      "extraction_confidence": 0.9,
+      "ocr_used": true,
+      "key_information": [],
+      "issues": [],
+      "verification_status": "Contents read and compared against the other documents"
+    },
+    {
+      "filename": "AKHARBAND MIN.pdf",
+      "path": "AKHARBAND MIN.pdf",
+      "document_type": "Unknown Document Type - Manual Review Required",
+      "document_type_key": "unknown",
+      "classification_confidence": 0.0,
+      "document_date": "\u2014",
+      "status": "needs_manual_review",
+      "pages": 1,
+      "pages_analysed": 1,
+      "extraction_confidence": 1.0,
+      "ocr_used": false,
+      "key_information": [
+        {
+          "label": "Survey number",
+          "value": "\u0c97\u0cb3\u0ca8\u0cc1D",
+          "page": 1,
+          "evidence": "\u0caa\u0003\u0cb5f\u001b\u0cb8\u0cb2\u0cc1 gh\u0cd5#\u0cae\u0cc1\u0c952 \u0c85ij\u0cbe\u0ca8\u0ca6# \u0c85\u0cb3`G \u0c92\u0cb3\u0caa#U \u0cb8.\u0ca8\u0c82\u0c97\u0cb3\u0ca8\u0cc1d \u0c85\u0cb3` \u0013\u0cb2\u0cb8 \u0caah"
+        }
+      ],
+      "issues": [],
+      "verification_status": "Not analysed"
+    },
+    {
+      "filename": "RTC MIN.pdf",
+      "path": "RTC MIN.pdf",
+      "document_type": "RTC / Pahani (Record of Rights, Tenancy and Crops)",
+      "document_type_key": "rtc_pahani",
+      "classification_confidence": 0.89,
+      "document_date": "\u2014",
+      "status": "analysed",
+      "pages": 1,
+      "pages_analysed": 1,
+      "extraction_confidence": 0.7,
+      "ocr_used": false,
+      "key_information": [],
+      "issues": [],
+      "verification_status": "Contents read and compared against the other documents"
+    }
+  ],
+  "section_4_document_analysis": [
+    {
+      "filename": "MR.pdf",
+      "document_type": "Unknown Document Type - Manual Review Required",
+      "status": "needs_manual_review",
+      "purpose": "Not determined - the document type could not be established with confidence.",
+      "parties": [],
+      "important_dates": [],
+      "property_identifiers": [],
+      "legal_or_financial_effect": "The document's effect has not been independently assessed.",
+      "referenced_documents": [],
+      "internal_inconsistencies": [],
+      "items_requiring_verification": [
+        "Values were read by OCR and should be checked against the original.",
+        "The document type was not established with high confidence."
+      ],
+      "issues": [],
+      "summary": "Classified as Unknown Document Type - Manual Review Required.",
+      "analysed_by": "deterministic rules"
+    },
+    {
+      "filename": "Digitized Sketch.pdf",
+      "document_type": "Survey Record / Sketch",
+      "status": "analysed",
+      "purpose": "A survey record / sketch relating to the subject property.",
+      "parties": [],
+      "important_dates": [],
+      "property_identifiers": [
+        {
+          "label": "Survey number",
+          "value": "/",
+          "page": 1
+        },
+        {
+          "label": "Extent / area",
+          "value": "\u0c97\u0cb3\u0cc1 \u0cb8\u0ccd\u0c95\u0cc7\u0cb2\u0ccd \u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3 \u0cb5\u0cbe\u0c97\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2 (\u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1 \u0cae\u0cc0\u0c9f\u0cb0\u0ccd\u200c\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf\u0cb5\u0cc6)Measurements are not to the scale (all measurements are in meeters )",
+          "page": 2
+        }
+      ],
+      "legal_or_financial_effect": "The document's effect has not been independently assessed.",
+      "referenced_documents": [],
+      "internal_inconsistencies": [],
+      "items_requiring_verification": [],
+      "issues": [],
+      "summary": "Classified as Survey Record / Sketch, covering Sy. No. /, measuring \u0c97\u0cb3\u0cc1 \u0cb8\u0ccd\u0c95\u0cc7\u0cb2\u0ccd \u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3 \u0cb5\u0cbe\u0c97\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2 (\u0c8e\u0cb2\u0ccd\u0cb2\u0cbe \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0cc1 \u0cae\u0cc0\u0c9f\u0cb0\u0ccd\u200c\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf\u0cb5\u0cc6)Measurements are not to the scale (all measurements are in meeters ).",
+      "analysed_by": "deterministic rules"
+    },
+    {
+      "filename": "WhatsApp Image 2026-10-14 at 16.30.34.jpeg",
+      "document_type": "Survey Record / Sketch",
+      "status": "analysed",
+      "purpose": "A survey record / sketch relating to the subject property.",
+      "parties": [],
+      "important_dates": [],
+      "property_identifiers": [],
+      "legal_or_financial_effect": "The document's effect has not been independently assessed.",
+      "referenced_documents": [],
+      "internal_inconsistencies": [],
+      "items_requiring_verification": [
+        "Values were read by OCR and should be checked against the original.",
+        "The document type was not established with high confidence."
+      ],
+      "issues": [],
+      "summary": "Classified as Survey Record / Sketch.",
+      "analysed_by": "deterministic rules"
+    },
+    {
+      "filename": "AKHARBAND MIN.pdf",
+      "document_type": "Unknown Document Type - Manual Review Required",
+      "status": "needs_manual_review",
+      "purpose": "Not determined - the document type could not be established with confidence.",
+      "parties": [],
+      "important_dates": [],
+      "property_identifiers": [
+        {
+          "label": "Survey number",
+          "value": "\u0c97\u0cb3\u0ca8\u0cc1D",
+          "page": 1
+        }
+      ],
+      "legal_or_financial_effect": "The document's effect has not been independently assessed.",
+      "referenced_documents": [],
+      "internal_inconsistencies": [],
+      "items_requiring_verification": [
+        "The document type was not established with high confidence."
+      ],
+      "issues": [],
+      "summary": "Classified as Unknown Document Type - Manual Review Required, covering Sy. No. \u0c97\u0cb3\u0ca8\u0cc1D.",
+      "analysed_by": "deterministic rules"
+    },
+    {
+      "filename": "RTC MIN.pdf",
+      "document_type": "RTC / Pahani (Record of Rights, Tenancy and Crops)",
+      "status": "analysed",
+      "purpose": "A rtc / pahani (record of rights, tenancy and crops) relating to the subject property.",
+      "parties": [],
+      "important_dates": [],
+      "property_identifiers": [],
+      "legal_or_financial_effect": "A revenue or municipal record. It evidences possession and the assessee of record for tax purposes; it is not conclusive proof of title.",
+      "referenced_documents": [],
+      "internal_inconsistencies": [],
+      "items_requiring_verification": [],
+      "issues": [],
+      "summary": "Classified as RTC / Pahani (Record of Rights, Tenancy and Crops).",
+      "analysed_by": "deterministic rules"
+    }
+  ],
+  "section_5_ownership_history": {
+    "timeline": [],
+    "note": "Each step is *documented* - it reflects what a supplied document states. No step has been independently verified against the Sub-Registrar's record, and matching names across documents is not proof that the same person is involved.",
+    "gaps": [],
+    "covered": false
+  },
+  "section_6_cross_verification": {
+    "comparisons": [
+      {
+        "field": "survey_number",
+        "label": "Survey number",
+        "values": [
+          {
+            "value": "/",
+            "documents": [
+              "Digitized Sketch.pdf"
+            ],
+            "pages": [
+              1
+            ]
+          }
+        ],
+        "consistent": true
+      },
+      {
+        "field": "khata_number",
+        "label": "Khata number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "plot_number",
+        "label": "Plot number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "flat_number",
+        "label": "Flat / unit number",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "village",
+        "label": "Village",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "taluk",
+        "label": "Taluk",
+        "values": [],
+        "consistent": true
+      },
+      {
+        "field": "property_area",
+        "label": "Extent / area",
+        "values": [],
+        "consistent": true
+      }
+    ],
+    "consistent_fields": [
+      "Survey number",
+      "Khata number",
+      "Plot number",
+      "Flat / unit number",
+      "Village",
+      "Taluk",
+      "Extent / area"
+    ],
+    "conflicting_fields": []
+  },
+  "section_7_encumbrance": {
+    "encumbrance_certificates": [],
+    "mortgage_indications": [],
+    "findings": [],
+    "limitations": [
+      "An Encumbrance Certificate reflects only what was registered against the identifiers used to obtain it, for the period it certifies.",
+      "An equitable mortgage created by deposit of title deeds is frequently not registered and may therefore not appear.",
+      "Unregistered agreements, family arrangements, tenancies and oral claims do not appear.",
+      "No certificate has been verified against the Sub-Registrar's own record."
+    ]
+  },
+  "section_8_legal_regulatory": {
+    "approvals_on_record": [],
+    "litigation_references": [],
+    "restriction_references": [],
+    "findings": [],
+    "checks_completed": [
+      "Every supplied document was read and compared against the others.",
+      "References to litigation, acquisition, restrictions and charges inside the supplied documents were identified and listed."
+    ],
+    "checks_on_supplied_documents_only": [
+      "Document classification and field extraction.",
+      "Ownership chain reconstruction.",
+      "Encumbrance coverage assessment."
+    ],
+    "checks_outstanding": [
+      {
+        "name": "Legal title opinion from a qualified advocate",
+        "authority": "An advocate practising property law in the relevant jurisdiction",
+        "status": "not_performed"
+      },
+      {
+        "name": "Independent litigation and court records search",
+        "authority": "Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals",
+        "status": "not_performed"
+      },
+      {
+        "name": "Online verification of current revenue / khata records",
+        "authority": "Bhoomi portal (RTC), BBMP / municipal khata portal",
+        "status": "not_performed"
+      },
+      {
+        "name": "Verification of deeds against Sub-Registrar records",
+        "authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services",
+        "status": "not_performed"
+      }
+    ]
+  },
+  "section_9_risk_register": {
+    "register": [
+      {
+        "risk_ref": "R-001",
+        "category": "process",
+        "description": "MR.pdf could not be analysed (needs manual review)",
+        "detail": "This file is in the case folder but its contents have not been assessed. Nothing in this report accounts for what it may contain.",
+        "severity": "medium",
+        "evidence": [
+          {
+            "document": "MR.pdf",
+            "page": null,
+            "quote": null,
+            "note": "Processing status: needs_manual_review."
+          }
+        ],
+        "impact": "A material fact in an unprocessed document would be missing from this assessment.",
+        "recommended_action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+        "required_documents": [
+          "Readable copy of MR.pdf"
+        ],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0cae\u0cb9\u0ca4\u0ccd\u0cb5\u0ca6 \u0c85\u0c82\u0cb6 \u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0ca6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cbf\u0cb5\u0cb0\u0ccd\u0ca4\u0cbf\u0cb8\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 (\u0caa\u0cbf\u0ca1\u0cbf\u0c8e\u0cab\u0ccd \u0c85\u0ca5\u0cb5\u0cbe \u0ca1\u0cbe\u0c95\u0ccd\u0cb8\u0ccd) \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf, \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0cc8\u0caf\u0cbe\u0cb0\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf \u0cab\u0cb2\u0cbf\u0ca4\u0cbe\u0c82\u0cb6 \u0ca6\u0cbe\u0c96\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 1.0,
+        "confirmed": true,
+        "verification_status": "not_performed",
+        "requires_legal_review": false,
+        "score": 30.0,
+        "resolution_note": null
+      },
+      {
+        "risk_ref": "R-002",
+        "category": "process",
+        "description": "AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+        "detail": "This file is in the case folder but its contents have not been assessed. Nothing in this report accounts for what it may contain.",
+        "severity": "medium",
+        "evidence": [
+          {
+            "document": "AKHARBAND MIN.pdf",
+            "page": null,
+            "quote": null,
+            "note": "Processing status: needs_manual_review."
+          }
+        ],
+        "impact": "A material fact in an unprocessed document would be missing from this assessment.",
+        "recommended_action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+        "required_documents": [
+          "Readable copy of AKHARBAND MIN.pdf"
+        ],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0cae\u0cb9\u0ca4\u0ccd\u0cb5\u0ca6 \u0c85\u0c82\u0cb6 \u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c87\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0ca6 \u0c85\u0ca5\u0cb5\u0cbe \u0caa\u0cb0\u0cbf\u0cb5\u0cb0\u0ccd\u0ca4\u0cbf\u0cb8\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 (\u0caa\u0cbf\u0ca1\u0cbf\u0c8e\u0cab\u0ccd \u0c85\u0ca5\u0cb5\u0cbe \u0ca1\u0cbe\u0c95\u0ccd\u0cb8\u0ccd) \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf, \u0c85\u0ca5\u0cb5\u0cbe \u0c95\u0cc8\u0caf\u0cbe\u0cb0\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf \u0cab\u0cb2\u0cbf\u0ca4\u0cbe\u0c82\u0cb6 \u0ca6\u0cbe\u0c96\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 1.0,
+        "confirmed": true,
+        "verification_status": "not_performed",
+        "requires_legal_review": false,
+        "score": 30.0,
+        "resolution_note": null
+      },
+      {
+        "risk_ref": "R-003",
+        "category": "process",
+        "description": "No external or official record has been checked",
+        "detail": "This assessment is based solely on the documents placed in the case folder. No search has been made of the Sub-Registrar's records, revenue databases, municipal records, court registries, RERA registrations or acquisition notifications. A document that exists but was not supplied cannot be seen, and a supplied copy has not been verified against the official record.",
+        "severity": "informational",
+        "evidence": [],
+        "impact": "The absence of a finding in this report is not evidence that the underlying issue does not exist.",
+        "recommended_action": "Commission the external searches listed under pending verification before relying on this assessment.",
+        "required_documents": [],
+        "status": "open",
+        "translations": {
+          "kn": {
+            "title": "\u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0cb9\u0cca\u0cb0\u0c97\u0cbf\u0ca8 \u0c85\u0ca5\u0cb5\u0cbe \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2",
+            "consequence": "\u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c92\u0c82\u0ca6\u0cc1 \u0c85\u0c82\u0cb6 \u0c95\u0cbe\u0ca3\u0cbf\u0cb8\u0ca6\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0c85\u0ca6\u0cc1 \u0c87\u0cb2\u0ccd\u0cb2\u0cb5\u0cc6\u0c82\u0cac\u0cc1\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0caa\u0cc1\u0cb0\u0cbe\u0cb5\u0cc6\u0caf\u0cb2\u0ccd\u0cb2.",
+            "recommended_action": "\u0c88 \u0cae\u0ccc\u0cb2\u0ccd\u0caf\u0cae\u0cbe\u0caa\u0ca8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0cb5\u0cb2\u0c82\u0cac\u0cbf\u0cb8\u0cc1\u0cb5 \u0cae\u0cca\u0ca6\u0cb2\u0cc1 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb0\u0cc1\u0cb5 \u0cb9\u0cca\u0cb0\u0c97\u0cbf\u0ca8 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca8\u0ca1\u0cc6\u0cb8\u0cbf.",
+            "description_untranslated": true,
+            "description_note": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0cb3\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cb0\u0cbf\u0c82\u0ca6 \u0c87\u0c82\u0c97\u0ccd\u0cb2\u0cbf\u0cb7\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6."
+          }
+        },
+        "confidence": 1.0,
+        "confirmed": true,
+        "verification_status": "not_performed",
+        "requires_legal_review": true,
+        "score": 2.0,
+        "resolution_note": null
+      }
+    ],
+    "critical_and_high": []
+  },
+  "section_10_missing_documents": {
+    "groups": {
+      "1. Documents potentially required by applicable law": [
+        {
+          "key": "current_title_document",
+          "name": "Current title document (registered sale / gift / partition / settlement deed)",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Establishes how the current claimed owner acquired the property and is the starting point for the title chain.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Jurisdictional Sub-Registrar's office",
+          "next_action": "Obtain the registered deed together with its certified copy from the Sub-Registrar.",
+          "risk_if_absent": "Ownership cannot be traced; no reliable basis exists for the transaction.",
+          "closure_criteria": "A registered deed in favour of the claimed owner is available, legible and analysed.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 (\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0c95\u0ccd\u0cb0\u0caf / \u0ca6\u0cbe\u0ca8 / \u0caa\u0cbe\u0cb2\u0cc1 / \u0cb8\u0c82\u0ca7\u0cbe\u0ca8 \u0caa\u0ca4\u0ccd\u0cb0)",
+              "reason": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0\u0cc1 \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cc7\u0c97\u0cc6 \u0caa\u0ca1\u0cc6\u0ca6\u0cb0\u0cc1 \u0c8e\u0c82\u0cac\u0cc1\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0cb8\u0ccd\u0ca5\u0cbe\u0caa\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6; \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0cbe\u0cb0\u0c82\u0cad \u0c87\u0ca6\u0cc7.",
+              "next_action": "\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0ca6\u0cb0 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cc3\u0ca4 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3\u0cbf\u0c82\u0ca6 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0ca4\u0ccd\u0cb5\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca4\u0ccd\u0ca4\u0cc6\u0cb9\u0c9a\u0ccd\u0c9a\u0cb2\u0cbe\u0c97\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2; \u0cb5\u0ccd\u0caf\u0cb5\u0cb9\u0cbe\u0cb0\u0c95\u0ccd\u0c95\u0cc6 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb5\u0cbe\u0cb8\u0cbe\u0cb0\u0ccd\u0cb9 \u0c86\u0ca7\u0cbe\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1, \u0cb8\u0ccd\u0caa\u0cb7\u0ccd\u0c9f\u0cb5\u0cbe\u0c97\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1, \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf"
+            }
+          }
+        },
+        {
+          "key": "encumbrance_certificate_full_period",
+          "name": "Encumbrance Certificate covering the full review period",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Shows registered transactions, mortgages and charges recorded against the property for the certified period.",
+          "related_finding": "",
+          "period": "01 Jan 1996 to 14 Oct 2026",
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services",
+          "next_action": "Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.",
+          "risk_if_absent": "Registered mortgages, attachments or competing transfers may remain undetected.",
+          "closure_criteria": "An EC covering the full review period has been analysed and reconciled against the title chain.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0c8b\u0ca3\u0cad\u0cbe\u0cb0 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0",
+              "reason": "\u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3\u0cc0\u0c95\u0cc3\u0ca4 \u0c85\u0cb5\u0ca7\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0cae\u0cc7\u0cb2\u0cc6 \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0cb5\u0ccd\u0caf\u0cb5\u0cb9\u0cbe\u0cb0\u0c97\u0cb3\u0cc1, \u0c85\u0ca1\u0cae\u0cbe\u0ca8\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cac\u0cbe\u0ca7\u0ccd\u0caf\u0ca4\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "next_action": "\u0c95\u0ca8\u0cbf\u0cb7\u0ccd\u0ca0 30 \u0cb5\u0cb0\u0ccd\u0cb7\u0c97\u0cb3 \u0c8b\u0ca3\u0cad\u0cbe\u0cb0 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0 (\u0ca8\u0cae\u0cc2\u0ca8\u0cc6 15) \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+              "risk_if_absent": "\u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0c85\u0ca1\u0cae\u0cbe\u0ca8\u0c97\u0cb3\u0cc1, \u0c9c\u0caa\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0cb8\u0ccd\u0caa\u0cb0\u0ccd\u0ca7\u0cbe\u0ca4\u0ccd\u0cae\u0c95 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cb3\u0cc1 \u0caa\u0ca4\u0ccd\u0ca4\u0cc6\u0caf\u0cbe\u0c97\u0ca6\u0cc6 \u0c89\u0cb3\u0cbf\u0caf\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3 \u0caa\u0ca4\u0ccd\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cbf \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf / \u0c95\u0cbe\u0cb5\u0cc7\u0cb0\u0cbf \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0cb8\u0cc7\u0cb5\u0cc6\u0c97\u0cb3\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "mutation_records",
+          "name": "Mutation register extracts (MR) for each transfer",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Mutation entries reconcile the registered transfers with the revenue record.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Tahsildar's office / Bhoomi mutation register",
+          "next_action": "Obtain the MR extract corresponding to each transfer in the title chain.",
+          "risk_if_absent": "The revenue record may not reflect the registered transfers, leaving the chain unreconciled.",
+          "closure_criteria": "Each registered transfer has a corresponding mutation entry on record.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc6 \u0cae\u0ccd\u0caf\u0cc1\u0c9f\u0cc7\u0cb6\u0ca8\u0ccd (\u0c8e\u0c82.\u0c86\u0cb0\u0ccd.) \u0c89\u0ca4\u0cbe\u0cb0\u0c97\u0cb3\u0cc1",
+              "reason": "\u0cae\u0ccd\u0caf\u0cc1\u0c9f\u0cc7\u0cb6\u0ca8\u0ccd \u0ca8\u0cae\u0cc2\u0ca6\u0cc1\u0c97\u0cb3\u0cc1 \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6.",
+              "next_action": "\u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc6 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3\u0cb5\u0cbe\u0ca6 \u0c8e\u0c82.\u0c86\u0cb0\u0ccd. \u0c89\u0ca4\u0cbe\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cc1 \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0cac\u0cbf\u0c82\u0cac\u0cbf\u0cb8\u0ca6\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc6 \u0c85\u0ca8\u0cc1\u0c97\u0cc1\u0ca3\u0cb5\u0cbe\u0ca6 \u0cae\u0ccd\u0caf\u0cc1\u0c9f\u0cc7\u0cb6\u0ca8\u0ccd \u0ca8\u0cae\u0cc2\u0ca6\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0ca4\u0cb9\u0cb6\u0cc0\u0cb2\u0ccd\u0ca6\u0cbe\u0cb0\u0ccd \u0c95\u0c9a\u0cc7\u0cb0\u0cbf / \u0cad\u0cc2\u0cae\u0cbf \u0cae\u0ccd\u0caf\u0cc1\u0c9f\u0cc7\u0cb6\u0ca8\u0ccd \u0ca6\u0cbe\u0c96\u0cb2\u0cc6"
+            }
+          }
+        },
+        {
+          "key": "parent_deeds_chain",
+          "name": "Parent deeds covering the title chain for the customary review period",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.",
+          "related_finding": "",
+          "period": "01 Jan 1996 to 14 Oct 2026",
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "The seller, or certified copies from the Sub-Registrar's office",
+          "next_action": "Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.",
+          "risk_if_absent": "A defect in an earlier transfer can invalidate the present owner's title even if the latest deed appears regular.",
+          "closure_criteria": "Every transfer in the chain for the review period is supported by a document that has been analysed.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0cae\u0cc2\u0cb2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1",
+              "reason": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf \u0cae\u0cbe\u0ca1\u0cbf\u0ca6\u0ccd\u0ca6\u0cbe\u0cb0\u0cc6\u0caf\u0cc7 \u0c8e\u0c82\u0ca6\u0cc1 \u0c96\u0c9a\u0cbf\u0ca4\u0caa\u0ca1\u0cbf\u0cb8\u0cb2\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cc1\u0cae\u0cbe\u0cb0\u0cc1 30 \u0cb5\u0cb0\u0ccd\u0cb7\u0c97\u0cb3\u0cb5\u0cb0\u0cc6\u0c97\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cb0\u0cc2\u0ca2\u0cbf.",
+              "next_action": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c89\u0cb2\u0ccd\u0cb2\u0cc7\u0c96\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0c82\u0c97\u0ccd\u0cb0\u0cb9\u0cbf\u0cb8\u0cbf, \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf \u0caa\u0cc2\u0cb0\u0ccd\u0ca3\u0cb5\u0cbe\u0c97\u0cc1\u0cb5\u0cb5\u0cb0\u0cc6\u0c97\u0cc6 \u0cb9\u0cbf\u0c82\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0cae\u0cc1\u0c82\u0ca6\u0cc1\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cb0\u0cbf\u0caf\u0cbe\u0c97\u0cbf \u0c95\u0c82\u0ca1\u0cb0\u0cc2, \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0ca6\u0ccb\u0cb7\u0cb5\u0cc1 \u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0cb8\u0cbf\u0c82\u0ca7\u0cc1\u0c97\u0cca\u0cb3\u0cbf\u0cb8\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc2 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0c87\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cc1, \u0c85\u0ca5\u0cb5\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf\u0caf\u0cbf\u0c82\u0ca6 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cc3\u0ca4 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c97\u0cb3\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "property_tax_receipts",
+          "name": "Latest property tax / land revenue paid receipts",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "Confirms the assessee of record and that no tax arrears attach to the property.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "BBMP / Municipal body / Gram Panchayat / Village Accountant",
+          "next_action": "Obtain tax-paid receipts for the current and preceding years in the seller's name.",
+          "risk_if_absent": "Unpaid dues can become a charge on the property and delay mutation after purchase.",
+          "closure_criteria": "Receipts for the current year in the seller's name are available with no arrears indicated.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0c86\u0cb8\u0ccd\u0ca4\u0cbf \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6 / \u0cad\u0cc2 \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0cc1",
+              "reason": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6\u0ca6\u0cbe\u0cb0\u0cb0\u0cc1 \u0caf\u0cbe\u0cb0\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0cb5\u0cc6\u0c82\u0cac\u0cc1\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "next_action": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cb8\u0c95\u0ccd\u0ca4 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0ca8 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0ca4\u0cc6\u0cb0\u0cbf\u0c97\u0cc6 \u0caa\u0cbe\u0cb5\u0ca4\u0cbf \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0caa\u0cbe\u0cb5\u0ca4\u0cbf\u0cb8\u0ca6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cc1 \u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0cae\u0cc7\u0cb2\u0cc6 \u0cad\u0cbe\u0cb0\u0cb5\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0caf \u0ca8\u0c82\u0ca4\u0cb0 \u0c96\u0cbe\u0ca4\u0cc6 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0c97\u0cc6 \u0c85\u0ca1\u0ccd\u0ca1\u0cbf\u0caf\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cb8\u0c95\u0ccd\u0ca4 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0cb0\u0cb8\u0cc0\u0ca6\u0cbf\u0c97\u0cb3\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb2\u0ccd\u0cb2.",
+              "issuing_authority": "\u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0ca8\u0c97\u0cb0\u0cb8\u0cad\u0cc6 / \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0caa\u0c82\u0c9a\u0cbe\u0caf\u0ca4\u0ccd / \u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0cb2\u0cc6\u0c95\u0ccd\u0c95\u0cbf\u0c97\u0cb0\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "seller_identity_verification",
+          "name": "Seller identity and authority to transfer",
+          "priority": "mandatory",
+          "status": "pending_collection",
+          "reason": "The person executing the transfer must be the person named in the title documents and must be competent to transfer.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "The seller; verified against title documents and photo identification",
+          "next_action": "Collect photo identification and reconcile the name, parentage and address against the title deed.",
+          "risk_if_absent": "Risk of impersonation, transfer by a person without authority, or an undisclosed co-owner.",
+          "closure_criteria": "Identification has been produced and reconciled with the names in the title documents.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {
+            "kn": {
+              "name": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0caf\u0cbf\u0cb8\u0cc1\u0cb5 \u0c85\u0ca7\u0cbf\u0c95\u0cbe\u0cb0",
+              "reason": "\u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0cae\u0cbe\u0ca1\u0cc1\u0cb5 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cc7 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cc7\u0c95\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0caf\u0cbf\u0cb8\u0cb2\u0cc1 \u0cb8\u0cae\u0cb0\u0ccd\u0ca5\u0cb0\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cc7\u0c95\u0cc1.",
+              "next_action": "\u0cad\u0cbe\u0cb5\u0c9a\u0cbf\u0ca4\u0ccd\u0cb0\u0cb5\u0cbf\u0cb0\u0cc1\u0cb5 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1, \u0ca4\u0c82\u0ca6\u0cc6\u0caf \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb3\u0cbe\u0cb8\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+              "risk_if_absent": "\u0cb8\u0ccb\u0c97\u0cc1 \u0cb9\u0cbe\u0c95\u0cc1\u0cb5\u0cbf\u0c95\u0cc6, \u0c85\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf\u0caf\u0cbf\u0c82\u0ca6 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cac\u0cb9\u0cbf\u0cb0\u0c82\u0c97\u0caa\u0ca1\u0cbf\u0cb8\u0ca6 \u0cb8\u0cb9-\u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0c85\u0caa\u0cbe\u0caf.",
+              "closure_criteria": "\u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc1\u0c97\u0cb3\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6\u0caf\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cc1; \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cad\u0cbe\u0cb5\u0c9a\u0cbf\u0ca4\u0ccd\u0cb0 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0ca8 \u0c9a\u0cc0\u0c9f\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6"
+            }
+          }
+        }
+      ],
+      "2. Documents conditionally required for this property": [
+        {
+          "key": "ptcl_grant_land_check",
+          "name": "Verification that the land is not granted land restricted under the PTCL Act",
+          "priority": "conditional",
+          "status": "not_performed",
+          "reason": "Land originally granted to members of Scheduled Castes / Scheduled Tribes may carry a statutory bar on alienation.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Assistant Commissioner / Deputy Commissioner; the original grant order and RTC remarks column",
+          "next_action": "Examine the earliest grant records and RTC remarks, and obtain confirmation that no PTCL proceedings are pending.",
+          "risk_if_absent": "A transfer in breach of a grant condition can be set aside and the land restored to the original grantee.",
+          "closure_criteria": "Official confirmation that the land is not restricted granted land, or that the restriction has lapsed.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0cbf\u0c9f\u0cbf\u0cb8\u0cbf\u0c8e\u0cb2\u0ccd \u0c95\u0cbe\u0caf\u0ccd\u0ca6\u0cc6\u0caf\u0ca1\u0cbf \u0ca8\u0cbf\u0cb0\u0ccd\u0cac\u0c82\u0ca7\u0cbf\u0ca4 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0cad\u0cc2\u0cae\u0cbf \u0c85\u0cb2\u0ccd\u0cb2\u0cb5\u0cc6\u0c82\u0ca6\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6",
+              "reason": "\u0caa\u0cb0\u0cbf\u0cb6\u0cbf\u0cb7\u0ccd\u0c9f \u0c9c\u0cbe\u0ca4\u0cbf / \u0caa\u0c82\u0c97\u0ca1\u0ca6 \u0cb8\u0ca6\u0cb8\u0ccd\u0caf\u0cb0\u0cbf\u0c97\u0cc6 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0cad\u0cc2\u0cae\u0cbf\u0caf \u0cae\u0cc7\u0cb2\u0cc6 \u0caa\u0cb0\u0cad\u0cbe\u0cb0\u0cc6\u0c97\u0cc6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0ca8\u0cbf\u0cb0\u0ccd\u0cac\u0c82\u0ca7\u0cb5\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "next_action": "\u0cae\u0cc2\u0cb2 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca4\u0cbf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb9\u0ca3\u0cbf\u0caf \u0cb7\u0cb0\u0cbe \u0c95\u0cbe\u0cb2\u0c82 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cbf; \u0caa\u0cbf\u0c9f\u0cbf\u0cb8\u0cbf\u0c8e\u0cb2\u0ccd \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0cb5\u0cc6\u0c82\u0ca6\u0cc1 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cb0\u0ca3 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+              "risk_if_absent": "\u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca4\u0cbf \u0cb7\u0cb0\u0ca4\u0ccd\u0ca4\u0cc1 \u0c89\u0cb2\u0ccd\u0cb2\u0c82\u0c98\u0cbf\u0cb8\u0cbf \u0cae\u0cbe\u0ca1\u0cbf\u0ca6 \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb0\u0ca6\u0ccd\u0ca6\u0cc1\u0caa\u0ca1\u0cbf\u0cb8\u0cbf \u0cad\u0cc2\u0cae\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cc2\u0cb2 \u0cab\u0cb2\u0cbe\u0ca8\u0cc1\u0cad\u0cb5\u0cbf\u0c97\u0cc6 \u0cb9\u0cbf\u0c82\u0ca6\u0cbf\u0cb0\u0cc1\u0c97\u0cbf\u0cb8\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0cad\u0cc2\u0cae\u0cbf \u0ca8\u0cbf\u0cb0\u0ccd\u0cac\u0c82\u0ca7\u0cbf\u0ca4 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca6 \u0cad\u0cc2\u0cae\u0cbf \u0c85\u0cb2\u0ccd\u0cb2 \u0c8e\u0c82\u0cac \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cb0\u0ca3.",
+              "issuing_authority": "\u0cb8\u0cb9\u0cbe\u0caf\u0c95 \u0c86\u0caf\u0cc1\u0c95\u0ccd\u0ca4\u0cb0\u0cc1 / \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3\u0cc1; \u0cae\u0cc2\u0cb2 \u0cae\u0c82\u0c9c\u0cc2\u0cb0\u0cbe\u0ca4\u0cbf \u0c86\u0ca6\u0cc7\u0cb6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb9\u0ca3\u0cbf\u0caf \u0cb7\u0cb0\u0cbe \u0c95\u0cbe\u0cb2\u0c82"
+            }
+          }
+        }
+      ],
+      "3. Documents needed to resolve identified discrepancies": [
+        {
+          "key": "issue:document_not_processed:686dc10f01",
+          "name": "Readable copy of AKHARBAND MIN.pdf",
+          "priority": "conditional",
+          "status": "pending_collection",
+          "reason": "Required to resolve: AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+          "related_finding": "AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "The seller, or the authority that issued the original record",
+          "next_action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+          "risk_if_absent": "A material fact in an unprocessed document would be missing from this assessment.",
+          "closure_criteria": "The document is supplied, analysed, and the finding \"AKHARBAND MIN.pdf could not be analysed (needs manual review)\" is resolved.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {}
+        },
+        {
+          "key": "issue:document_not_processed:acac9720ca",
+          "name": "Readable copy of MR.pdf",
+          "priority": "conditional",
+          "status": "pending_collection",
+          "reason": "Required to resolve: MR.pdf could not be analysed (needs manual review)",
+          "related_finding": "MR.pdf could not be analysed (needs manual review)",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "The seller, or the authority that issued the original record",
+          "next_action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+          "risk_if_absent": "A material fact in an unprocessed document would be missing from this assessment.",
+          "closure_criteria": "The document is supplied, analysed, and the finding \"MR.pdf could not be analysed (needs manual review)\" is resolved.",
+          "jurisdiction_confirmed": false,
+          "note": null,
+          "translations": {}
+        }
+      ],
+      "4. Documents recommended for stronger due diligence": [
+        {
+          "key": "physical_inspection_boundaries",
+          "name": "Physical site inspection and boundary verification",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "Documents describe boundaries and extent; only a measurement on site confirms them.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "A licensed surveyor; joint inspection with the seller",
+          "next_action": "Arrange a survey against the sketch and confirm possession, access and the absence of encroachment.",
+          "risk_if_absent": "Encroachment, access failure or a shortfall in extent may be discovered only after purchase.",
+          "closure_criteria": "A surveyor's report confirms extent, boundaries and access.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0cb8\u0ccd\u0ca5\u0cb3 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0ca6\u0cc3\u0ca2\u0cc0\u0c95\u0cb0\u0ca3",
+              "reason": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb5\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6; \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0c85\u0cb3\u0ca4\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf\u0ca6\u0cbe\u0c97 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0c85\u0cb5\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6.",
+              "next_action": "\u0ca8\u0c95\u0ccd\u0cb7\u0cc6\u0caf \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0 \u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cae\u0cbe\u0ca1\u0cbf\u0cb8\u0cbf, \u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8, \u0ca6\u0cbe\u0cb0\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c92\u0ca4\u0ccd\u0ca4\u0cc1\u0cb5\u0cb0\u0cbf \u0c87\u0cb2\u0ccd\u0cb2\u0ca6\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c96\u0c9a\u0cbf\u0ca4\u0caa\u0ca1\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c92\u0ca4\u0ccd\u0ca4\u0cc1\u0cb5\u0cb0\u0cbf, \u0ca6\u0cbe\u0cb0\u0cbf\u0caf \u0c95\u0cca\u0cb0\u0ca4\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0ca6 \u0c95\u0cca\u0cb0\u0ca4\u0cc6 \u0c96\u0cb0\u0cc0\u0ca6\u0cbf\u0caf \u0ca8\u0c82\u0ca4\u0cb0\u0cb5\u0cc7 \u0c97\u0cca\u0ca4\u0ccd\u0ca4\u0cbe\u0c97\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7\u0caf\u0cb0\u0ccd \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3, \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca6\u0cbe\u0cb0\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+              "issuing_authority": "\u0caa\u0cb0\u0cb5\u0cbe\u0ca8\u0c97\u0cbf \u0caa\u0ca1\u0cc6\u0ca6 \u0cb8\u0cb0\u0ccd\u0cb5\u0cc7\u0caf\u0cb0\u0ccd; \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0c9c\u0c82\u0c9f\u0cbf \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6"
+            }
+          }
+        }
+      ],
+      "5. External verification checks not yet performed": [
+        {
+          "key": "litigation_search_external",
+          "name": "Independent litigation and court records search",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "The supplied documents cannot show proceedings that the seller has not disclosed.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals",
+          "next_action": "Have an advocate run a search against the property identifiers and every owner in the title chain.",
+          "risk_if_absent": "Pending suits, injunctions or attachments may exist without appearing in any supplied document.",
+          "closure_criteria": "A search report from a qualified professional is on record.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0cb8\u0ccd\u0cb5\u0ca4\u0c82\u0ca4\u0ccd\u0cb0 \u0cb5\u0ccd\u0caf\u0cbe\u0c9c\u0ccd\u0caf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f",
+              "reason": "\u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0c97\u0cbe\u0cb0\u0cb0\u0cc1 \u0cac\u0cb9\u0cbf\u0cb0\u0c82\u0c97\u0caa\u0ca1\u0cbf\u0cb8\u0ca6 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0cb0\u0cb5\u0cc1.",
+              "next_action": "\u0cb8\u0ccd\u0cb5\u0ca4\u0ccd\u0ca4\u0cbf\u0ca8 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cb0\u0caa\u0cb3\u0cbf\u0caf \u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0cb5\u0c95\u0cc0\u0cb2\u0cb0\u0cbf\u0c82\u0ca6 \u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f \u0ca8\u0ca1\u0cc6\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c95\u0cbe\u0ca3\u0cbf\u0cb8\u0ca6 \u0cac\u0cbe\u0c95\u0cbf \u0ca6\u0cbe\u0cb5\u0cc6\u0c97\u0cb3\u0cc1, \u0ca4\u0ca1\u0cc6\u0caf\u0cbe\u0c9c\u0ccd\u0c9e\u0cc6\u0c97\u0cb3\u0cc1 \u0c85\u0ca5\u0cb5\u0cbe \u0c9c\u0caa\u0ccd\u0ca4\u0cbf\u0c97\u0cb3\u0cc1 \u0c87\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0c85\u0cb0\u0ccd\u0cb9 \u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0\u0cb0\u0cbf\u0c82\u0ca6 \u0cb9\u0cc1\u0ca1\u0cc1\u0c95\u0cbe\u0c9f \u0cb5\u0cb0\u0ca6\u0cbf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0cb8\u0cbf\u0cb5\u0cbf\u0cb2\u0ccd \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf\u0c97\u0cb3\u0cc1, \u0c95\u0cb0\u0ccd\u0ca8\u0cbe\u0c9f\u0c95 \u0c89\u0c9a\u0ccd\u0c9a \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf (\u0c87-\u0c95\u0ccb\u0cb0\u0ccd\u0c9f\u0ccd\u0cb8\u0ccd), \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cae\u0c82\u0ca1\u0cb3\u0cbf\u0c97\u0cb3\u0cc1"
+            }
+          }
+        },
+        {
+          "key": "revenue_record_online_verification",
+          "name": "Online verification of current revenue / khata records",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "Revenue records change; the supplied extract may be out of date.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Bhoomi portal (RTC), BBMP / municipal khata portal",
+          "next_action": "Pull the live record for the survey number or khata and compare it with the supplied extract.",
+          "risk_if_absent": "A recent adverse entry, attachment or mutation may not appear in the supplied copy.",
+          "closure_criteria": "A current record has been retrieved and reconciled.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0c95\u0c82\u0ca6\u0cbe\u0caf / \u0c96\u0cbe\u0ca4\u0cbe \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6",
+              "reason": "\u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1 \u0cac\u0ca6\u0cb2\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0cb5\u0cc6; \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0c89\u0ca4\u0cbe\u0cb0 \u0cb9\u0cb3\u0cc6\u0caf\u0ca6\u0cbe\u0c97\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "next_action": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0c96\u0cbe\u0ca4\u0cbe\u0c97\u0cc6 \u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0c89\u0ca4\u0cbe\u0cb0\u0ca6\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c95\u0cc2\u0cb2 \u0ca8\u0cae\u0cc2\u0ca6\u0cc1, \u0c9c\u0caa\u0ccd\u0ca4\u0cbf \u0c85\u0ca5\u0cb5\u0cbe \u0cb5\u0cb0\u0ccd\u0c97\u0cbe\u0cb5\u0ca3\u0cc6 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c95\u0cbe\u0ca3\u0ca6\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0ca6\u0cc1 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cad\u0cc2\u0cae\u0cbf \u0caa\u0ccb\u0cb0\u0ccd\u0c9f\u0cb2\u0ccd (\u0c86\u0cb0\u0ccd\u200c\u0c9f\u0cbf\u0cb8\u0cbf), \u0cac\u0cbf\u0cac\u0cbf\u0c8e\u0c82\u0caa\u0cbf / \u0ca8\u0c97\u0cb0\u0cb8\u0cad\u0cc6 \u0c96\u0cbe\u0ca4\u0cbe \u0caa\u0ccb\u0cb0\u0ccd\u0c9f\u0cb2\u0ccd"
+            }
+          }
+        },
+        {
+          "key": "sub_registrar_record_verification",
+          "name": "Verification of deeds against Sub-Registrar records",
+          "priority": "recommended",
+          "status": "not_performed",
+          "reason": "A scanned or photocopied deed is not proof that the registration entry exists in the official record.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services",
+          "next_action": "Verify each registration number, date and book/volume entry against the official register.",
+          "risk_if_absent": "Fabricated or altered copies cannot be ruled out from the documents alone.",
+          "closure_criteria": "Each registered document has been matched to the official registration entry.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca6\u0cb8\u0ccd\u0ca4\u0cbe\u0cb5\u0cc7\u0c9c\u0cc1\u0c97\u0cb3 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cc6",
+              "reason": "\u0cb8\u0ccd\u0c95\u0ccd\u0caf\u0cbe\u0ca8\u0ccd \u0c85\u0ca5\u0cb5\u0cbe \u0c9b\u0cbe\u0caf\u0cbe\u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf \u0ca8\u0cae\u0cc2\u0ca6\u0cc1 \u0c87\u0ca6\u0cc6 \u0c8e\u0c82\u0cac\u0cc1\u0ca6\u0c95\u0ccd\u0c95\u0cc6 \u0caa\u0cc1\u0cb0\u0cbe\u0cb5\u0cc6\u0caf\u0cb2\u0ccd\u0cb2.",
+              "next_action": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6, \u0ca6\u0cbf\u0ca8\u0cbe\u0c82\u0c95 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cc1\u0cb8\u0ccd\u0ca4\u0c95/\u0cb8\u0c82\u0caa\u0cc1\u0c9f \u0ca8\u0cae\u0cc2\u0ca6\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cbf.",
+              "risk_if_absent": "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cbf\u0c82\u0ca6 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0ca8\u0c95\u0cb2\u0cbf \u0c85\u0ca5\u0cb5\u0cbe \u0ca4\u0cbf\u0ca6\u0ccd\u0ca6\u0cbf\u0ca6 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca4\u0cb3\u0ccd\u0cb3\u0cbf\u0cb9\u0cbe\u0c95\u0cb2\u0cbe\u0c97\u0ca6\u0cc1.",
+              "closure_criteria": "\u0caa\u0ccd\u0cb0\u0ca4\u0cbf \u0ca8\u0ccb\u0c82\u0ca6\u0cbe\u0caf\u0cbf\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf \u0ca8\u0cae\u0cc2\u0ca6\u0cbf\u0ca8\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cbe \u0c89\u0caa \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbe\u0ca7\u0cbf\u0c95\u0cbe\u0cb0\u0cbf\u0c97\u0cb3 \u0c95\u0c9a\u0cc7\u0cb0\u0cbf / \u0c95\u0cbe\u0cb5\u0cc7\u0cb0\u0cbf \u0c86\u0ca8\u0ccd\u200c\u0cb2\u0cc8\u0ca8\u0ccd \u0cb8\u0cc7\u0cb5\u0cc6\u0c97\u0cb3\u0cc1"
+            }
+          }
+        }
+      ],
+      "6. Professional assessments still pending": [
+        {
+          "key": "legal_title_opinion",
+          "name": "Legal title opinion from a qualified advocate",
+          "priority": "professional_advice",
+          "status": "not_performed",
+          "reason": "This system organises and cross-checks evidence; it does not give a legal opinion on marketability of title.",
+          "related_finding": "",
+          "period": null,
+          "relates_to": "minnasandra agri land",
+          "issuing_authority": "An advocate practising property law in the relevant jurisdiction",
+          "next_action": "Place the complete document set and this report before an advocate for a written title opinion.",
+          "risk_if_absent": "No qualified professional has certified that the title is marketable.",
+          "closure_criteria": "A written title opinion covering the review period is on record.",
+          "jurisdiction_confirmed": false,
+          "note": "This check cannot be satisfied by a document in the folder; it requires an external enquiry.",
+          "translations": {
+            "kn": {
+              "name": "\u0c85\u0cb0\u0ccd\u0cb9 \u0cb5\u0c95\u0cc0\u0cb2\u0cb0\u0cbf\u0c82\u0ca6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf",
+              "reason": "\u0c88 \u0cb5\u0ccd\u0caf\u0cb5\u0cb8\u0ccd\u0ca5\u0cc6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c9c\u0ccb\u0ca1\u0cbf\u0cb8\u0cbf \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6; \u0cb9\u0c95\u0ccd\u0c95\u0cbf\u0ca8 \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0caf\u0ccb\u0c97\u0ccd\u0caf\u0ca4\u0cc6\u0caf \u0cac\u0c97\u0ccd\u0c97\u0cc6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf \u0ca8\u0cc0\u0ca1\u0cc1\u0cb5\u0cc1\u0ca6\u0cbf\u0cb2\u0ccd\u0cb2.",
+              "next_action": "\u0cb8\u0c82\u0caa\u0cc2\u0cb0\u0ccd\u0ca3 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb8\u0c82\u0c97\u0ccd\u0cb0\u0cb9 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c88 \u0cb5\u0cb0\u0ca6\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0c95\u0cc0\u0cb2\u0cb0 \u0cae\u0cc1\u0c82\u0ca6\u0cc6 \u0cb2\u0cbf\u0c96\u0cbf\u0ca4 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf\u0c95\u0ccd\u0c95\u0cbe\u0c97\u0cbf \u0c87\u0cb0\u0cbf\u0cb8\u0cbf.",
+              "risk_if_absent": "\u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0cae\u0cbe\u0cb0\u0cbe\u0c9f\u0caf\u0ccb\u0c97\u0ccd\u0caf \u0c8e\u0c82\u0ca6\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0c85\u0cb0\u0ccd\u0cb9 \u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caa\u0cb0\u0cb0\u0cc1 \u0caa\u0ccd\u0cb0\u0cae\u0cbe\u0ca3\u0cc0\u0c95\u0cb0\u0cbf\u0cb8\u0cbf\u0cb2\u0ccd\u0cb2.",
+              "closure_criteria": "\u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c92\u0cb3\u0c97\u0cca\u0c82\u0ca1 \u0cb2\u0cbf\u0c96\u0cbf\u0ca4 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+              "issuing_authority": "\u0cb8\u0c82\u0cac\u0c82\u0ca7\u0cbf\u0ca4 \u0cb5\u0ccd\u0caf\u0cbe\u0caa\u0ccd\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0c86\u0cb8\u0ccd\u0ca4\u0cbf \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0c85\u0cad\u0ccd\u0caf\u0cbe\u0cb8 \u0cae\u0cbe\u0ca1\u0cc1\u0cb5 \u0cb5\u0c95\u0cc0\u0cb2\u0cb0\u0cc1"
+            }
+          }
+        }
+      ]
+    },
+    "satisfied_or_closed": [
+      {
+        "key": "phodi_subdivision_record",
+        "name": "Phodi / subdivision (hissa) record",
+        "priority": "conditional",
+        "status": "available_analysed",
+        "reason": "Where a survey number has been subdivided, the phodi record establishes the identity and extent of the subdivided portion.",
+        "related_finding": "",
+        "period": null,
+        "relates_to": "minnasandra agri land",
+        "issuing_authority": "Department of Survey, Settlement and Land Records / Tahsildar",
+        "next_action": "Obtain the phodi / hissa durasti record for the subdivided survey number.",
+        "risk_if_absent": "The portion being transacted may not be officially identifiable on the ground.",
+        "closure_criteria": "The subdivision record matches the survey number and extent in the title documents.",
+        "jurisdiction_confirmed": false,
+        "note": "Satisfied by: Digitized Sketch.pdf, WhatsApp Image 2026-10-14 at 16.30.34.jpeg",
+        "translations": {
+          "kn": {
+            "name": "\u0caa\u0ccb\u0ca1\u0cbf / \u0c89\u0caa \u0cb5\u0cbf\u0cad\u0cbe\u0c97 (\u0cb9\u0cbf\u0cb8\u0ccd\u0cb8\u0cbe) \u0ca6\u0cbe\u0c96\u0cb2\u0cc6",
+            "reason": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0c89\u0caa\u0cb5\u0cbf\u0cad\u0cbe\u0c97 \u0cae\u0cbe\u0ca1\u0cbf\u0ca6\u0ccd\u0ca6\u0cb0\u0cc6, \u0caa\u0ccb\u0ca1\u0cbf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cc1 \u0c86 \u0cad\u0cbe\u0c97\u0ca6 \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cc1 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0ccd\u0ca5\u0cbe\u0caa\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+            "next_action": "\u0c89\u0caa\u0cb5\u0cbf\u0cad\u0cbe\u0c97\u0c97\u0cca\u0c82\u0ca1 \u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6\u0c97\u0cc6 \u0caa\u0ccb\u0ca1\u0cbf / \u0cb9\u0cbf\u0cb8\u0ccd\u0cb8\u0cbe \u0ca6\u0cc1\u0cb0\u0cb8\u0ccd\u0ca4\u0cbf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+            "risk_if_absent": "\u0cb5\u0ccd\u0caf\u0cb5\u0cb9\u0cbe\u0cb0\u0cb5\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0cbf\u0cb0\u0cc1\u0cb5 \u0cad\u0cbe\u0c97\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0ccd\u0ca5\u0cb3\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4\u0cb5\u0cbe\u0c97\u0cbf \u0c97\u0cc1\u0cb0\u0cc1\u0ca4\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0ca6\u0cbf\u0cb0\u0cac\u0cb9\u0cc1\u0ca6\u0cc1.",
+            "closure_criteria": "\u0c89\u0caa\u0cb5\u0cbf\u0cad\u0cbe\u0c97 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0ca6\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6\u0caf\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+            "issuing_authority": "\u0cad\u0cc2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0c87\u0cb2\u0cbe\u0c96\u0cc6 / \u0ca4\u0cb9\u0cb6\u0cc0\u0cb2\u0ccd\u0ca6\u0cbe\u0cb0\u0ccd"
+          }
+        }
+      },
+      {
+        "key": "rtc_pahani_current",
+        "name": "Current RTC / Pahani (Record of Rights, Tenancy and Crops)",
+        "priority": "mandatory",
+        "status": "available_analysed",
+        "reason": "The RTC records the person in possession and cultivating the land, the extent, and the land classification.",
+        "related_finding": "",
+        "period": null,
+        "relates_to": "minnasandra agri land",
+        "issuing_authority": "Village Accountant / Tahsildar; Bhoomi portal",
+        "next_action": "Obtain the latest RTC together with the historical RTC series for the review period.",
+        "risk_if_absent": "The revenue position, extent and kharab area cannot be reconciled against the deeds.",
+        "closure_criteria": "A current RTC in the claimed owner's name is available and reconciled.",
+        "jurisdiction_confirmed": false,
+        "note": "Satisfied by: RTC MIN.pdf",
+        "translations": {
+          "kn": {
+            "name": "\u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0caa\u0cb9\u0ca3\u0cbf / \u0c86\u0cb0\u0ccd\u200c\u0c9f\u0cbf\u0cb8\u0cbf (\u0cb9\u0c95\u0ccd\u0c95\u0cc1, \u0cac\u0cbe\u0ca7\u0ccd\u0caf\u0ca4\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cac\u0cc6\u0cb3\u0cc6\u0c97\u0cb3 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6)",
+            "reason": "\u0caa\u0cb9\u0ca3\u0cbf\u0caf\u0cc1 \u0cb8\u0ccd\u0cb5\u0cbe\u0ca7\u0cc0\u0ca8\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf\u0cb0\u0cc1\u0cb5 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0cbe\u0c97\u0cc1\u0cb5\u0cb3\u0cbf \u0cae\u0cbe\u0ca1\u0cc1\u0ca4\u0ccd\u0ca4\u0cbf\u0cb0\u0cc1\u0cb5 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf, \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c9c\u0cae\u0cc0\u0ca8\u0cbf\u0ca8 \u0cb5\u0cb0\u0ccd\u0c97\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+            "next_action": "\u0c87\u0ca4\u0ccd\u0ca4\u0cc0\u0c9a\u0cbf\u0ca8 \u0caa\u0cb9\u0ca3\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0ca8\u0cbe \u0c85\u0cb5\u0ca7\u0cbf\u0caf \u0cb9\u0cb3\u0cc6\u0caf \u0caa\u0cb9\u0ca3\u0cbf \u0cb8\u0cb0\u0ca3\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ca1\u0cc6\u0caf\u0cbf\u0cb0\u0cbf.",
+            "risk_if_absent": "\u0c95\u0c82\u0ca6\u0cbe\u0caf \u0cb8\u0ccd\u0ca5\u0cbf\u0ca4\u0cbf, \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c96\u0cb0\u0cbe\u0cac\u0cc1 \u0caa\u0ccd\u0cb0\u0ca6\u0cc7\u0cb6\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0ca4\u0cbe\u0cb3\u0cc6 \u0cae\u0cbe\u0ca1\u0cb2\u0cbe\u0c97\u0ca6\u0cc1.",
+            "closure_criteria": "\u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0cb0 \u0cb9\u0cc6\u0cb8\u0cb0\u0cbf\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0cb8\u0ccd\u0ca4\u0cc1\u0ca4 \u0caa\u0cb9\u0ca3\u0cbf \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0ca6\u0ccd\u0ca6\u0cc1 \u0ca4\u0cbe\u0cb3\u0cc6\u0caf\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+            "issuing_authority": "\u0c97\u0ccd\u0cb0\u0cbe\u0cae \u0cb2\u0cc6\u0c95\u0ccd\u0c95\u0cbf\u0c97\u0cb0\u0cc1 / \u0ca4\u0cb9\u0cb6\u0cc0\u0cb2\u0ccd\u0ca6\u0cbe\u0cb0\u0ccd; \u0cad\u0cc2\u0cae\u0cbf \u0caa\u0ccb\u0cb0\u0ccd\u0c9f\u0cb2\u0ccd"
+          }
+        }
+      },
+      {
+        "key": "survey_sketch_tippani",
+        "name": "Survey sketch / Tippani / Akarband",
+        "priority": "recommended",
+        "status": "available_analysed",
+        "reason": "Confirms the shape, boundaries and official extent of the survey number on the ground.",
+        "related_finding": "",
+        "period": null,
+        "relates_to": "minnasandra agri land",
+        "issuing_authority": "Department of Survey, Settlement and Land Records",
+        "next_action": "Apply for the Tippani / Akarband and the hissa sketch for the survey number.",
+        "risk_if_absent": "Boundary and extent disputes cannot be assessed against official survey records.",
+        "closure_criteria": "An official sketch matching the described boundaries is on record.",
+        "jurisdiction_confirmed": false,
+        "note": "Satisfied by: Digitized Sketch.pdf, WhatsApp Image 2026-10-14 at 16.30.34.jpeg",
+        "translations": {
+          "kn": {
+            "name": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 / \u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf / \u0c86\u0c95\u0cbe\u0cb0\u0ccd \u0cac\u0c82\u0ca6\u0ccd",
+            "reason": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6\u0caf \u0c86\u0c95\u0cbe\u0cb0, \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c87\u0ca6\u0cc1 \u0ca6\u0cc3\u0ca2\u0caa\u0ca1\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6.",
+            "next_action": "\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7 \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cc6\u0c97\u0cc6 \u0c9f\u0cbf\u0caa\u0ccd\u0caa\u0ca3\u0cbf / \u0c86\u0c95\u0cbe\u0cb0\u0ccd \u0cac\u0c82\u0ca6\u0ccd \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb9\u0cbf\u0cb8\u0ccd\u0cb8\u0cbe \u0ca8\u0c95\u0ccd\u0cb7\u0cc6\u0c97\u0cc6 \u0c85\u0cb0\u0ccd\u0c9c\u0cbf \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf.",
+            "risk_if_absent": "\u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0ca6 \u0cb5\u0cbf\u0cb5\u0cbe\u0ca6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0ca6\u0cc1.",
+            "closure_criteria": "\u0cb5\u0cbf\u0cb5\u0cb0\u0cbf\u0cb8\u0cbf\u0ca6 \u0c9a\u0c95\u0ccd\u0c95\u0cc1\u0cac\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0cca\u0c82\u0ca6\u0cc1\u0cb5 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca8\u0c95\u0ccd\u0cb7\u0cc6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6.",
+            "issuing_authority": "\u0cad\u0cc2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3 \u0c87\u0cb2\u0cbe\u0c96\u0cc6 (\u0cb8\u0cb0\u0ccd\u0cb5\u0cc7, \u0cb8\u0cc6\u0c9f\u0ccd\u0cb2\u0ccd\u200c\u0cae\u0cc6\u0c82\u0c9f\u0ccd \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cad\u0cc2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cc1)"
+          }
+        }
+      }
+    ],
+    "note": "A requirement listed here is something still to be obtained or done. The absence of a document is not itself proof of a defect - it means the point has not been verified.",
+    "jurisdiction_caveat": "Requirement sets are templates for the selected jurisdiction and have not been confirmed by local counsel. Statutory applicability must be confirmed for this property and this transaction."
+  },
+  "section_11_questions": [
+    {
+      "question": "Can you provide a readable copy of MR.pdf, preferably as a PDF?",
+      "reason": "MR.pdf could not be analysed (needs manual review)",
+      "severity": "medium",
+      "risk_ref": "R-001",
+      "source": "finding"
+    },
+    {
+      "question": "Can you provide a readable copy of AKHARBAND MIN.pdf, preferably as a PDF?",
+      "reason": "AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+      "severity": "medium",
+      "risk_ref": "R-002",
+      "source": "finding"
+    },
+    {
+      "question": "Can you provide current title document (registered sale / gift / partition / settlement deed)?",
+      "reason": "Establishes how the current claimed owner acquired the property and is the starting point for the title chain.",
+      "severity": null,
+      "requirement_key": "current_title_document",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide encumbrance Certificate covering the full review period?",
+      "reason": "Shows registered transactions, mortgages and charges recorded against the property for the certified period.",
+      "severity": null,
+      "requirement_key": "encumbrance_certificate_full_period",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide mutation register extracts (MR) for each transfer?",
+      "reason": "Mutation entries reconcile the registered transfers with the revenue record.",
+      "severity": null,
+      "requirement_key": "mutation_records",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide parent deeds covering the title chain for the customary review period?",
+      "reason": "The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.",
+      "severity": null,
+      "requirement_key": "parent_deeds_chain",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide latest property tax / land revenue paid receipts?",
+      "reason": "Confirms the assessee of record and that no tax arrears attach to the property.",
+      "severity": null,
+      "requirement_key": "property_tax_receipts",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide verification that the land is not granted land restricted under the PTCL Act?",
+      "reason": "Land originally granted to members of Scheduled Castes / Scheduled Tribes may carry a statutory bar on alienation.",
+      "severity": null,
+      "requirement_key": "ptcl_grant_land_check",
+      "source": "requirement"
+    },
+    {
+      "question": "Can you provide seller identity and authority to transfer?",
+      "reason": "The person executing the transfer must be the person named in the title documents and must be competent to transfer.",
+      "severity": null,
+      "requirement_key": "seller_identity_verification",
+      "source": "requirement"
+    }
+  ],
+  "section_12_action_plan": [
+    {
+      "order": 1,
+      "group": "Resolve",
+      "action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+      "reason": "MR.pdf could not be analysed (needs manual review)",
+      "severity": "medium",
+      "depends_on": [
+        "Readable copy of MR.pdf"
+      ],
+      "finding_id": "6e366962bc234209a9a46d299af9fa8c",
+      "risk_ref": "R-001"
+    },
+    {
+      "order": 2,
+      "group": "Resolve",
+      "action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+      "reason": "AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+      "severity": "medium",
+      "depends_on": [
+        "Readable copy of AKHARBAND MIN.pdf"
+      ],
+      "finding_id": "6554003fe0e24bf2bb52a830b0244516",
+      "risk_ref": "R-002"
+    },
+    {
+      "order": 3,
+      "group": "Collect documents required by law",
+      "action": "Obtain the registered deed together with its certified copy from the Sub-Registrar.",
+      "reason": "Establishes how the current claimed owner acquired the property and is the starting point for the title chain.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "e798e28bbb0742cd8ef35a7a300f9b7b",
+      "authority": "Jurisdictional Sub-Registrar's office"
+    },
+    {
+      "order": 4,
+      "group": "Collect documents required by law",
+      "action": "Apply for an EC (Form 15) covering at least the last 30 years and verify it against the title chain.",
+      "reason": "Shows registered transactions, mortgages and charges recorded against the property for the certified period.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "a2f611a64fbf40a9ababea0f74851c32",
+      "authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services"
+    },
+    {
+      "order": 5,
+      "group": "Collect documents required by law",
+      "action": "Obtain the MR extract corresponding to each transfer in the title chain.",
+      "reason": "Mutation entries reconcile the registered transfers with the revenue record.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "3cbbc0b6538a4ce18f18b249b24c6545",
+      "authority": "Tahsildar's office / Bhoomi mutation register"
+    },
+    {
+      "order": 6,
+      "group": "Collect documents required by law",
+      "action": "Collect each earlier deed referenced in the current title document and continue backwards until the review period is covered.",
+      "reason": "The title chain is customarily traced for about 30 years to confirm that each transfer was validly made by a person entitled to transfer.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "d30acdadb21b4d238d8e151f343c998b",
+      "authority": "The seller, or certified copies from the Sub-Registrar's office"
+    },
+    {
+      "order": 7,
+      "group": "Collect documents required by law",
+      "action": "Obtain tax-paid receipts for the current and preceding years in the seller's name.",
+      "reason": "Confirms the assessee of record and that no tax arrears attach to the property.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "96b408f4d7ad4c1ebb98ae8e79727b74",
+      "authority": "BBMP / Municipal body / Gram Panchayat / Village Accountant"
+    },
+    {
+      "order": 8,
+      "group": "Collect documents required by law",
+      "action": "Collect photo identification and reconcile the name, parentage and address against the title deed.",
+      "reason": "The person executing the transfer must be the person named in the title documents and must be competent to transfer.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "a02ca1c8cb474839a2839ba83720ccf2",
+      "authority": "The seller; verified against title documents and photo identification"
+    },
+    {
+      "order": 9,
+      "group": "Collect documents needed to resolve discrepancies",
+      "action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+      "reason": "Required to resolve: AKHARBAND MIN.pdf could not be analysed (needs manual review)",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "04eb97717f1a45e2ba65d24727d0bb86",
+      "authority": "The seller, or the authority that issued the original record"
+    },
+    {
+      "order": 10,
+      "group": "Collect documents needed to resolve discrepancies",
+      "action": "Supply a clearer or converted copy (PDF or DOCX), or review the document manually and record the outcome against the case.",
+      "reason": "Required to resolve: MR.pdf could not be analysed (needs manual review)",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "0ed79cb1c5314277b7975b01f49c3432",
+      "authority": "The seller, or the authority that issued the original record"
+    },
+    {
+      "order": 11,
+      "group": "Collect conditionally required documents",
+      "action": "Examine the earliest grant records and RTC remarks, and obtain confirmation that no PTCL proceedings are pending.",
+      "reason": "Land originally granted to members of Scheduled Castes / Scheduled Tribes may carry a statutory bar on alienation.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "6f39499a0c4448a8b6c586834007e582",
+      "authority": "Assistant Commissioner / Deputy Commissioner; the original grant order and RTC remarks column"
+    },
+    {
+      "order": 12,
+      "group": "Perform external verification",
+      "action": "Have an advocate run a search against the property identifiers and every owner in the title chain.",
+      "reason": "The supplied documents cannot show proceedings that the seller has not disclosed.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "a7c0046b27bc40abb8abb85ede3cc7eb",
+      "authority": "Jurisdictional civil courts, High Court of Karnataka, e-Courts services, revenue tribunals"
+    },
+    {
+      "order": 13,
+      "group": "Perform external verification",
+      "action": "Pull the live record for the survey number or khata and compare it with the supplied extract.",
+      "reason": "Revenue records change; the supplied extract may be out of date.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "8299421e140b4f3fb0881f8800bfb8ec",
+      "authority": "Bhoomi portal (RTC), BBMP / municipal khata portal"
+    },
+    {
+      "order": 14,
+      "group": "Perform external verification",
+      "action": "Verify each registration number, date and book/volume entry against the official register.",
+      "reason": "A scanned or photocopied deed is not proof that the registration entry exists in the official record.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "937f8c77e3ef46ecbb588a78d00523b5",
+      "authority": "Jurisdictional Sub-Registrar's office / Kaveri Online Services"
+    },
+    {
+      "order": 15,
+      "group": "Recommended for stronger due diligence",
+      "action": "Arrange a survey against the sketch and confirm possession, access and the absence of encroachment.",
+      "reason": "Documents describe boundaries and extent; only a measurement on site confirms them.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "5f86290be7ca45f3ae1e93b2fc29da06",
+      "authority": "A licensed surveyor; joint inspection with the seller"
+    },
+    {
+      "order": 16,
+      "group": "Obtain professional review",
+      "action": "Place the complete document set and this report before an advocate for a written title opinion.",
+      "reason": "This system organises and cross-checks evidence; it does not give a legal opinion on marketability of title.",
+      "severity": null,
+      "depends_on": [],
+      "requirement_id": "d8a11e88c8ae4ae8aa9da4ae7980059b",
+      "authority": "An advocate practising property law in the relevant jurisdiction"
+    }
+  ],
+  "section_13_final_assessment": {
+    "status": "assessment_incomplete",
+    "label": "Assessment Incomplete",
+    "overall_risk": "medium",
+    "risk_score": 62.0,
+    "risk_score_normalised": 20.7,
+    "how_determined": "The overall level is set by the most severe unresolved finding, not by an average. The numerical score (severity x evidence reliability x whether the issue is confirmed and still open) is shown alongside it as a secondary indicator only.",
+    "how_determined_kn": "\u0c92\u0c9f\u0ccd\u0c9f\u0cbe\u0cb0\u0cc6 \u0cae\u0c9f\u0ccd\u0c9f\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c85\u0ca4\u0ccd\u0caf\u0c82\u0ca4 \u0c97\u0c82\u0cad\u0cc0\u0cb0\u0cb5\u0cbe\u0ca6 \u0c87\u0ca4\u0ccd\u0caf\u0cb0\u0ccd\u0ca5\u0cb5\u0cbe\u0c97\u0ca6 \u0c85\u0c82\u0cb6\u0cb5\u0cc1 \u0ca8\u0cbf\u0cb0\u0ccd\u0ca7\u0cb0\u0cbf\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0ca6\u0cc6, \u0cb8\u0cb0\u0cbe\u0cb8\u0cb0\u0cbf \u0c85\u0cb2\u0ccd\u0cb2. \u0cb8\u0c82\u0c96\u0ccd\u0caf\u0cbe\u0ca4\u0ccd\u0cae\u0c95 \u0c85\u0c82\u0c95\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 (\u0ca4\u0cc0\u0cb5\u0ccd\u0cb0\u0ca4\u0cc6 x \u0cb8\u0cbe\u0c95\u0ccd\u0cb7\u0ccd\u0caf\u0ca6 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb5\u0cbe\u0cb8\u0cbe\u0cb0\u0ccd\u0cb9\u0ca4\u0cc6 x \u0c85\u0c82\u0cb6 \u0ca6\u0cc3\u0ca2\u0caa\u0c9f\u0ccd\u0c9f\u0cbf\u0ca6\u0cc6\u0caf\u0cc7 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0ca6\u0cc6\u0caf\u0cc7) \u0c9c\u0cca\u0ca4\u0cc6\u0c97\u0cc6 \u0ca6\u0ccd\u0cb5\u0cbf\u0ca4\u0cc0\u0caf \u0cb8\u0cc2\u0c9a\u0c95\u0cb5\u0cbe\u0c97\u0cbf \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0ca4\u0ccb\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+    "label_kn": "\u0cae\u0ccc\u0cb2\u0ccd\u0caf\u0cae\u0cbe\u0caa\u0ca8 \u0c85\u0caa\u0cc2\u0cb0\u0ccd\u0ca3",
+    "reasons": [
+      "6 mandatory requirement(s) have not been met: Current title document (registered sale / gift / partition / settlement deed); Encumbrance Certificate covering the full review period; Mutation register extracts (MR) for each transfer.",
+      "6 statutory requirement(s) are still outstanding.",
+      "2 of 5 documents could not be analysed."
+    ],
+    "reasons_kn": [
+      "6 \u0c95\u0ca1\u0ccd\u0ca1\u0cbe\u0caf \u0c85\u0c97\u0ca4\u0ccd\u0caf(\u0c97\u0cb3\u0cc1) \u0caa\u0cc2\u0cb0\u0cc8\u0cb8\u0cbf\u0cb2\u0ccd\u0cb2: Current title document (registered sale / gift / partition / settlement deed); Encumbrance Certificate covering the full review period; Mutation register extracts (MR) for each transfer.",
+      "6 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cbf\u0ca8 \u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb0 \u0c85\u0c97\u0ca4\u0ccd\u0caf\u0cb5\u0cbe\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6(\u0c97\u0cb3\u0cc1) \u0c87\u0ca8\u0ccd\u0ca8\u0cc2 \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb5\u0cc6.",
+      "5 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0cb2\u0ccd\u0cb2\u0cbf 2 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb5\u0cbf\u0cb6\u0ccd\u0cb2\u0cc7\u0cb7\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2."
+    ],
+    "scope_and_limitations_kn": [
+      "\u0c88 \u0cb5\u0cb0\u0ccd\u0c97\u0cc0\u0c95\u0cb0\u0ca3\u0cb5\u0cc1 \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0ca6 \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0c86\u0ca7\u0cb0\u0cbf\u0cb8\u0cbf\u0ca6\u0cc6. \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6, \u0ca8\u0ccd\u0caf\u0cbe\u0caf\u0cbe\u0cb2\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0cb9\u0cca\u0cb0\u0c97\u0cbf\u0ca8 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf \u0c95\u0ccb\u0cb6\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0cb0\u0cbf\u0cb6\u0cc0\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2, \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0c95\u0cbe\u0ca8\u0cc2\u0ca8\u0cc1 \u0c85\u0cad\u0cbf\u0caa\u0ccd\u0cb0\u0cbe\u0caf \u0ca8\u0cc0\u0ca1\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+      "\u0c88 \u0c86\u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caf \u0cb8\u0cae\u0caf\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0caa\u0ccd\u0cb0\u0c95\u0cb0\u0ca3\u0ca6 \u0cab\u0ccb\u0cb2\u0ccd\u0ca1\u0cb0\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0ccd\u0ca6 \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cbe\u0ca4\u0ccd\u0cb0 \u0caa\u0cb0\u0cbf\u0c97\u0ca3\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6.",
+      "\u0cb8\u0ccd\u0c95\u0ccd\u0caf\u0cbe\u0ca8\u0ccd \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0c97\u0cb3\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb8\u0cb2\u0ccd\u0cb2\u0cbf\u0cb8\u0cbf\u0ca6\u0c82\u0ca4\u0cc6\u0caf\u0cc7 \u0c93\u0ca6\u0cb2\u0cbe\u0c97\u0cbf\u0ca6\u0cc6; \u0caf\u0cbe\u0cb5\u0cc1\u0ca6\u0cc7 \u0caa\u0ccd\u0cb0\u0ca4\u0cbf\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cae\u0cc2\u0cb2\u0ca6\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0c85\u0ca5\u0cb5\u0cbe \u0c85\u0ca7\u0cbf\u0c95\u0cc3\u0ca4 \u0ca8\u0ccb\u0c82\u0ca6\u0ca3\u0cbf\u0caf\u0cca\u0c82\u0ca6\u0cbf\u0c97\u0cc6 \u0cb9\u0ccb\u0cb2\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0cb2\u0ccd\u0cb2.",
+      "\u0ca6\u0cbe\u0c96\u0cb2\u0cc6 \u0cb9\u0cca\u0c82\u0ca6\u0cbf\u0cb0\u0cc1\u0cb5\u0cc1\u0ca6\u0cc1 \u0cae\u0cbe\u0cb2\u0cc0\u0c95\u0ca4\u0ccd\u0cb5\u0c95\u0ccd\u0c95\u0cc6 \u0caa\u0cc1\u0cb0\u0cbe\u0cb5\u0cc6\u0caf\u0cb2\u0ccd\u0cb2, \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0c95\u0c82\u0ca6\u0cbe\u0caf \u0ca6\u0cbe\u0c96\u0cb2\u0cc6\u0caf\u0cc1 \u0cb9\u0c95\u0ccd\u0c95\u0cbf\u0c97\u0cc6 \u0ca8\u0cbf\u0cb0\u0ccd\u0ca3\u0cbe\u0caf\u0c95 \u0cb8\u0cbe\u0c95\u0ccd\u0cb7\u0ccd\u0caf\u0cb5\u0cb2\u0ccd\u0cb2.",
+      "\u0c88 \u0c86\u0cb5\u0cc3\u0ca4\u0ccd\u0ca4\u0cbf\u0caf\u0cb2\u0ccd\u0cb2\u0cbf 14 \u0c85\u0c97\u0ca4\u0ccd\u0caf(\u0c97\u0cb3\u0cc1) \u0cac\u0cbe\u0c95\u0cbf \u0c87\u0cb5\u0cc6."
+    ],
+    "scope_and_limitations": [
+      "This classification reflects only the documents supplied in the case folder. No official record, court registry or external database has been checked, and no legal opinion has been given.",
+      "Only the documents present in the case folder at the time of this version were considered.",
+      "Scanned copies were read as supplied; no copy was compared with an original or with the official register.",
+      "Possession of a document is not evidence of ownership, and a revenue record is not conclusive evidence of title.",
+      "14 requirement(s) remain outstanding at this version."
+    ],
+    "disclaimer": "This report is an evidence-based preliminary assessment produced by an automated system from the documents supplied in the case folder. It is not a title search, not an official verification, and not a legal opinion. No statement in it should be read as confirming that title is clear or marketable, that a document is genuine, that the property is free from encumbrances or litigation, or that the property is suitable for purchase. Material conclusions require an independent title investigation and the written opinion of a qualified property lawyer."
+  },
+  "change_summary": [
+    {
+      "type": "no_material_change",
+      "detail": "No material change from the previous version."
+    }
+  ]
+}
